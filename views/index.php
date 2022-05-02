@@ -94,7 +94,7 @@ require_once('../partials/head.php');
                                     <h3>Introducing TuruLav</h3>
                                     <p>Serious Dating With <strong>TuruLav </strong> Your Perfect
                                         Match is Just a Click Away.</p>
-                                    <form action="https://labartisan.net/" class="banner-form">
+                                    <form  class="banner-form">
                                         <div class="gender">
                                             <label for="gender" class="left">I am a </label>
                                             <div class="custom-select right">
@@ -165,39 +165,27 @@ require_once('../partials/head.php');
                                         <button class="">Find Your Partner</button>
 
                                     </form>
-                                    <ul class="social-list">
-                                        <li class="google"><a href="#">
-                                                <img src="assets/images/banner/google.png" alt="img">
-                                                <span>Continue with google</span>
-                                            </a></li>
-                                        <li class="facebook"><a href="index-2.html#">
-                                                <i class="icofont-facebook"></i>
-                                            </a></li>
-                                        <li class="twitter"><a href="index-2.html#">
-                                                <i class="icofont-twitter"></i>
-                                            </a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="banner-thumb">
-                            <img src="assets/images/banner/01.png" alt="img">
+                            <img src="../public/images/banner/01.png" alt="img">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="all-shapes">
-            <img src="assets/images/banner/banner-shapes/01.png" alt="shape" class="banner-shape shape-1">
-            <img src="assets/images/banner/banner-shapes/02.png" alt="shape" class="banner-shape shape-2">
-            <img src="assets/images/banner/banner-shapes/03.png" alt="shape" class="banner-shape shape-3">
-            <img src="assets/images/banner/banner-shapes/04.png" alt="shape" class="banner-shape shape-4">
-            <img src="assets/images/banner/banner-shapes/05.png" alt="shape" class="banner-shape shape-5">
-            <img src="assets/images/banner/banner-shapes/06.png" alt="shape" class="banner-shape shape-6">
-            <img src="assets/images/banner/banner-shapes/07.png" alt="shape" class="banner-shape shape-7">
-            <img src="assets/images/banner/banner-shapes/08.png" alt="shape" class="banner-shape shape-8">
+            <img src="../public/images/banner/banner-shapes/01.png" alt="shape" class="banner-shape shape-1">
+            <img src="../public/images/banner/banner-shapes/02.png" alt="shape" class="banner-shape shape-2">
+            <img src="../public/images/banner/banner-shapes/03.png" alt="shape" class="banner-shape shape-3">
+            <img src="../public/images/banner/banner-shapes/04.png" alt="shape" class="banner-shape shape-4">
+            <img src="../public/images/banner/banner-shapes/05.png" alt="shape" class="banner-shape shape-5">
+            <img src="../public/images/banner/banner-shapes/06.png" alt="shape" class="banner-shape shape-6">
+            <img src="../public/images/banner/banner-shapes/07.png" alt="shape" class="banner-shape shape-7">
+            <img src="../public/images/banner/banner-shapes/08.png" alt="shape" class="banner-shape shape-8">
         </div>
     </section>
     <!-- ================ Banner Section end Here =============== -->
@@ -216,7 +204,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/01.jpg" alt="member-img">
+                                    <img src="../public/images/member/01.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Andrea Guido</a> </h6>
@@ -229,7 +217,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/02.jpg" alt="member-img">
+                                    <img src="../public/images/member/02.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Gihan-Fernando</a></h6>
@@ -242,7 +230,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/03.jpg" alt="member-img">
+                                    <img src="../public/images/member/03.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Sweet Admin</a></h6>
@@ -255,7 +243,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/04.jpg" alt="member-img">
+                                    <img src="../public/images/member/04.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Gyan-Baffour</a></h6>
@@ -268,7 +256,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/05.jpg" alt="member-img">
+                                    <img src="../public/images/member/05.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Teszt Eleking</a></h6>
@@ -991,15 +979,9 @@ require_once('../partials/head.php');
     <!-- ================ footer Section start Here =============== -->
     <?php require_once('../partials/footer.php'); ?>
     <!-- ================ footer Section end Here =============== -->
-
-
     <!-- scrollToTop start here -->
     <a href="#" class="scrollToTop"><i class="icofont-rounded-up"></i></a>
     <!-- scrollToTop ending here -->
-
-
-
-
     <!-- All Scripts -->
     <?php require_once('../partials/scripts.php'); ?>
 </body>
