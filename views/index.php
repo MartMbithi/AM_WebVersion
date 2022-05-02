@@ -269,7 +269,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/06.jpg" alt="member-img">
+                                    <img src="../public//images/member/06.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Zeahra Guido</a>
@@ -305,7 +305,7 @@ require_once('../partials/head.php');
                         <div class="lab-item about-item">
                             <div class="lab-inner text-center">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/about/01.png" alt="img">
+                                    <img src="../public//images/about/01.png" alt="img">
                                 </div>
                                 <div class="lab-content">
                                     <h2 class="counter">29,991</h2>
@@ -318,7 +318,7 @@ require_once('../partials/head.php');
                         <div class="lab-item about-item">
                             <div class="lab-inner text-center">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/about/02.png" alt="img">
+                                    <img src="../public//images/about/02.png" alt="img">
                                 </div>
                                 <div class="lab-content">
                                     <h2 class="counter">29,960</h2>
@@ -331,7 +331,7 @@ require_once('../partials/head.php');
                         <div class="lab-item about-item">
                             <div class="lab-inner text-center">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/about/03.png" alt="img">
+                                    <img src="../public//images/about/03.png" alt="img">
                                 </div>
                                 <div class="lab-content">
                                     <h2 class="counter">29,960</h2>
@@ -344,7 +344,7 @@ require_once('../partials/head.php');
                         <div class="lab-item about-item">
                             <div class="lab-inner text-center">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/about/04.png" alt="img">
+                                    <img src="../public//images/about/04.png" alt="img">
                                 </div>
                                 <div class="lab-content">
                                     <h2 class="counter">28,960</h2>
@@ -374,7 +374,7 @@ require_once('../partials/head.php');
                             <div class="lab-inner text-center">
                                 <div class="lab-thumb">
                                     <div class="thumb-inner">
-                                        <img src="assets/images/work/01.png" alt="work-img">
+                                        <img src="../public//images/work/01.png" alt="work-img">
                                         <div class="step">
                                             <span>step</span>
                                             <p>01</p>
@@ -395,7 +395,7 @@ require_once('../partials/head.php');
                             <div class="lab-inner text-center">
                                 <div class="lab-thumb">
                                     <div class="thumb-inner">
-                                        <img src="assets/images/work/02.png" alt="work-img">
+                                        <img src="../public//images/work/02.png" alt="work-img">
                                         <div class="step">
                                             <span>step</span>
                                             <p>02</p>
@@ -416,7 +416,7 @@ require_once('../partials/head.php');
                             <div class="lab-inner text-center">
                                 <div class="lab-thumb">
                                     <div class="thumb-inner">
-                                        <img src="assets/images/work/03.png" alt="work-img">
+                                        <img src="../public//images/work/03.png" alt="work-img">
                                         <div class="step">
                                             <span>step</span>
                                             <p>03</p>
@@ -453,7 +453,7 @@ require_once('../partials/head.php');
                         <div class="story-item lab-item">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/story/01.jpg" alt="img">
+                                    <img src="../public//images/story/01.jpg" alt="img">
                                 </div>
                                 <div class="lab-content">
                                     <h4><a href="blog-single.html">Image Post Formate</a></h4>
@@ -470,7 +470,7 @@ require_once('../partials/head.php');
                         <div class="story-item lab-item">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/story/02.jpg" alt="img">
+                                    <img src="../public//images/story/02.jpg" alt="img">
                                 </div>
                                 <div class="lab-content">
                                     <h4><a href="blog-single.html">Couple Of Month</a></h4>
@@ -487,7 +487,7 @@ require_once('../partials/head.php');
                         <div class="story-item lab-item">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/story/03.jpg" alt="img">
+                                    <img src="../public//images/story/03.jpg" alt="img">
                                 </div>
                                 <div class="lab-content">
                                     <h4><a href="blog-single.html">Media For Blog Article</a></h4>
@@ -529,7 +529,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1 style-2">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/01.jpg" alt="member-img">
+                                    <img src="../public//images/member/01.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Johanna</a> </h6>
@@ -542,7 +542,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1 style-2">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/03.jpg" alt="member-img">
+                                    <img src="../public//images/member/03.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Selinae</a> </h6>
@@ -555,7 +555,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1 style-2">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/02.jpg" alt="member-img">
+                                    <img src="../public//images/member/02.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Andrea Guido</a> </h6>
@@ -568,7 +568,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1 style-2">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/04.jpg" alt="member-img">
+                                    <img src="../public//images/member/04.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Rocky deo</a> </h6>
@@ -581,7 +581,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1 style-2">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/05.jpg" alt="member-img">
+                                    <img src="../public//images/member/05.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Jhon doe</a> </h6>
@@ -594,7 +594,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1 style-2">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/06.jpg" alt="member-img">
+                                    <img src="../public//images/member/06.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Angelina</a> </h6>
@@ -607,7 +607,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1 style-2">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/07.jpg" alt="member-img">
+                                    <img src="../public//images/member/07.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Andrea Guido</a> </h6>
@@ -620,7 +620,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1 style-2">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/08.jpg" alt="member-img">
+                                    <img src="../public//images/member/08.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Jene Aiko</a> </h6>
@@ -633,7 +633,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1 style-2">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/09.jpg" alt="member-img">
+                                    <img src="../public//images/member/09.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Anna haek</a> </h6>
@@ -646,7 +646,7 @@ require_once('../partials/head.php');
                         <div class="lab-item member-item style-1 style-2">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/member/10.jpg" alt="member-img">
+                                    <img src="../public//images/member/10.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Andrean Puido</a> </h6>
@@ -675,19 +675,19 @@ require_once('../partials/head.php');
                         <div class="group-item lab-item">
                             <div class="lab-inner d-flex flex-wrap align-items-center p-4">
                                 <div class="lab-thumb me-sm-4 mb-4 mb-sm-0">
-                                    <img src="assets/images/group/01.jpg" alt="img">
+                                    <img src="../public//images/group/01.jpg" alt="img">
                                 </div>
                                 <div class="lab-content">
                                     <h4>Active Group A1</h4>
                                     <p>Colabors atively fabcate best breed and
                                         apcations through visionary value </p>
                                     <ul class="img-stack d-flex">
-                                        <li><img src="assets/images/group/group-mem/01.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/02.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/03.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/04.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/05.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/06.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/01.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/02.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/03.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/04.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/05.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/06.png" alt="member-img"></li>
                                         <li class="bg-theme">12+</li>
                                     </ul>
                                     <div class="test"> <a href="active-group.html" class="lab-btn"> <i class="icofont-users-alt-5"></i>View Group</a></div>
@@ -699,19 +699,19 @@ require_once('../partials/head.php');
                         <div class="group-item lab-item">
                             <div class="lab-inner d-flex flex-wrap align-items-center p-4">
                                 <div class="lab-thumb me-sm-4 mb-4 mb-sm-0">
-                                    <img src="assets/images/group/02.jpg" alt="img">
+                                    <img src="../public//images/group/02.jpg" alt="img">
                                 </div>
                                 <div class="lab-content">
                                     <h4>Active Group A2</h4>
                                     <p>Colabors atively fabcate best breed and
                                         apcations through visionary value </p>
                                     <ul class="img-stack d-flex">
-                                        <li><img src="assets/images/group/group-mem/01.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/02.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/03.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/04.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/05.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/06.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/01.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/02.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/03.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/04.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/05.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/06.png" alt="member-img"></li>
                                         <li class="bg-theme">12+</li>
                                     </ul>
                                     <div class="test"> <a href="active-group.html" class="lab-btn"> <i class="icofont-users-alt-5"></i>View Group</a></div>
@@ -730,12 +730,12 @@ require_once('../partials/head.php');
                                     <p>Colabors atively fabcate best breed and
                                         apcations through visionary value </p>
                                     <ul class="img-stack d-flex">
-                                        <li><img src="assets/images/group/group-mem/01.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/02.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/03.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/04.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/05.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/06.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/01.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/02.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/03.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/04.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/05.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/06.png" alt="member-img"></li>
                                         <li class="bg-theme">12+</li>
                                     </ul>
                                     <div class="test"> <a href="active-group.html" class="lab-btn"> <i class="icofont-users-alt-5"></i>View Group</a></div>
@@ -754,12 +754,12 @@ require_once('../partials/head.php');
                                     <p>Colabors atively fabcate best breed and
                                         apcations through visionary value </p>
                                     <ul class="img-stack d-flex">
-                                        <li><img src="assets/images/group/group-mem/01.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/02.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/03.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/04.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/05.png" alt="member-img"></li>
-                                        <li><img src="assets/images/group/group-mem/06.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/01.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/02.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/03.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/04.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/05.png" alt="member-img"></li>
+                                        <li><img src="../public//images/group/group-mem/06.png" alt="member-img"></li>
                                         <li class="bg-theme">12+</li>
                                     </ul>
                                     <div class="test"> <a href="active-group.html" class="lab-btn"> <i class="icofont-users-alt-5"></i>View Group</a></div>
@@ -805,7 +805,7 @@ require_once('../partials/head.php');
                             </div>
                         </div>
                         <div class="client-thumb">
-                            <img src="assets/images/group/group-mem/02.png" alt="lab-clients">
+                            <img src="../public//images/group/group-mem/02.png" alt="lab-clients">
                         </div>
                     </div>
                     <div class="client-list">
@@ -829,7 +829,7 @@ require_once('../partials/head.php');
                             </div>
                         </div>
                         <div class="client-thumb">
-                            <img src="assets/images/group/group-mem/01.png" alt="lab-clients">
+                            <img src="../public//images/group/group-mem/01.png" alt="lab-clients">
                         </div>
                     </div>
                     <div class="client-list">
@@ -853,7 +853,7 @@ require_once('../partials/head.php');
                             </div>
                         </div>
                         <div class="client-thumb">
-                            <img src="assets/images/group/group-mem/03.png" alt="lab-clients">
+                            <img src="../public//images/group/group-mem/03.png" alt="lab-clients">
                         </div>
                     </div>
                     <div class="client-list">
@@ -877,7 +877,7 @@ require_once('../partials/head.php');
                             </div>
                         </div>
                         <div class="client-thumb">
-                            <img src="assets/images/group/group-mem/04.png" alt="lab-clients">
+                            <img src="../public//images/group/group-mem/04.png" alt="lab-clients">
                         </div>
                     </div>
                     <div class="client-list">
@@ -901,7 +901,7 @@ require_once('../partials/head.php');
                             </div>
                         </div>
                         <div class="client-thumb">
-                            <img src="assets/images/group/group-mem/05.png" alt="lab-clients">
+                            <img src="../public//images/group/group-mem/05.png" alt="lab-clients">
                         </div>
                     </div>
                     <div class="client-list">
@@ -925,7 +925,7 @@ require_once('../partials/head.php');
                             </div>
                         </div>
                         <div class="client-thumb">
-                            <img src="assets/images/group/group-mem/06.png" alt="lab-clients">
+                            <img src="../public//images/group/group-mem/06.png" alt="lab-clients">
                         </div>
                     </div>
                 </div>
@@ -948,7 +948,7 @@ require_once('../partials/head.php');
                     <ul class="app-download d-flex flex-wrap">
                         <li><a href="#" class="d-flex flex-wrap align-items-center">
                                 <div class="app-thumb">
-                                    <img src="assets/images/app/apple.png" alt="apple">
+                                    <img src="../public//images/app/apple.png" alt="apple">
                                 </div>
                                 <div class="app-content">
                                     <p>Available on the</p>
@@ -957,7 +957,7 @@ require_once('../partials/head.php');
                             </a></li>
                         <li class="d-inline-block"><a href="#" class="d-flex flex-wrap align-items-center">
                                 <div class="app-thumb">
-                                    <img src="assets/images/app/playstore.png" alt="playstore">
+                                    <img src="../public//images/app/playstore.png" alt="playstore">
                                 </div>
                                 <div class="app-content">
                                     <p>Available on the</p>
@@ -968,7 +968,7 @@ require_once('../partials/head.php');
 
                 </div>
                 <div class="mobile-app">
-                    <img src="assets/images/app/mobile-view.png" alt="mbl-view">
+                    <img src="../public//images/app/mobile-view.png" alt="mbl-view">
                 </div>
             </div>
         </div>
