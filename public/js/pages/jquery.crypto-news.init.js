@@ -1,1 +1,0 @@
-$(".js-conveyor-example").jConveyorTicker({reverse_elm:!0});
