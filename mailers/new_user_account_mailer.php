@@ -83,7 +83,7 @@ while ($sys = $res->fetch_object()) {
     $mail->Port = $sys->mailer_port;
     $mail->Username = $sys->mailer_username;
     $mail->Password = $sys->mailer_password;
-    $mail->Subject = 'Password Reset Link';
+    $mail->Subject = 'Welcome To ' . $sys->mailer_mail_from_name;
     /* Custom Mail Body */
     $mail->Body = '
     <!doctype html>
@@ -128,7 +128,7 @@ while ($sys = $res->fetch_object()) {
                                     </tr>
                                     <tr>
                                         <td style="padding:0 35px;">
-                                            <h1 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;font-family:"Rubik",sans-serif;">Password Reset</h1>
+                                            <h1 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;font-family:"Rubik",sans-serif;">Verify Your Email</h1>
                                             <p style="color:#455056; font-size:15px;line-height:24px; margin:0;">
                                                 Hi there, <br>
                                                 We are so glad that you have joined  ' . $sys->mailer_mail_from_name . '. 

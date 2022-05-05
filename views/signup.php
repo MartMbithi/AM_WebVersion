@@ -60,6 +60,7 @@
  */
 session_start();
 require_once '../config/config.php';
+require_once '../config/codeGen.php';
 require_once '../config/app_config.php';
 /* Register New User */
 if (isset($_POST['SignUp'])) {
@@ -80,17 +81,19 @@ if (isset($_POST['SignUp'])) {
                 $err =  "$user_email - An Account With This Email Exists";
             } else {
                 /* Persist */
-                $activate_url = $account_activation . $rand_id;
                 $sql = "INSERT INTO users (user_id, user_name, user_email, user_password) VALUES(?,?,?,?)";
                 $prepare = $mysqli->prepare($sql);
                 $bind = $prepare->bind_param(
                     'ssss',
-                    $rand_id,
+                    $ran_id,
                     $user_name,
                     $user_email,
                     $confirm_password
                 );
                 $prepare->execute();
+                $activate_url = $account_activation . $ran_id;
+                /* Load Mailer */
+                require_once('../mailers/new_user_account_mailer.php');
                 if ($prepare && $mail->send()) {
                     $success = "Your Account Has Been Created";
                 } else {

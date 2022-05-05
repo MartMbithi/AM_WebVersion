@@ -148,7 +148,7 @@ require_once('../partials/head.php');
                         <div class="d-flex justify-content-between flex-wrap pt-sm-2">
                             <div class="checkgroup">
                             </div>
-                            <a href="forget_password">Remember Password?</a>
+                            <a href="login">Remember Password?</a>
                         </div>
                     </div>
                     <div class="form-group">
