@@ -96,7 +96,7 @@ if (isset($_POST['Login'])) {
                 $info = "Please Verify Your Email Address To Proceed";
             }
         } else {
-            $err =  "$email - This email not Exist!";
+            $err =  "No Account With This $user_email Email";
         }
     } else {
         $err =  "All input fields are required!";
