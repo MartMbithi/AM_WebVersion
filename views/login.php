@@ -84,6 +84,7 @@ if (isset($_POST['Login'])) {
                         /* Success Login */
                         $_SESSION['user_id'] = $row['user_id'];
                         $_SESSION['user_gender'] = $row['user_gender'];
+                        $_SESSION['user_address'] = $row['user_address'];
                         $_SESSION['success'] = 'Authentication Successful';
                         header('Location: index');
                         exit;

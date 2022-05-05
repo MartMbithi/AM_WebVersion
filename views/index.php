@@ -97,14 +97,27 @@ require_once('../partials/head.php');
                                     <p>Your Perfect Match is Just a Click Away.</p>
 
                                     <form class="banner-form">
-                                        <div class="gender">
-                                            <label for="gender" class="left">I am a </label>
-                                            <div class="custom-select right">
-                                                <select name="gender" id="gender" class="">
-                                                    <option><?php echo $_SESSION['user_gender']; ?></option>
-                                                </select>
+                                        <?php if (!empty($_SESSION['user_id'])) { ?>
+                                            <div class="gender">
+                                                <label for="gender" class="left">I am a </label>
+                                                <div class="custom-select right">
+                                                    <select name="gender" id="gender" class="">
+                                                        <option><?php echo $_SESSION['user_gender']; ?></option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
+                                        <?php } else { ?>
+                                            <div class="gender">
+                                                <label for="gender" class="left">I am a </label>
+                                                <div class="custom-select right">
+                                                    <select name="gender" id="gender" class="">
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        <?php } ?>
+
                                         <div class="person">
                                             <label for="gender-two" class="left">Looking for</label>
                                             <div class="custom-select right">
@@ -143,7 +156,6 @@ require_once('../partials/head.php');
                                             <input class="right" type="text" value="<?php echo $_SESSION['user_address']; ?>">
                                         </div>
                                         <button class="">Find Your Partner</button>
-
                                     </form>
                                 </div>
                             </div>
