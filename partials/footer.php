@@ -44,69 +44,24 @@
     <div class="footer-middle padding-tb" style="background-image: url(../public//images/footer/bg.png);">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-6 col-md-6 col-12">
                     <div class="footer-middle-item-wrapper">
                         <div class="footer-middle-item mb-lg-0">
                             <div class="fm-item-title">
-                                <h4>About TuruLav</h4>
+                                <h4>About Asian Melodies</h4>
                             </div>
                             <div class="fm-item-content">
-                                <p class="mb-4">Energistically coordinate highly efficient procesr
-                                    partnerships befor revolutionar growth strategie
-                                    improvement viaing awesome</p>
+                                <p class="mb-4">
+                                    We are an online dating and geosocial networking platform,
+                                    which connects your lone self to your partner. <br>
+                                    Asian Melodies - The Future Of Dating
+                                </p>
                                 <img src="../public//images/footer/about.jpg" alt="about-image" class="footer-abt-img">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="footer-middle-item-wrapper">
-                        <div class="footer-middle-item mb-lg-0">
-                            <div class="fm-item-title">
-                                <h4>our Recent news</h4>
-                            </div>
-                            <div class="fm-item-content">
-                                <div class="fm-item-widget lab-item">
-                                    <div class="lab-inner">
-                                        <div class="lab-thumb">
-                                            <a href="#"> <img src="../public//images/footer/01.jpg" alt="footer-widget-img"></a>
-                                        </div>
-                                        <div class="lab-content">
-                                            <h6><a href="blog-single.html">Enable Seamin Matera Forin And Our
-                                                    Orthonal Create Vortals.</a></h6>
-                                            <p>July 23, 2021</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="fm-item-widget lab-item">
-                                    <div class="lab-inner">
-                                        <div class="lab-thumb">
-                                            <a href="#"><img src="../public//images/footer/02.jpg" alt="footer-widget-img"></a>
-                                        </div>
-                                        <div class="lab-content">
-                                            <h6><a href="blog-single.html">Dynamca Network Otuitive Catays For
-                                                    Plagiarize Mindshare After</a></h6>
-                                            <p>July 23, 2021</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="fm-item-widget lab-item">
-                                    <div class="lab-inner">
-                                        <div class="lab-thumb">
-                                            <a href="#"><img src="../public//images/footer/03.jpg" alt="footer-widget-img"></a>
-                                        </div>
-                                        <div class="lab-content">
-                                            <h6><a href="blog-single.html">Dynamca Network Otuitive Catays For
-                                                    Plagiarize Mindshare After</a></h6>
-                                            <p>July 23, 2021</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-6 col-md-6 col-12">
                     <div class="footer-middle-item-wrapper">
                         <div class="footer-middle-item-3 mb-lg-0">
                             <div class="fm-item-title">
@@ -115,7 +70,7 @@
                             <div class="fm-item-content">
                                 <p>By subscribing to our mailing list you will always
                                     be update with the latest news from us.</p>
-                                <form>
+                                <form method="post">
                                     <div class="form-group">
                                         <input type="email" class="form-control" placeholder="Enter email">
                                     </div>
@@ -133,7 +88,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="footer-bottom-content text-center">
-                        <p>&copy; 2022 - <?php echo date('Y'); ?> <a href="index">Asian Melodies</a> -Best For Dating HTML Template.</p>
+                        <p>&copy; 2022 - <?php echo date('Y'); ?> <a href="index">Asian Melodies</a> The Future Of Dating</p>
                     </div>
                 </div>
             </div>

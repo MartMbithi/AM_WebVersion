@@ -4,10 +4,10 @@
             <div class="header-top-area">
                 <ul class="left">
                     <li>
-                        <i class="icofont-ui-call"></i> <span>+800-123-4567 6587</span>
+                        <i class="icofont-ui-call"></i> <span>+254 737 229776 </span>
                     </li>
                     <li>
-                        <i class="icofont-location-pin"></i> Beverley, New York 224 USA
+                        <i class="icofont-location-pin"></i> 127.0.0.1 Localhost
                     </li>
                 </ul>
                 <ul class="social-icons d-flex align-items-center">
@@ -39,14 +39,14 @@
         <div class="container">
             <div class="header-wrapper">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="index">
                         <img src="../public/images/logo/logo.png" alt="logo">
                     </a>
                 </div>
                 <div class="menu-area">
                     <ul class="menu">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index">Home</a>
                         </li>
 
                         <li>
@@ -73,8 +73,8 @@
                         </li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                    <a href="login.html" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
-                    <a href="signup.html" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span> </a>
+                    <a href="login" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
+                    <a href="signup" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span> </a>
 
                     <!-- toggle icons -->
                     <div class="header-bar d-lg-none">

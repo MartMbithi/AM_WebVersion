@@ -17,5 +17,5 @@
     <!-- Application Css -->
     <link rel="stylesheet" href="../public/css/style.css">
 
-    <title>Asian Melodies </title>
+    <title>Asian Melodies - The Future Of Dating </title>
 </head>
