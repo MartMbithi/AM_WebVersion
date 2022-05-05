@@ -147,13 +147,39 @@ require_once('../partials/head.php');
         <div class=" container">
             <div class="account-wrapper">
                 <h3 class="title bite-chocolate">Finalize Your Account Set Up</h3>
-                <p class="text-center">You have verified your password, kindly fill all required fields to set up your account</p>
+                <p class="text-center">You have verified your email, kindly fill all required fields to set up your account</p>
                 <form method="POST" class="account-form">
-                    <div class="form-group">
-                        <input type="text" required name="user_name" placeholder="Full Names">
+                    <div class="form-group row">
+                        <label class="col-4 col-form-label">
+                            Gender
+                        </label>
+                        <div class="col-6">
+                            <select class="form-control" name="user_gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" required name="user_email" placeholder="Email Address">
+                    <div class="form-group row">
+                        <label class="col-4 col-form-label" for="val-username">Age
+                        </label>
+                        <div class="col-6">
+                            <input type="text" required name="user_age">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-4 col-form-label" for="val-username">Current City
+                        </label>
+                        <div class="col-6">
+                            <input type="text" required name="user_address">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-4 col-form-label" for="val-username">Profile Picture
+                        </label>
+                        <div class="col-6">
+                            <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required name="user_address">
+                        </div>
                     </div>
                     <div class="form-group">
                         <button type="submit" name="SignUp" class="d-block lab-btn"><span>Submit</span></button>
