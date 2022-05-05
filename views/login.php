@@ -60,6 +60,48 @@
  */
 
 session_start();
+require_once '../config/config.php';
+require_once '../config/app_config.php';
+/* Login */
+if (isset($_POST['Login'])) {
+    $user_email = mysqli_real_escape_string($mysqli, $_POST['user_email']);
+    $user_password = mysqli_real_escape_string($mysqli, $_POST['user_password']);
+    /* Check If Null Values Has Been Posted */
+    if (!empty($user_email) && !empty($user_password)) {
+        $sql = mysqli_query($mysqli, "SELECT * FROM users WHERE user_email = '{$user_email}'");
+        if (mysqli_num_rows($sql) > 0) {
+            $row = mysqli_fetch_assoc($sql);
+            $user_pass = sha1(md5($user_password));
+            $enc_pass = $row['user_password'];
+            $acc_status = $row['user_account_status'];
+            /* Check If This Account Is Verified */
+            if ($acc_status == 'Verified') {
+                /* Check If Auth Details Match */
+                if ($user_pass === $enc_pass) {
+                    $status = "Active now";
+                    $sql2 = mysqli_query($mysqli, "UPDATE users SET user_status = '{$status}' WHERE user_id = {$row['user_id']}");
+                    if ($sql2) {
+                        /* Success Login */
+                        $_SESSION['user_id'] = $row['user_id'];
+                        $_SESSION['success'] = 'Authentication Successful';
+                        header('Location: index');
+                        exit;
+                    } else {
+                        $err =  "Something went wrong. Please try again!";
+                    }
+                } else {
+                    $err =  "Email or Password is Incorrect!";
+                }
+            } else {
+                $info = "Please Verify Your Email Address To Proceed";
+            }
+        } else {
+            $err =  "$email - This email not Exist!";
+        }
+    } else {
+        $err =  "All input fields are required!";
+    }
+}
 require_once('../partials/head.php');
 
 ?>
