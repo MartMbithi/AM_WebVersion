@@ -61,42 +61,48 @@
 session_start();
 require_once '../config/config.php';
 require_once '../config/app_config.php';
-/* Register New User */
+/* Proceed To Activation */
 if (isset($_POST['SignUp'])) {
     /* Prevent SQL Injection */
-    $user_name = mysqli_real_escape_string($mysqli, $_POST['user_name']);
-    $user_email = mysqli_real_escape_string($mysqli, $_POST['user_email']);
-    $new_password = sha1(md5(mysqli_real_escape_string($mysqli, $_POST['new_password'])));
-    $confirm_password = sha1(md5(mysqli_real_escape_string($mysqli, $_POST['confirm_password'])));
+    $user_gender = mysqli_real_escape_string($mysqli, $_POST['user_gender']);
+    $user_age = mysqli_real_escape_string($mysqli, $_POST['user_age']);
+    $user_address = mysqli_real_escape_string($mysqli, $_POST['user_address']);
+    $user_id = mysqli_real_escape_string($mysqli, $_GET['account']);
+    $user_account_status = 'Verified';
+    /* Persist User Profile Image */
+    if (isset($_FILES['image'])) {
+        $img_name = $_FILES['image']['name'];
+        $img_type = $_FILES['image']['type'];
+        $tmp_name = $_FILES['image']['tmp_name'];
 
-    /* Check If Passwords Match */
-    if ($new_password != $confirm_password) {
-        $err = "Passwords Does Not Match";
-    } else {
-        /* Filter And Validate Email */
-        if (filter_var($user_email, FILTER_VALIDATE_EMAIL)) {
-            $sql = mysqli_query($mysqli, "SELECT * FROM users WHERE user_email = '{$user_email}'");
-            if (mysqli_num_rows($sql) > 0) {
-                $err =  "$user_email - An Account With This Email Exists";
-            } else {
-                /* Persist */
-                $activate_url = $account_activation . $rand_id;
-                $sql = "INSERT INTO users (user_id, user_name, user_email, user_password) VALUES(?,?,?,?)";
-                $prepare = $mysqli->prepare($sql);
-                $bind = $prepare->bind_param(
-                    'ssss',
-                    $rand_id,
-                    $user_name,
-                    $user_email,
-                    $confirm_password
-                );
-                $prepare->execute();
-                if ($prepare && $mail->send()) {
-                    $success = "Your Account Has Been Created";
-                } else {
-                    $err = "Failed!, Please Try Again";
+        $img_explode = explode('.', $img_name);
+        $img_ext = end($img_explode);
+
+        $extensions = ["jpeg", "png", "jpg"];
+        if (in_array($img_ext, $extensions) === true) {
+            $types = ["image/jpeg", "image/jpg", "image/png"];
+            if (in_array($img_type, $types) === true) {
+                $time = time();
+                $new_img_name = $time . $img_name;
+                if (move_uploaded_file($tmp_name, "../public/uploads/user_data/" . $new_img_name)) {
+                    /* Persist User Data */
+                    $sql = "UPDATE users SET user_gender ='{$user_gender}', user_age ='{$user_age}', user_address ='{$user_address}',
+                    user_account_status = '{$user_account_status}' WHERE user_id = {'$user_id'}";
+                    $prepare = $mysqli->prepare($sql);
+                    $prepare->execute();
+                    if ($prepare) {
+                        $_SESSION['success'] = 'Your Account Has Been Set Up, Proceed To Login';
+                        header('Location: login');
+                        exit;
+                    } else {
+                        $err = "Failed!, Please Try Again";
+                    }
                 }
+            } else {
+                echo "Please upload an image file - jpeg, png, jpg";
             }
+        } else {
+            echo "Please upload an image file - jpeg, png, jpg";
         }
     }
 }
@@ -148,7 +154,7 @@ require_once('../partials/head.php');
             <div class="account-wrapper">
                 <h3 class="title bite-chocolate">Finalize Your Account Set Up</h3>
                 <p class="text-center">You have verified your email, kindly fill all required fields to set up your account</p>
-                <form method="POST" class="account-form">
+                <form enctype="multipart/form-data" autocomplete="off" method="POST" class="account-form">
                     <div class="form-group row">
                         <label class="col-4 col-form-label">
                             Gender
@@ -182,7 +188,7 @@ require_once('../partials/head.php');
                         </div>
                     </div>
                     <div class="form-group">
-                        <button type="submit" name="SignUp" class="d-block lab-btn"><span>Submit</span></button>
+                        <button type="submit" name="SignUp" class="d-block lab-btn"><span>Proceed</span></button>
                     </div>
                 </form>
             </div>
