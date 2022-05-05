@@ -86,8 +86,8 @@ if (isset($_POST['SignUp'])) {
                 $new_img_name = $time . $img_name;
                 if (move_uploaded_file($tmp_name, "../public/uploads/user_data/" . $new_img_name)) {
                     /* Persist User Data */
-                    $sql = "UPDATE users SET user_gender ='{$user_gender}', user_age ='{$user_age}', user_address ='{$user_address}',
-                    user_account_status = '{$user_account_status}' WHERE user_id = {'$user_id'}";
+                    $sql = "UPDATE users SET user_gender ='$user_gender', user_age ='$user_age', user_address ='$user_address',
+                    user_account_status = '$user_account_status', user_profile_picture = '$new_img_name' WHERE user_id = '$user_id'";
                     $prepare = $mysqli->prepare($sql);
                     $prepare->execute();
                     if ($prepare) {
