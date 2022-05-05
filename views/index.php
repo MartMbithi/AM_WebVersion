@@ -109,10 +109,9 @@ require_once('../partials/head.php');
                                             <label for="gender-two" class="left">Looking for</label>
                                             <div class="custom-select right">
                                                 <select name="gender" id="gender-two" class="">
-                                                    <option value="0">Select Gender</option>
-                                                    <option value="1">Male</option>
-                                                    <option value="2">Female</option>
-                                                    <option value="3">Others</option>
+                                                    <option value="">Select Gender</option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -120,38 +119,20 @@ require_once('../partials/head.php');
                                             <label for="age" class="left">Age</label>
                                             <div class="right d-flex justify-content-between">
                                                 <div class="custom-select">
-                                                    <select name="age-start" id="age">
-                                                        <option value="1">18</option>
-                                                        <option value="2">19</option>
-                                                        <option value="3">20</option>
-                                                        <option value="4">21</option>
-                                                        <option value="5">22</option>
-                                                        <option value="6">23</option>
-                                                        <option value="7">24</option>
-                                                        <option value="8">25</option>
-                                                        <option value="9">26</option>
-                                                        <option value="10">27</option>
-                                                        <option value="11">28</option>
-                                                        <option value="13">29</option>
-                                                        <option value="14">30</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="custom-select">
                                                     <select name="age-end" id="age-two">
-                                                        <option value="1">18+</option>
-                                                        <option value="2">19</option>
-                                                        <option value="3">20</option>
-                                                        <option value="4">21</option>
-                                                        <option value="5">22</option>
-                                                        <option value="6">23</option>
-                                                        <option value="7">24</option>
-                                                        <option value="8">25</option>
-                                                        <option value="9">26</option>
-                                                        <option value="10">27</option>
-                                                        <option value="11">28</option>
-                                                        <option value="13">29</option>
-                                                        <option value="14">30</option>
+                                                        <option>18</option>
+                                                        <option>19</option>
+                                                        <option>20</option>
+                                                        <option>21</option>
+                                                        <option>22</option>
+                                                        <option>23</option>
+                                                        <option>24</option>
+                                                        <option>25</option>
+                                                        <option>26</option>
+                                                        <option>27</option>
+                                                        <option>28</option>
+                                                        <option>29</option>
+                                                        <option>30</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -159,7 +140,7 @@ require_once('../partials/head.php');
                                         </div>
                                         <div class="city">
                                             <label for="city" class="left">City</label>
-                                            <input class="right" type="text" id="city" placeholder="Your City Name..">
+                                            <input class="right" type="text" value="<?php echo $_SESSION['user_address']; ?>">
                                         </div>
                                         <button class="">Find Your Partner</button>
 
