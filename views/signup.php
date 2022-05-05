@@ -77,7 +77,7 @@ if (isset($_POST['SignUp'])) {
         if (filter_var($user_email, FILTER_VALIDATE_EMAIL)) {
             $sql = mysqli_query($mysqli, "SELECT * FROM users WHERE user_email = '{$user_email}'");
             if (mysqli_num_rows($sql) > 0) {
-                echo "$email - An Account With This Email Exists";
+                $err =  "$user_email - An Account With This Email Exists";
             } else {
                 /* Persist */
                 $sql = "INSERT INTO users (user_id, user_name, user_email, user_password) VALUES(?,?,?,?)";

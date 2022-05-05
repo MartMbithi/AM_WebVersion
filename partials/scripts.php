@@ -21,7 +21,7 @@
     <!-- Pop Success Alert -->
     <script>
         toastr.success("<?php echo $success; ?>", "", {
-            positionClass: "toast-top-left",
+            positionClass: "toast-top-right",
             timeOut: 5e3,
             newestOnTop: !0,
             progressBar: !0,
@@ -40,7 +40,7 @@
 if (isset($err)) { ?>
     <script>
         toastr.error("<?php echo $err; ?>", "", {
-            positionClass: "toast-top-left",
+            positionClass: "toast-top-right",
             timeOut: 5e3,
             newestOnTop: !0,
             progressBar: !0,
@@ -58,7 +58,7 @@ if (isset($err)) { ?>
 if (isset($info)) { ?>
     <script>
         toastr.warning("<?php echo $info; ?>", "", {
-            positionClass: "toast-top-left",
+            positionClass: "toast-top-right",
             timeOut: 5e3,
             newestOnTop: !0,
             progressBar: !0,
