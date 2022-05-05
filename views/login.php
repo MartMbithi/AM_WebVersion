@@ -83,6 +83,7 @@ if (isset($_POST['Login'])) {
                     if ($sql2) {
                         /* Success Login */
                         $_SESSION['user_id'] = $row['user_id'];
+                        $_SESSION['user_gender'] = $row['user_gender'];
                         $_SESSION['success'] = 'Authentication Successful';
                         header('Location: index');
                         exit;
