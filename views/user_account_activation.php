@@ -134,7 +134,7 @@ require_once('../partials/head.php');
                     </div>
                     <ol class="breadcrumb quick-kiss">
                         <li><a href="index ">Home</a></li>
-                        <li class="active">Sign Up</li>
+                        <li class="active">Account Activation</li>
                     </ol>
                 </div>
             </div>
@@ -146,7 +146,8 @@ require_once('../partials/head.php');
     <div class="login-section padding-tb">
         <div class=" container">
             <div class="account-wrapper">
-                <h3 class="title bite-chocolate">Sign Up</h3>
+                <h3 class="title bite-chocolate">Finalize Your Account Set Up</h3>
+                <p class="text-center">You have verified your password, kindly fill all required fields to set up your account</p>
                 <form method="POST" class="account-form">
                     <div class="form-group">
                         <input type="text" required name="user_name" placeholder="Full Names">
@@ -155,22 +156,9 @@ require_once('../partials/head.php');
                         <input type="text" required name="user_email" placeholder="Email Address">
                     </div>
                     <div class="form-group">
-                        <input type="password" required name="new_password" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" required name="confirm_password" placeholder="Confirm Password">
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" name="SignUp" class="d-block lab-btn"><span>Sign Up </span></button>
+                        <button type="submit" name="SignUp" class="d-block lab-btn"><span>Submit</span></button>
                     </div>
                 </form>
-                <div class="account-bottom">
-                    <span class="d-block cate pt-10">Have An Account?
-                        <a href="login">
-                            Sign In
-                        </a>
-                    </span>
-                </div>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 <?php
 /*
- * Created on Thu Jan 20 2022
+ * Created on Thu Dec 16 2021
  *
  *  Devlan - devlan.co.ke 
  *
@@ -9,7 +9,7 @@
  *
  * The Devlan End User License Agreement
  *
- * Copyright (c) 2022 Devlan
+ * Copyright (c) 2021 Devlan
  *
  * 1. GRANT OF LICENSE
  * Devlan hereby grants to you (an individual) the revocable, personal, non-exclusive, and nontransferable right to
@@ -59,7 +59,6 @@
  * TORT OR ANY OTHER THEORY OF LIABILITY, EXCEED THE LICENSE FEE PAID BY YOU, IF ANY.
  */
 
-
 /* Load Composer PHPMAILER */
 require_once('../vendor/PHPMailer/src/SMTP.php');
 require_once('../vendor/PHPMailer/src/PHPMailer.php');
@@ -67,8 +66,7 @@ require_once('../vendor/PHPMailer/src/Exception.php');
 
 /* Init PHP Mailer */
 
-$ret = "SELECT * FROM system_settings 
-INNER JOIN mailer_settings";
+$ret = "SELECT * FROM mailer_settings";
 $stmt = $mysqli->prepare($ret);
 $stmt->execute(); //ok
 $res = $stmt->get_result();
@@ -76,7 +74,7 @@ while ($sys = $res->fetch_object()) {
     $mail = new PHPMailer\PHPMailer\PHPMailer();
     $mail->setFrom($sys->mailer_mail_from_email);
     $mail->addAddress($user_email);
-    $mail->FromName = $sys->system_name;
+    $mail->FromName = $sys->mailer_mail_from_name;
     $mail->isHTML(true);
     $mail->IsSMTP();
     $mail->SMTPSecure = 'ssl';
@@ -85,7 +83,7 @@ while ($sys = $res->fetch_object()) {
     $mail->Port = $sys->mailer_port;
     $mail->Username = $sys->mailer_username;
     $mail->Password = $sys->mailer_password;
-    $mail->Subject = 'Account Activation';
+    $mail->Subject = 'Password Reset Link';
     /* Custom Mail Body */
     $mail->Body = '
     <!doctype html>
@@ -111,13 +109,13 @@ while ($sys = $res->fetch_object()) {
                         <tr>
                             <td style="height:80px;">&nbsp;</td>
                         </tr>
-                       <tr>
+                       <!-- <tr>
                             <td style="text-align:center;">
                               <a href="" title="logo" target="_blank">
-                                <img width="200" src="' . $sys->hosted_logo_link . '" title="logo" alt="">
+                                <img width="200" src="" title="logo" alt="">
                               </a>
                             </td>
-                        </tr>
+                        </tr> -->
                         <tr>
                             <td style="height:20px;">&nbsp;</td>
                         </tr>
@@ -130,15 +128,16 @@ while ($sys = $res->fetch_object()) {
                                     </tr>
                                     <tr>
                                         <td style="padding:0 35px;">
-                                            <h1 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;font-family:"Rubik",sans-serif;">Account Activation</h1>
+                                            <h1 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;font-family:"Rubik",sans-serif;">Password Reset</h1>
                                             <p style="color:#455056; font-size:15px;line-height:24px; margin:0;">
                                                 Hi there, <br>
-                                                Your ' . $sys->system_name . ' portal account has been created. Click the link below to activate your account and set password. <br>
-                                                <a href=' . $activate_url . '>  Activate Your Account </a> <br>
-                                                Thanks, <br>
+                                                We are so glad that you have joined  ' . $sys->mailer_mail_from_name . '. 
+                                                Click the link below to activate your account and verify your email. <br>
+                                                <a href=' . $activate_url . '> Click Here To Verify Your Email  </a> <br>
+                                                <br>
                                                 Kind Regards<br>
-                                                <b> ' . $sys->system_name . ' </b> <br>
-                                                <i>' . $sys->system_tagline . '</i>
+                                                <b> ' . $sys->mailer_mail_from_name . ' </b> <br>
+                                                <i>The Future Of Dating</i>
                                             </p>
                                         </td>
                                     </tr>
@@ -152,7 +151,7 @@ while ($sys = $res->fetch_object()) {
                         </tr>
                         <tr>
                             <td style="text-align:center;">
-                                <p style="font-size:14px; color:rgba(69, 80, 86, 0.7411764705882353); line-height:18px; margin:0 0 0;">&copy; ' . date('Y') . ' <strong> ' . $sys->system_name . ' . A <a href="https://devlan.co.ke/"> Devlan </a> Production</strong></p>
+                                <p style="font-size:14px; color:rgba(69, 80, 86, 0.7411764705882353); line-height:18px; margin:0 0 0;">&copy; ' . date('Y') . ' <strong> ' . $sys->system_name . ' . A <a href="https://devlan.co.ke/"> Devlan Solutions LTD </a> Production</strong></p>
                             </td>
                         </tr>
                         <tr>
