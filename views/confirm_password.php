@@ -58,10 +58,10 @@
  * IN NO EVENT WILL DEVLAN  LIABILITY FOR ANY CLAIM, WHETHER IN CONTRACT 
  * TORT OR ANY OTHER THEORY OF LIABILITY, EXCEED THE LICENSE FEE PAID BY YOU, IF ANY.
  */
+session_start();
 require_once '../config/config.php';
-require_once '../config/app_config.php';
 require_once '../config/codeGen.php';
-
+require_once '../config/app_config.php';
 
 if (isset($_POST['ResetPassword'])) {
     /* Prevent SQL Injection */
@@ -82,9 +82,10 @@ if (isset($_POST['ResetPassword'])) {
             $token,
         );
         $prepare->execute();
-        if ($prepare) {
-            $success = "Password Reset Instructions Send To Your Email";
-            /* Pass This Alert Via Session */
+        /* Load Password Reset Successfully Mailer */
+        require_once('../mailers/success_password_reset.php');
+        if ($prepare &&  $mail->send()) {
+            /* Redirect To Login Page With A Success Message */
             $_SESSION['success'] = 'Your Password Has Been Reset Proceed To Login';
             header('Location: login');
             exit;
@@ -142,10 +143,10 @@ require_once('../partials/head.php');
                 <h3 class="title bite-chocolate">Password Reset</h3>
                 <form method="POST" class="account-form">
                     <div class="form-group">
-                        <input type="text" required name="new_password" placeholder="New Password">
+                        <input type="password" required name="new_password" placeholder="New Password">
                     </div>
                     <div class="form-group">
-                        <input type="text" required name="confirm_password" placeholder="Confirm New Password">
+                        <input type="password" required name="confirm_password" placeholder="Confirm New Password">
                     </div>
                     <div class="form-group">
                         <button type="submit" name="ResetPassword" class="d-block lab-btn"><span>Reset Password</span></button>

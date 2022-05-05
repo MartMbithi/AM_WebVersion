@@ -67,7 +67,7 @@ if (isset($_POST['ResetPassword'])) {
     /* Prevent SQL Injection */
     $user_email = mysqli_real_escape_string($mysqli, $_POST['user_email']);
     $password_reset_token = $checksum;
-    $reset_url  =  $url . $checksum;
+    $reset_url  =  $url . $checksum . '&email=' . $user_email;
     /* Filter And Validate Email */
     if (filter_var($user_email, FILTER_VALIDATE_EMAIL)) {
         $sql = mysqli_query($mysqli, "SELECT * FROM users WHERE user_email = '{$user_email}'");
