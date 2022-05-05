@@ -19,4 +19,11 @@
     <!-- Load Alert-->
     <link rel="stylesheet" href="../public/plugins/toastr/toastr.min.css">
     <title>Asian Melodies - The Future Of Dating </title>
+    <?php
+    /* Alert Sesion Via Alerts */
+    if (isset($_SESSION['success'])) {
+        $success = $_SESSION['success'];
+        unset($_SESSION['success']);
+    }
+    ?>
 </head>
