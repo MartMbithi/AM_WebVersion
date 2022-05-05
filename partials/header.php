@@ -35,6 +35,7 @@
             </div>
         </div>
     </div>
+    <!-- Show this if user is not logged in -->
     <div class="header-bottom">
         <div class="container">
             <div class="header-wrapper">
@@ -48,30 +49,15 @@
                         <li>
                             <a href="index">Home</a>
                         </li>
-
                         <li>
-                            <a href="#0">Features</a>
-                            <ul class="submenu">
-                                <li><a href="members.html">All Members</a></li>
-                                <li><a href="profile.html">Member Profile</a></li>
-                                <li><a href="login.html">Login</a></li>
-                                <li><a href="signup.html">Sign Up</a></li>
-                                <li><a href="pricing-plan.html">Pricing Plan</a></li>
-                                <li><a href="404.html">404 Page</a></li>
-
-                            </ul>
+                            <a href="about">About Us</a>
                         </li>
                         <li>
-                            <a href="active-group.html">Community</a>
+                            <a href="contact">Contact</a>
                         </li>
                         <li>
-                            <a href="#0">Blog</a>
-                            <ul class="submenu">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-single.html">Blog Single</a></li>
-                            </ul>
+                            <a href="contact">Privacy Policy</a>
                         </li>
-                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <a href="login" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
                     <a href="signup" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span> </a>
@@ -89,4 +75,6 @@
             </div>
         </div>
     </div>
+    <!-- Show This if user is logged in -->
+
 </header>

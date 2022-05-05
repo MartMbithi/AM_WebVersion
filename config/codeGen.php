@@ -101,3 +101,6 @@ $sys_gen_id_alt_1 = bin2hex(random_bytes($length));
 /* Alternative System Generated ID 2 */
 $length = date('y');
 $sys_gen_id_alt_2 = bin2hex(random_bytes($length));
+
+/* Non String System Generated IDS */
+$ran_id = rand(time(), 100000000);

@@ -92,8 +92,7 @@ require_once('../partials/head.php');
                             <div class="intro-form">
                                 <div class="intro-form-inner">
                                     <h3>Introducing Asian Melodies</h3>
-                                    <p>Serious Dating With <strong>Asian Meloddies </strong> Your Perfect
-                                        Match is Just a Click Away.</p>
+                                    <p>Your Perfect Match is Just a Click Away.</p>
                                     <form class="banner-form">
                                         <div class="gender">
                                             <label for="gender" class="left">I am a </label>

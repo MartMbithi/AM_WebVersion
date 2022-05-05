@@ -58,7 +58,47 @@
  * IN NO EVENT WILL DEVLAN  LIABILITY FOR ANY CLAIM, WHETHER IN CONTRACT 
  * TORT OR ANY OTHER THEORY OF LIABILITY, EXCEED THE LICENSE FEE PAID BY YOU, IF ANY.
  */
+session_start();
+require_once '../config/config.php';
+require_once '../config/app_config.php';
+/* Register New User */
+if (isset($_POST['SignUp'])) {
+    /* Prevent SQL Injection */
+    $user_name = mysqli_real_escape_string($mysqli, $_POST['user_name']);
+    $user_email = mysqli_real_escape_string($mysqli, $_POST['user_email']);
+    $new_password = sha1(md5(mysqli_real_escape_string($mysqli, $_POST['new_password'])));
+    $confirm_password = sha1(md5(mysqli_real_escape_string($mysqli, $_POST['confirm_password'])));
 
+    /* Check If Passwords Match */
+    if ($new_password != $confirm_password) {
+        $err = "Passwords Does Not Match";
+    } else {
+        /* Filter And Validate Email */
+        if (filter_var($user_email, FILTER_VALIDATE_EMAIL)) {
+            $sql = mysqli_query($mysqli, "SELECT * FROM users WHERE user_email = '{$user_email}'");
+            if (mysqli_num_rows($sql) > 0) {
+                echo "$email - An Account With This Email Exists";
+            } else {
+                /* Persist */
+                $sql = "INSERT INTO users (user_id, user_name, user_email, user_password) VALUES(?,?,?,?)";
+                $prepare = $mysqli->prepare($sql);
+                $bind = $prepare->bind_param(
+                    'ssss',
+                    $rand_id,
+                    $user_name,
+                    $user_email,
+                    $confirm_password
+                );
+                $prepare->execute();
+                if ($prepare) {
+                    $success = "Your Account Has Been Created Proceed To Login";
+                } else {
+                    $err = "Failed!, Please Try Again";
+                }
+            }
+        }
+    }
+}
 require_once('../partials/head.php');
 
 ?>

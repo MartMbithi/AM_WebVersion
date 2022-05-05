@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../public/css/swiper.min.css">
     <!-- Application Css -->
     <link rel="stylesheet" href="../public/css/style.css">
-
+    <!-- Load Alert-->
+    <link rel="stylesheet" href="../public/plugins/toastr/toastr.min.css">
     <title>Asian Melodies - The Future Of Dating </title>
 </head>
