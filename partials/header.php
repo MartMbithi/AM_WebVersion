@@ -35,46 +35,94 @@
             </div>
         </div>
     </div>
-    <!-- Show this if user is not logged in -->
-    <div class="header-bottom">
-        <div class="container">
-            <div class="header-wrapper">
-                <div class="logo">
-                    <a href="index">
-                        <img src="../public/images/logo/logo.png" alt="logo">
-                    </a>
-                </div>
-                <div class="menu-area">
-                    <ul class="menu">
-                        <li>
-                            <a href="index">Home</a>
-                        </li>
-                        <li>
-                            <a href="about">About Us</a>
-                        </li>
-                        <li>
-                            <a href="contact">Contact</a>
-                        </li>
-                        <li>
-                            <a href="contact">Privacy Policy</a>
-                        </li>
-                    </ul>
-                    <a href="login" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
-                    <a href="signup" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span> </a>
 
-                    <!-- toggle icons -->
-                    <div class="header-bar d-lg-none">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+    <?php
+    if (!empty($_SESSION['user_id'])) {
+    ?>
+        <!-- Show this if user is not logged in -->
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="index">
+                            <img src="../public/images/logo/logo.png" alt="logo">
+                        </a>
                     </div>
-                    <div class="ellepsis-bar d-lg-none">
-                        <i class="icofont-info-square"></i>
+                    <div class="menu-area">
+                        <ul class="menu">
+                            <li>
+                                <a href="index">Home</a>
+                            </li>
+                            <li>
+                                <a href="my_members">Members</a>
+                            </li>
+                            <li>
+                                <a href="my_matches">Matches</a>
+                            </li>
+                            <li>
+                                <a href="my_favourites">Favourites</a>
+                            </li>
+                            <li>
+                                <a href="#0">Profile</a>
+                                <ul class="submenu">
+                                    <li><a href="my_profile">My Profile</a></li>
+                                    <li><a href="logout?account=<?php echo $_SESSION['user_id']; ?>">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- toggle icons -->
+                        <div class="header-bar d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="ellepsis-bar d-lg-none">
+                            <i class="icofont-info-square"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Show This if user is logged in -->
+    <?php } else { ?>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="index">
+                            <img src="../public/images/logo/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="menu-area">
+                        <ul class="menu">
+                            <li>
+                                <a href="index">Home</a>
+                            </li>
+                            <li>
+                                <a href="about">About Us</a>
+                            </li>
+                            <li>
+                                <a href="contact">Contact</a>
+                            </li>
+                            <li>
+                                <a href="contact">Privacy Policy</a>
+                            </li>
+                        </ul>
+                        <a href="login" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
+                        <a href="signup" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span> </a>
+
+                        <!-- toggle icons -->
+                        <div class="header-bar d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="ellepsis-bar d-lg-none">
+                            <i class="icofont-info-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?php } ?>
 
 </header>
