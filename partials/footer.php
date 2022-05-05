@@ -49,7 +49,7 @@
                         <div class="footer-middle-item mb-lg-0">
                             <div class="fm-item-title">
                                 <h4 class="bite-chocolate">Asian Melodies</h4>
-                            </div> 
+                            </div>
                             <div class="fm-item-content">
                                 <p class="mb-4">
                                     We are an online dating and geosocial networking platform,
@@ -65,16 +65,16 @@
                     <div class="footer-middle-item-wrapper">
                         <div class="footer-middle-item-3 mb-lg-0">
                             <div class="fm-item-title">
-                                <h4>Our Newsletter Signup</h4>
+                                <h4 class="bite-chocolate">Our Newsletter</h4>
                             </div>
                             <div class="fm-item-content">
                                 <p>By subscribing to our mailing list you will always
-                                    be update with the latest news from us.</p>
+                                    be updated with the latest news from us.</p>
                                 <form method="post">
                                     <div class="form-group">
                                         <input type="email" class="form-control" placeholder="Enter email">
                                     </div>
-                                    <button type="submit" class="lab-btn">Send Massage <i class="icofont-paper-plane"></i></button>
+                                    <button type="submit" class="lab-btn">Submit <i class="icofont-paper-plane"></i></button>
                                 </form>
                             </div>
                         </div>
