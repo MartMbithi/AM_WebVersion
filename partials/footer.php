@@ -49,7 +49,7 @@
                         <div class="footer-middle-item mb-lg-0">
                             <div class="fm-item-title">
                                 <h4 class="bite-chocolate">Asian Melodies</h4>
-                            </div>
+                            </div> 
                             <div class="fm-item-content">
                                 <p class="mb-4">
                                     We are an online dating and geosocial networking platform,
@@ -87,8 +87,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="footer-bottom-content text-center">
-                        <p>&copy; 2022 - <?php echo date('Y'); ?> <a href="index">Asian Melodies</a> The Future Of Dating</p>
+                    <div class="footer-bottom-content text-center quick-kiss">
+                        <p>&copy; 2022 - <?php echo date('Y'); ?> <a href="index">Asian Melodies </a> - The Future Of Dating</p>
                     </div>
                 </div>
             </div>
