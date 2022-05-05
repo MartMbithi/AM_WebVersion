@@ -66,16 +66,15 @@ require_once('../vendor/PHPMailer/src/Exception.php');
 
 /* Init PHP Mailer */
 
-$ret = "SELECT * FROM system_settings 
-INNER JOIN mailer_settings";
+$ret = "SELECT * FROM mailer_settings";
 $stmt = $mysqli->prepare($ret);
 $stmt->execute(); //ok
 $res = $stmt->get_result();
 while ($sys = $res->fetch_object()) {
     $mail = new PHPMailer\PHPMailer\PHPMailer();
     $mail->setFrom($sys->mailer_mail_from_email);
-    $mail->addAddress($email);
-    $mail->FromName = $sys->system_name;
+    $mail->addAddress($user_email);
+    $mail->FromName = $sys->mailer_mail_from_name;
     $mail->isHTML(true);
     $mail->IsSMTP();
     $mail->SMTPSecure = 'ssl';
@@ -132,13 +131,13 @@ while ($sys = $res->fetch_object()) {
                                             <h1 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;font-family:"Rubik",sans-serif;">Password Reset</h1>
                                             <p style="color:#455056; font-size:15px;line-height:24px; margin:0;">
                                                 Hi there, <br>
-                                                You recently requested to reset the password for your ' . $sys->system_name . ' portal. Click the link below to proceed. <br>
+                                                You recently requested to reset the password for your ' . $sys->mailer_mail_from_name . '. Click the link below to proceed. <br>
                                                 <a href=' . $reset_url . '>Click Here To Reset Password </a> <br>
                                                 If you did not request a password reset, please ignore this email or reply to let us know. This password reset link is only valid for the next 30 minutes. <br>
                                                 Thanks, <br>
                                                 Kind Regards<br>
-                                                <b> ' . $sys->system_name . ' </b> <br>
-                                                <i>' . $sys->system_tagline . '</i>
+                                                <b> ' . $sys->mailer_mail_from_name . ' </b> <br>
+                                                <i>The Future Of Dating</i>
                                             </p>
                                         </td>
                                     </tr>
@@ -152,7 +151,7 @@ while ($sys = $res->fetch_object()) {
                         </tr>
                         <tr>
                             <td style="text-align:center;">
-                                <p style="font-size:14px; color:rgba(69, 80, 86, 0.7411764705882353); line-height:18px; margin:0 0 0;">&copy; ' . date('Y') . ' <strong> ' . $sys->system_name . ' . A <a href="https://devlan.co.ke/"> Devlan </a> Production</strong></p>
+                                <p style="font-size:14px; color:rgba(69, 80, 86, 0.7411764705882353); line-height:18px; margin:0 0 0;">&copy; ' . date('Y') . ' <strong> ' . $sys->system_name . ' . A <a href="https://devlan.co.ke/"> Devlan Solutions LTD </a> Production</strong></p>
                             </td>
                         </tr>
                         <tr>
