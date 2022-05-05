@@ -2,7 +2,7 @@
     <div class="header-top">
         <div class="container">
             <div class="header-top-area">
-                <ul class="left">
+                <ul class="left quick-kiss">
                     <li>
                         <i class="icofont-ui-call"></i> <span>+254 737 229776 </span>
                     </li>
@@ -12,7 +12,7 @@
                 </ul>
                 <ul class="social-icons d-flex align-items-center">
                     <li>
-                        <p>
+                        <p class="quick-kiss">
                             Find us on :
                         </p>
                     </li>

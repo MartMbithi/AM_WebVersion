@@ -1,15 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tapestry&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 /*!
-Template Name: turulav
-Template URI: https://themeforest.net/user/labartisan
-Author: labartisan.net
-Author URI: https://themeforest.net/user/labartisan
-Description: Description
-Version: 1.0.0
-Text Domain: turulav
-Tags: community, couple, creative, dating, groups, love template, matching, members, online dating, profile, relationship, romance, social media, social network
-
+Asian Melodies
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -35,60 +30,546 @@ Tags: community, couple, creative, dating, groups, love template, matching, memb
 #Footer
 --------------------------------------------------------------*/
 /* @@@@@@@@@@@@@  Extend Property CSS Writing Now  @@@@@@@@@@@@@@ */
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner, .account-form .form-group .checkgroup, .contact-form-wrapper .contact-form form.comment-form, .contact-item, .comment-respond .add-comment .comment-form, .blog-section .main-blog .blog-wrapper .post-item .tags-section .tags, .blog-section .main-blog .blog-wrapper .post-item .tags-section, .blog-section .post-item-inner .blog-footer, .post-item .post-meta .post-meta-bottom .react-list, .post-item .post-meta .post-meta-top, .post-item .post-content .post-author .post-author-inner .author-details .post-status, .post-item .post-content .post-author .post-author-inner .author-details, .post-item .post-content .post-author .post-author-inner, .create-post .lab-inner .lab-content .post-form .content-type .content-list, .create-post .lab-inner .lab-thumb .thumb-inner, .info-card .info-card-content .info-list li, .profile-section .member-profile .profile-item .profile-information .profile-contact li a, .profile-section .member-profile .profile-item .profile-information .profile-contact, .profile-section .member-profile .profile-item .profile-information, .member-page-section .member-wrapper .member-info .all-member, .member-page-section .member-wrapper .member-info, .clints-section .section-wrapper .clients .client-list .client-content .client-info .rating ul, .clints-section .section-wrapper .clients .client-list .client-content .client-info, .banner-form .gender,
+
+/* Fancy Font Classes */
+.bite-chocolate {
+  font-family: "Tapestry", cursive;
+  font-size: 40px;
+}
+
+.quick-kiss {
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 20px;
+
+}
+
+.dancing-script {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget
+  .lab-inner,
+.account-form .form-group .checkgroup,
+.contact-form-wrapper .contact-form form.comment-form,
+.contact-item,
+.comment-respond .add-comment .comment-form,
+.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags,
+.blog-section .main-blog .blog-wrapper .post-item .tags-section,
+.blog-section .post-item-inner .blog-footer,
+.post-item .post-meta .post-meta-bottom .react-list,
+.post-item .post-meta .post-meta-top,
+.post-item
+  .post-content
+  .post-author
+  .post-author-inner
+  .author-details
+  .post-status,
+.post-item .post-content .post-author .post-author-inner .author-details,
+.post-item .post-content .post-author .post-author-inner,
+.create-post .lab-inner .lab-content .post-form .content-type .content-list,
+.create-post .lab-inner .lab-thumb .thumb-inner,
+.info-card .info-card-content .info-list li,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-contact
+  li
+  a,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-contact,
+.profile-section .member-profile .profile-item .profile-information,
+.member-page-section .member-wrapper .member-info .all-member,
+.member-page-section .member-wrapper .member-info,
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list
+  .client-content
+  .client-info
+  .rating
+  ul,
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list
+  .client-content
+  .client-info,
+.banner-form .gender,
 .banner-form .person,
 .banner-form .age,
 .banner-form .city,
-.banner-form .interest, .banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list, .header-form .form-container, .header-form, .menu, .header-wrapper .menu-area, .header-wrapper, .header-top-area .left, .header-top-area, .paginations ul li a, .group-search .group-search-btn form, .group-search .group-count, .group-search, .member-filter .member-filter-inner .filter-form, .price-item .price-item-inner .price-bottom ul li {
+.banner-form .interest,
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list,
+.header-form .form-container,
+.header-form,
+.menu,
+.header-wrapper .menu-area,
+.header-wrapper,
+.header-top-area .left,
+.header-top-area,
+.paginations ul li a,
+.group-search .group-search-btn form,
+.group-search .group-count,
+.group-search,
+.member-filter .member-filter-inner .filter-form,
+.price-item .price-item-inner .price-bottom ul li {
   display: flex;
   flex-wrap: wrap;
 }
 
-.footer-section .footer-middle .footer-middle-item-wrapper, .footer-section .footer-middle, .widget.like-member .widget-content .col .image-thumb, .blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li span, .blog-section .main-blog .blog-wrapper .post-item.video-post .post-item-inner .post-thumb .embed-responsive, .blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider, .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content blockquote p, .post-item .post-content .post-author .post-author-inner .author-details .post-status .post-privacy, .create-post .lab-inner .lab-content .post-form .content-type .content-list .image-video,
-.create-post .lab-inner .lab-content .post-form .content-type .content-list .attach-file, .media-wrapper .tab-content .tab-pane .media-content .album .album-thumb, .media-wrapper .nav-tabs .nav-item .nav-link.active span, .media-wrapper .nav-tabs .nav-item .nav-link.active, .media-wrapper .nav-tabs .nav-item .nav-link span, .info-card .info-card-content .info-list li .info-name, .profile-section .member-profile .profile-details .profile-nav .nav-tabs .dropdown, .profile-section .member-profile .profile-details .profile-nav .nav-tabs .nav-link.active, .profile-section .member-profile .profile-details .profile-nav .nav-tabs .nav-link .item-number, .profile-section .member-profile .profile-item .profile-information .profile-pic, .profile-section .member-profile .profile-item .profile-cover, .member-page-section .member-wrapper .member-info .all-member p:last-child, .app-section .section-wrapper, .clints-section .section-wrapper .clients .client-list .client-content .client-info .name-desi span, .clints-section .section-wrapper .clients .client-list .client-thumb img, .clints-section .section-wrapper .clients .client-list .client-thumb, .clints-section .section-wrapper .clients, .banner-form .gender .left,
+.footer-section .footer-middle .footer-middle-item-wrapper,
+.footer-section .footer-middle,
+.widget.like-member .widget-content .col .image-thumb,
+.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li span,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.video-post
+  .post-item-inner
+  .post-thumb
+  .embed-responsive,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .post-content
+  blockquote
+  p,
+.post-item
+  .post-content
+  .post-author
+  .post-author-inner
+  .author-details
+  .post-status
+  .post-privacy,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .image-video,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .attach-file,
+.media-wrapper .tab-content .tab-pane .media-content .album .album-thumb,
+.media-wrapper .nav-tabs .nav-item .nav-link.active span,
+.media-wrapper .nav-tabs .nav-item .nav-link.active,
+.media-wrapper .nav-tabs .nav-item .nav-link span,
+.info-card .info-card-content .info-list li .info-name,
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .dropdown,
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .nav-link.active,
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .nav-link
+  .item-number,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-pic,
+.profile-section .member-profile .profile-item .profile-cover,
+.member-page-section .member-wrapper .member-info .all-member p:last-child,
+.app-section .section-wrapper,
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list
+  .client-content
+  .client-info
+  .name-desi
+  span,
+.clints-section .section-wrapper .clients .client-list .client-thumb img,
+.clints-section .section-wrapper .clients .client-list .client-thumb,
+.clints-section .section-wrapper .clients,
+.banner-form .gender .left,
 .banner-form .person .left,
 .banner-form .age .left,
 .banner-form .city .left,
-.banner-form .interest .left, .banner-section .section-wrapper .banner-thumb, .banner-section .section-wrapper .banner-content .intro-form, .banner-section, .page-header-section.style-1 .page-header-content .page-header-inner .breadcrumb li a, .menu-item-has-children > a, .header-bar, .custom-select, .cart-plus-minus, .paginations ul li a, .section-header, .lab-btn, .group-search .group-search-btn form .input-button, .group-search .group-count p:last-child, .work-item .lab-inner .lab-thumb .thumb-inner, .about-item .lab-inner .lab-content, .about-item .lab-inner, .custom-upload {
+.banner-form .interest .left,
+.banner-section .section-wrapper .banner-thumb,
+.banner-section .section-wrapper .banner-content .intro-form,
+.banner-section,
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .breadcrumb
+  li
+  a,
+.menu-item-has-children > a,
+.header-bar,
+.custom-select,
+.cart-plus-minus,
+.paginations ul li a,
+.section-header,
+.lab-btn,
+.group-search .group-search-btn form .input-button,
+.group-search .group-count p:last-child,
+.work-item .lab-inner .lab-thumb .thumb-inner,
+.about-item .lab-inner .lab-content,
+.about-item .lab-inner,
+.custom-upload {
   position: relative;
 }
 
-.widget.like-member .widget-content .col .image-thumb::after, .widget.like-member .widget-content .col .image-thumb::before, .blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li span::after, .blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider .blog-slider-prev,
-.blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider .blog-slider-next, .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content blockquote p::before, .post-item .post-content .post-author .post-author-inner .author-details .post-status .post-privacy:after, .create-post .lab-inner .lab-content .post-form .content-type .content-list .image-video input[type=file],
-.create-post .lab-inner .lab-content .post-form .content-type .content-list .attach-file input[type=file], .media-wrapper .tab-content .tab-pane .media-content .album .album-thumb::after, .media-wrapper .tab-content .tab-pane .media-content .album .album-thumb:before, .media-wrapper .nav-tabs .nav-item .nav-link.active span:before, .media-wrapper .nav-tabs .nav-item .nav-link span:before, .info-card .info-card-content .info-list li .info-name:after, .profile-section .member-profile .profile-item .profile-information .profile-pic .custom-upload, .profile-section .member-profile .profile-item .profile-cover .custom-upload, .member-page-section .member-wrapper .member-info .all-member p:last-child:before, .app-section .section-wrapper .mobile-app, .clints-section .section-wrapper .clients .client-list .client-content .client-info .name-desi span::after, .clints-section .section-wrapper .clients .client-list .client-content:after, .clints-section .section-wrapper .clients .client-list .client-content, .clints-section .section-wrapper .clients .client-list .client-thumb::after, .clints-section .section-wrapper .clients .client-list .client-thumb::before, .clints-section .section-wrapper .clients .client-list, .banner-form .gender .left:after,
+.widget.like-member .widget-content .col .image-thumb::after,
+.widget.like-member .widget-content .col .image-thumb::before,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .tags
+  li
+  span::after,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider
+  .blog-slider-prev,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider
+  .blog-slider-next,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .post-content
+  blockquote
+  p::before,
+.post-item
+  .post-content
+  .post-author
+  .post-author-inner
+  .author-details
+  .post-status
+  .post-privacy:after,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .image-video
+  input[type="file"],
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .attach-file
+  input[type="file"],
+.media-wrapper .tab-content .tab-pane .media-content .album .album-thumb::after,
+.media-wrapper .tab-content .tab-pane .media-content .album .album-thumb:before,
+.media-wrapper .nav-tabs .nav-item .nav-link.active span:before,
+.media-wrapper .nav-tabs .nav-item .nav-link span:before,
+.info-card .info-card-content .info-list li .info-name:after,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-pic
+  .custom-upload,
+.profile-section .member-profile .profile-item .profile-cover .custom-upload,
+.member-page-section
+  .member-wrapper
+  .member-info
+  .all-member
+  p:last-child:before,
+.app-section .section-wrapper .mobile-app,
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list
+  .client-content
+  .client-info
+  .name-desi
+  span::after,
+.clints-section .section-wrapper .clients .client-list .client-content:after,
+.clints-section .section-wrapper .clients .client-list .client-content,
+.clints-section .section-wrapper .clients .client-list .client-thumb::after,
+.clints-section .section-wrapper .clients .client-list .client-thumb::before,
+.clints-section .section-wrapper .clients .client-list,
+.banner-form .gender .left:after,
 .banner-form .person .left:after,
 .banner-form .age .left:after,
 .banner-form .city .left:after,
-.banner-form .interest .left:after, .banner-section .all-shapes .banner-shape, .banner-section .section-wrapper .banner-content .intro-form::after, .banner-section .section-wrapper .banner-content .intro-form::before, .page-header-section.style-1 .page-header-content .page-header-inner .breadcrumb li a::before, .menu-item-has-children > a::before, .menu-item-has-children > a::after, .header-bar span, .header-section, .custom-select::after, .cart-plus-minus .qtybutton, .group-search .group-search-btn form .input-button:before, .group-search .group-count p:last-child:before, .work-item .lab-inner .lab-thumb .thumb-inner .step, .about-item .lab-inner .lab-content:before, .about-item .lab-inner:before, .custom-upload input[type=file] {
+.banner-form .interest .left:after,
+.banner-section .all-shapes .banner-shape,
+.banner-section .section-wrapper .banner-content .intro-form::after,
+.banner-section .section-wrapper .banner-content .intro-form::before,
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .breadcrumb
+  li
+  a::before,
+.menu-item-has-children > a::before,
+.menu-item-has-children > a::after,
+.header-bar span,
+.header-section,
+.custom-select::after,
+.cart-plus-minus .qtybutton,
+.group-search .group-search-btn form .input-button:before,
+.group-search .group-count p:last-child:before,
+.work-item .lab-inner .lab-thumb .thumb-inner .step,
+.about-item .lab-inner .lab-content:before,
+.about-item .lab-inner:before,
+.custom-upload input[type="file"] {
   position: absolute;
   content: "";
 }
 
-.widget.like-member .widget-content .col .image-thumb, .widget .widget-title, .comments .comment-list .comment .com-content, .comments .comment-list .comment .com-image, .comments .comment-list .comment, .blog-section .main-blog .blog-wrapper .post-item.video-post .post-item-inner .post-thumb .embed-responsive, .blog-section .post-item-inner .post-thumb, .create-post .lab-inner .lab-content .post-form .content-type .content-list .image-video,
-.create-post .lab-inner .lab-content .post-form .content-type .content-list .attach-file, .media-wrapper .tab-content .tab-pane .media-content .media-thumb, .profile-section .member-profile .profile-item .profile-information .profile-pic, .clints-section, .work-section, .banner-section, .page-header-section.style-1, .cart-plus-minus, .gallery-img, .lab-btn, .preloader, .price-item .price-item-inner, .story-item .lab-inner .lab-thumb, .custom-upload, .story-item .lab-inner .lab-content h4, .member-item.style-1 .lab-inner .lab-content h6, .footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner .lab-content h6 a, .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content h3 a, .blog-section .post-item-inner .post-content h4 > a, .group-item .lab-inner .lab-content p {
+.widget.like-member .widget-content .col .image-thumb,
+.widget .widget-title,
+.comments .comment-list .comment .com-content,
+.comments .comment-list .comment .com-image,
+.comments .comment-list .comment,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.video-post
+  .post-item-inner
+  .post-thumb
+  .embed-responsive,
+.blog-section .post-item-inner .post-thumb,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .image-video,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .attach-file,
+.media-wrapper .tab-content .tab-pane .media-content .media-thumb,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-pic,
+.clints-section,
+.work-section,
+.banner-section,
+.page-header-section.style-1,
+.cart-plus-minus,
+.gallery-img,
+.lab-btn,
+.preloader,
+.price-item .price-item-inner,
+.story-item .lab-inner .lab-thumb,
+.custom-upload,
+.story-item .lab-inner .lab-content h4,
+.member-item.style-1 .lab-inner .lab-content h6,
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget
+  .lab-inner
+  .lab-content
+  h6
+  a,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .post-content
+  h3
+  a,
+.blog-section .post-item-inner .post-content h4 > a,
+.group-item .lab-inner .lab-content p {
   overflow: hidden;
 }
 
-.contact-form-wrapper .contact-form form.comment-form button.lab-btn, .comment-respond .add-comment .comment-form .lab-btn, .blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider .blog-slider-prev,
-.blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider .blog-slider-next, .create-post .lab-inner .lab-content .post-form .content-type .content-list .image-video input[type=file],
-.create-post .lab-inner .lab-content .post-form .content-type .content-list .attach-file input[type=file], .top-member-section .filters-button-group .filter-btn, .header-bar, .header-wrapper .menu-area .ellepsis-bar i, .cart-plus-minus, .lab-btn, .custom-upload input[type=file], .custom-upload .file-btn, .custom-upload {
+.contact-form-wrapper .contact-form form.comment-form button.lab-btn,
+.comment-respond .add-comment .comment-form .lab-btn,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider
+  .blog-slider-prev,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider
+  .blog-slider-next,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .image-video
+  input[type="file"],
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .attach-file
+  input[type="file"],
+.top-member-section .filters-button-group .filter-btn,
+.header-bar,
+.header-wrapper .menu-area .ellepsis-bar i,
+.cart-plus-minus,
+.lab-btn,
+.custom-upload input[type="file"],
+.custom-upload .file-btn,
+.custom-upload {
   cursor: pointer;
 }
 
-.account-form .form-group button, .account-form .form-group input, .contact-form-wrapper .contact-form form.comment-form textarea, .contact-form-wrapper .contact-form form.comment-form input[type=text],
-.contact-form-wrapper .contact-form form.comment-form [type=email], .contact-form-wrapper .contact-form form.comment-form, .blog-section .main-blog .blog-wrapper .post-item.video-post .post-item-inner .post-thumb .embed-responsive iframe, .blog-section .main-blog .blog-wrapper .post-item.video-post .post-item-inner .post-thumb .embed-responsive, .blog-section .post-item-inner .post-thumb a img, .post-item .post-content .post-description .post-desc-img img, .create-post .lab-inner .lab-content .post-form input[type=text], .media-wrapper .tab-content .tab-pane .media-content .album .album-thumb img, .profile-section .member-profile .profile-item .profile-information .profile-pic img, .profile-section .member-profile .profile-item .profile-cover img, .banner-form button, .banner-form .gender,
+.account-form .form-group button,
+.account-form .form-group input,
+.contact-form-wrapper .contact-form form.comment-form textarea,
+.contact-form-wrapper .contact-form form.comment-form input[type="text"],
+.contact-form-wrapper .contact-form form.comment-form [type="email"],
+.contact-form-wrapper .contact-form form.comment-form,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.video-post
+  .post-item-inner
+  .post-thumb
+  .embed-responsive
+  iframe,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.video-post
+  .post-item-inner
+  .post-thumb
+  .embed-responsive,
+.blog-section .post-item-inner .post-thumb a img,
+.post-item .post-content .post-description .post-desc-img img,
+.create-post .lab-inner .lab-content .post-form input[type="text"],
+.media-wrapper .tab-content .tab-pane .media-content .album .album-thumb img,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-pic
+  img,
+.profile-section .member-profile .profile-item .profile-cover img,
+.banner-form button,
+.banner-form .gender,
 .banner-form .person,
 .banner-form .age,
 .banner-form .city,
-.banner-form .interest, .header-bar span, .header-section.header-fixed, .header-section, .custom-select select, .custom-select, .group-item.style-1 .lab-inner .lab-content, .group-item.style-1 .lab-inner .lab-thumb, .group-item .lab-inner .lab-content .img-stack li img, .group-item .lab-inner .lab-thumb img, .group-item .lab-inner .lab-thumb, .story-item .lab-inner .lab-thumb img, .member-item.style-1 .lab-inner .lab-thumb img {
+.banner-form .interest,
+.header-bar span,
+.header-section.header-fixed,
+.header-section,
+.custom-select select,
+.custom-select,
+.group-item.style-1 .lab-inner .lab-content,
+.group-item.style-1 .lab-inner .lab-thumb,
+.group-item .lab-inner .lab-content .img-stack li img,
+.group-item .lab-inner .lab-thumb img,
+.group-item .lab-inner .lab-thumb,
+.story-item .lab-inner .lab-thumb img,
+.member-item.style-1 .lab-inner .lab-thumb img {
   width: 100%;
 }
 
-.profile-section .member-profile .profile-item .profile-information .profile-pic img, .group-item .lab-inner .lab-content .img-stack li img {
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-pic
+  img,
+.group-item .lab-inner .lab-content .img-stack li img {
   height: 100%;
 }
 
-.comments .comment-list .comment .com-content .com-title .reply a, .blog-section .main-blog .blog-wrapper .post-item.code-post .post-item-inner .post-thumb .code-content p, .page-header-section.style-1 .page-header-content .page-header-inner .page-title .title-text, .page-header-section.style-1 .page-header-content .page-header-inner .breadcrumb li a, .text-btn, .work-item .lab-inner .lab-thumb .thumb-inner .step span, h1,
+.comments .comment-list .comment .com-content .com-title .reply a,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.code-post
+  .post-item-inner
+  .post-thumb
+  .code-content
+  p,
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .page-title
+  .title-text,
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .breadcrumb
+  li
+  a,
+.text-btn,
+.work-item .lab-inner .lab-thumb .thumb-inner .step span,
+h1,
 h2,
 h3,
 h4,
@@ -109,55 +590,317 @@ a h6 {
   font-weight: 700;
 }
 
-.blog-section .post-item-inner .blog-footer .blog-comment, .page-header-section.style-1 .page-header-content .page-header-inner .breadcrumb li.active, .page-header-section.style-1 .page-header-content .page-header-inner .page-title h2 {
+.blog-section .post-item-inner .blog-footer .blog-comment,
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .breadcrumb
+  li.active,
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .page-title
+  h2 {
   font-weight: 400;
 }
 
-.page-header-section.style-1 .page-header-content .page-header-inner .breadcrumb, .paginations ul li a, .price-item .price-item-inner .price-bottom ul li {
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .breadcrumb,
+.paginations ul li a,
+.price-item .price-item-inner .price-bottom ul li {
   justify-content: center;
 }
 
-.contact-form-wrapper .contact-form form.comment-form, .comments .comment-list .comment .com-content .com-title, .blog-section .main-blog .blog-wrapper .post-item .tags-section, .blog-section .post-item-inner .blog-footer, .post-item .post-meta .post-meta-top, .member-page-section .member-wrapper .member-info, .banner-form .gender,
+.contact-form-wrapper .contact-form form.comment-form,
+.comments .comment-list .comment .com-content .com-title,
+.blog-section .main-blog .blog-wrapper .post-item .tags-section,
+.blog-section .post-item-inner .blog-footer,
+.post-item .post-meta .post-meta-top,
+.member-page-section .member-wrapper .member-info,
+.banner-form .gender,
 .banner-form .person,
 .banner-form .age,
 .banner-form .city,
-.banner-form .interest, .banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list, .header-wrapper, .header-top-area, .group-search {
+.banner-form .interest,
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list,
+.header-wrapper,
+.header-top-area,
+.group-search {
   justify-content: space-between;
 }
 
-.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags, .blog-section .main-blog .blog-wrapper .post-item .tags-section, .blog-section .post-item-inner .blog-footer, .post-item .post-meta .post-meta-bottom .react-list, .post-item .post-content .post-author .post-author-inner .author-details .post-status, .post-item .post-content .post-author .post-author-inner .author-details, .post-item .post-content .post-author .post-author-inner, .create-post .lab-inner .lab-content .post-form .content-type .content-list, .create-post .lab-inner .lab-thumb .thumb-inner, .profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav, .profile-section .member-profile .profile-details .profile-nav .nav-tabs, .profile-section .member-profile .profile-item .profile-information .profile-contact li a, .profile-section .member-profile .profile-item .profile-information, .banner-form .gender,
+.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags,
+.blog-section .main-blog .blog-wrapper .post-item .tags-section,
+.blog-section .post-item-inner .blog-footer,
+.post-item .post-meta .post-meta-bottom .react-list,
+.post-item
+  .post-content
+  .post-author
+  .post-author-inner
+  .author-details
+  .post-status,
+.post-item .post-content .post-author .post-author-inner .author-details,
+.post-item .post-content .post-author .post-author-inner,
+.create-post .lab-inner .lab-content .post-form .content-type .content-list,
+.create-post .lab-inner .lab-thumb .thumb-inner,
+.profile-section
+  .member-profile
+  .profile-details
+  .tab-content
+  .activity-page
+  .activity-tab
+  .nav,
+.profile-section .member-profile .profile-details .profile-nav .nav-tabs,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-contact
+  li
+  a,
+.profile-section .member-profile .profile-item .profile-information,
+.banner-form .gender,
 .banner-form .person,
 .banner-form .age,
 .banner-form .city,
-.banner-form .interest, .header-wrapper .menu-area, .header-wrapper, .header-top-area, .paginations ul li a, .price-item .price-item-inner .price-bottom ul li {
+.banner-form .interest,
+.header-wrapper .menu-area,
+.header-wrapper,
+.header-top-area,
+.paginations ul li a,
+.price-item .price-item-inner .price-bottom ul li {
   align-items: center;
 }
 
-.blog-section .main-blog .blog-wrapper .post-item.video-post .post-item-inner .post-thumb .embed-responsive, .blog-section .post-item-inner .post-content .meta, .blog-section .post-item-inner .post-thumb a img, .blog-section .post-item-inner .post-thumb a, .header-wrapper .logo a {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.video-post
+  .post-item-inner
+  .post-thumb
+  .embed-responsive,
+.blog-section .post-item-inner .post-content .meta,
+.blog-section .post-item-inner .post-thumb a img,
+.blog-section .post-item-inner .post-thumb a,
+.header-wrapper .logo a {
   display: block;
 }
 
-.account-bottom .social-media li a, .comments .comment-list .comment .com-content .com-title .com-title-meta span, .blog-section .main-blog .blog-wrapper .post-item .tags-section .social-link-list li a, .blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li a, .blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li span i, .create-post .lab-inner .lab-content .post-form .content-type .content-list .image-video,
-.create-post .lab-inner .lab-content .post-form .content-type .content-list .attach-file, .app-section .section-wrapper .app-content .app-download li a, .app-section .section-wrapper .app-content .app-download li, .banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .facebook a,
-.banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .twitter a, .banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .google a, .header-bar span, .header-top-area .social-icons li a, .lab-btn, .scrollToTop i, .price-item .price-item-inner .price-bottom .purchase-btn, .custom-upload {
+.account-bottom .social-media li a,
+.comments .comment-list .comment .com-content .com-title .com-title-meta span,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .social-link-list
+  li
+  a,
+.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li a,
+.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li span i,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .image-video,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .attach-file,
+.app-section .section-wrapper .app-content .app-download li a,
+.app-section .section-wrapper .app-content .app-download li,
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .facebook
+  a,
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .twitter
+  a,
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .google
+  a,
+.header-bar span,
+.header-top-area .social-icons li a,
+.lab-btn,
+.scrollToTop i,
+.price-item .price-item-inner .price-bottom .purchase-btn,
+.custom-upload {
   display: inline-block;
 }
 
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item-content form .form-group input, .contact-info-wrapper, .contact-form-wrapper .contact-form form.comment-form textarea, .contact-form-wrapper .contact-form form.comment-form input[type=text],
-.contact-form-wrapper .contact-form form.comment-form [type=email], .contact-form-wrapper, .comment-respond .add-comment .comment-form .lab-btn, .comment-respond .add-comment .comment-form textarea, .comment-respond .add-comment .comment-form input[type=text], .comment-respond, .comments, .blog-section .main-blog .blog-wrapper .post-item .tags-section .social-link-list li a, .post-item, .create-post .lab-inner .lab-thumb .thumb-inner .thumb-content .custom-select select, .create-post, .media-wrapper .tab-content .tab-pane .media-content .media-upload .upload-now .custom-upload, .media-wrapper .nav-tabs .nav-item .nav-link.active span, .media-wrapper .nav-tabs .nav-item .nav-link span, .media-wrapper .nav-tabs .nav-item .nav-link, .media-wrapper .nav-tabs, .info-card, .profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav .custom-select select, .profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav .nav-item .nav-link, .profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav, .profile-section .member-profile .profile-details .profile-nav .nav-tabs .nav-link .item-number, .member-page-section .member-wrapper .member-info .all-member p, .app-section .section-wrapper .app-content .app-download li a, .top-member-section .filters-button-group .filter-btn, .member-button-group .lab-btn, .banner-form button, .banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .facebook a,
-.banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .twitter a, .banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .google a, .border-radius-2, .group-search .group-count p, .price-item .price-item-inner .price-bottom .purchase-btn, .group-item .lab-inner .lab-content .lab-btn, .group-item .lab-inner, .story-item, .about-item .lab-inner .lab-content:before {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item-3
+  .fm-item-content
+  form
+  .form-group
+  input,
+.contact-info-wrapper,
+.contact-form-wrapper .contact-form form.comment-form textarea,
+.contact-form-wrapper .contact-form form.comment-form input[type="text"],
+.contact-form-wrapper .contact-form form.comment-form [type="email"],
+.contact-form-wrapper,
+.comment-respond .add-comment .comment-form .lab-btn,
+.comment-respond .add-comment .comment-form textarea,
+.comment-respond .add-comment .comment-form input[type="text"],
+.comment-respond,
+.comments,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .social-link-list
+  li
+  a,
+.post-item,
+.create-post
+  .lab-inner
+  .lab-thumb
+  .thumb-inner
+  .thumb-content
+  .custom-select
+  select,
+.create-post,
+.media-wrapper
+  .tab-content
+  .tab-pane
+  .media-content
+  .media-upload
+  .upload-now
+  .custom-upload,
+.media-wrapper .nav-tabs .nav-item .nav-link.active span,
+.media-wrapper .nav-tabs .nav-item .nav-link span,
+.media-wrapper .nav-tabs .nav-item .nav-link,
+.media-wrapper .nav-tabs,
+.info-card,
+.profile-section
+  .member-profile
+  .profile-details
+  .tab-content
+  .activity-page
+  .activity-tab
+  .nav
+  .custom-select
+  select,
+.profile-section
+  .member-profile
+  .profile-details
+  .tab-content
+  .activity-page
+  .activity-tab
+  .nav
+  .nav-item
+  .nav-link,
+.profile-section
+  .member-profile
+  .profile-details
+  .tab-content
+  .activity-page
+  .activity-tab
+  .nav,
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .nav-link
+  .item-number,
+.member-page-section .member-wrapper .member-info .all-member p,
+.app-section .section-wrapper .app-content .app-download li a,
+.top-member-section .filters-button-group .filter-btn,
+.member-button-group .lab-btn,
+.banner-form button,
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .facebook
+  a,
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .twitter
+  a,
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .google
+  a,
+.border-radius-2,
+.group-search .group-count p,
+.price-item .price-item-inner .price-bottom .purchase-btn,
+.group-item .lab-inner .lab-content .lab-btn,
+.group-item .lab-inner,
+.story-item,
+.about-item .lab-inner .lab-content:before {
   border-radius: 2px;
 }
 
 /* @@@@@@@@@@@@@  Extend Property CSS Writing Now  @@@@@@@@@@@@@@ */
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner .lab-content h6 a, .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content h3 a, .blog-section .post-item-inner .post-content h4 > a, .group-item .lab-inner .lab-content p {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget
+  .lab-inner
+  .lab-content
+  h6
+  a,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .post-content
+  h3
+  a,
+.blog-section .post-item-inner .post-content h4 > a,
+.group-item .lab-inner .lab-content p {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 }
 
-.story-item .lab-inner .lab-content h4, .member-item.style-1 .lab-inner .lab-content h6 {
+.story-item .lab-inner .lab-content h4,
+.member-item.style-1 .lab-inner .lab-content h6 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
@@ -165,40 +908,305 @@ a h6 {
 }
 
 /* @@@@@@@@@@@@@  Extend Property CSS Writing Now  @@@@@@@@@@@@@@ */
-.app-section .section-wrapper .app-content .app-download li a, .banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .google a, .header-wrapper .menu-area .login, .group-item .lab-inner .lab-content .lab-btn, .story-item .lab-inner .lab-content .lab-btn, .work-item .lab-inner .lab-thumb .thumb-inner .step {
+.app-section .section-wrapper .app-content .app-download li a,
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .google
+  a,
+.header-wrapper .menu-area .login,
+.group-item .lab-inner .lab-content .lab-btn,
+.story-item .lab-inner .lab-content .lab-btn,
+.work-item .lab-inner .lab-thumb .thumb-inner .step {
   background-color: #fff;
 }
 
-.footer-section .footer-bottom, .bg-color, .group-item .lab-inner, .story-item, .about-item .lab-inner {
+.footer-section .footer-bottom,
+.bg-color,
+.group-item .lab-inner,
+.story-item,
+.about-item .lab-inner {
   background-color: #391965;
 }
 
-.cart-plus-minus .qtybutton, .cart-plus-minus .cart-plus-minus-box {
+.cart-plus-minus .qtybutton,
+.cart-plus-minus .cart-plus-minus-box {
   color: #ffffff;
 }
 
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item-content form button,
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item-content form .lab-btn, .account-form .form-group button, .widget.active-group .widget-content .group-item .lab-inner .lab-content .test .lab-btn:hover, .comment-respond .add-comment .comment-form .lab-btn, .blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li a:hover, .blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li span::after, .blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li span, .blog-section .main-blog .blog-wrapper .post-item.code-post .post-item-inner .post-thumb, .blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider .blog-slider-prev:hover,
-.blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider .blog-slider-next:hover, .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content blockquote, .load-btn .lab-btn, .create-post .lab-inner .lab-content .post-form .content-type .content-list .post-submit .lab-btn, .media-wrapper .tab-content .tab-pane .media-content .media-upload .upload-now .custom-upload, .media-wrapper .nav-tabs .nav-item .nav-link.active, .media-wrapper .nav-tabs .nav-item .nav-link span, .profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav .nav-item .nav-link.active, .profile-section .member-profile .profile-details .profile-nav .nav-tabs .dropdown ul li .dropdown-item:hover, .profile-section .member-profile .profile-details .profile-nav .nav-tabs .nav-link .item-number, .profile-section .member-profile .profile-item .profile-information .profile-contact li a .icon, .fore-zero .section-wrapper .zero-item .zero-content .lab-btn, .member-page-section .member-wrapper .member-info .all-member p:last-child, .clints-section .section-wrapper .clients .client-list .client-content:after, .clints-section .section-wrapper .clients .client-list .client-content, .banner-form button, .header-wrapper .menu-area .signup, .cart-plus-minus .qtybutton:hover, .paginations ul li a.active, .paginations ul li a:hover, .bg-theme, .scrollToTop i, .group-search .group-search-btn form .input-button input[type=submit], .group-search .group-count p:last-child, .member-filter .member-filter-inner, .price-item .price-item-inner .price-bottom .purchase-btn, .group-item.style-1 .lab-inner .lab-content .lab-btn:hover, .group-item:hover .lab-inner, .story-item .lab-inner .lab-content .lab-btn:hover, .about-item .lab-inner .lab-content:before, .member-item.style-1:hover .lab-inner {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item-3
+  .fm-item-content
+  form
+  button,
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item-3
+  .fm-item-content
+  form
+  .lab-btn,
+.account-form .form-group button,
+.widget.active-group
+  .widget-content
+  .group-item
+  .lab-inner
+  .lab-content
+  .test
+  .lab-btn:hover,
+.comment-respond .add-comment .comment-form .lab-btn,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .tags
+  li
+  a:hover,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .tags
+  li
+  span::after,
+.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li span,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.code-post
+  .post-item-inner
+  .post-thumb,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider
+  .blog-slider-prev:hover,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider
+  .blog-slider-next:hover,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .post-content
+  blockquote,
+.load-btn .lab-btn,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .post-submit
+  .lab-btn,
+.media-wrapper
+  .tab-content
+  .tab-pane
+  .media-content
+  .media-upload
+  .upload-now
+  .custom-upload,
+.media-wrapper .nav-tabs .nav-item .nav-link.active,
+.media-wrapper .nav-tabs .nav-item .nav-link span,
+.profile-section
+  .member-profile
+  .profile-details
+  .tab-content
+  .activity-page
+  .activity-tab
+  .nav
+  .nav-item
+  .nav-link.active,
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .dropdown
+  ul
+  li
+  .dropdown-item:hover,
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .nav-link
+  .item-number,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-contact
+  li
+  a
+  .icon,
+.fore-zero .section-wrapper .zero-item .zero-content .lab-btn,
+.member-page-section .member-wrapper .member-info .all-member p:last-child,
+.clints-section .section-wrapper .clients .client-list .client-content:after,
+.clints-section .section-wrapper .clients .client-list .client-content,
+.banner-form button,
+.header-wrapper .menu-area .signup,
+.cart-plus-minus .qtybutton:hover,
+.paginations ul li a.active,
+.paginations ul li a:hover,
+.bg-theme,
+.scrollToTop i,
+.group-search .group-search-btn form .input-button input[type="submit"],
+.group-search .group-count p:last-child,
+.member-filter .member-filter-inner,
+.price-item .price-item-inner .price-bottom .purchase-btn,
+.group-item.style-1 .lab-inner .lab-content .lab-btn:hover,
+.group-item:hover .lab-inner,
+.story-item .lab-inner .lab-content .lab-btn:hover,
+.about-item .lab-inner .lab-content:before,
+.member-item.style-1:hover .lab-inner {
   background: #df314d;
 }
 
-.account-wrapper, .contact-info-wrapper, .contact-form-wrapper, .widget.active-group .widget-content .group-item .lab-inner, .widget, .comment-respond, .comments, .blog-section .post-item-inner .blog-footer, .blog-section .post-item-inner .post-content, .post-item, .create-post, .media-wrapper .tab-content .tab-pane, .media-wrapper .nav-tabs .nav-item .nav-link.active span, .media-wrapper .nav-tabs, .info-card, .profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav, .profile-section .member-profile .profile-details .profile-nav, .fore-zero .section-wrapper .zero-item, .member-page-section .member-wrapper .member-info .all-member p:first-child, .top-member-section .filters-button-group .filter-btn, .paginations ul li a, .bg-prime, .lab-btn, .group-search .group-search-btn form input[type=text], .group-search .group-count p:first-child, .price-item .price-item-inner, .group-item.style-1 .lab-inner, .member-item.style-1 .lab-inner {
+.account-wrapper,
+.contact-info-wrapper,
+.contact-form-wrapper,
+.widget.active-group .widget-content .group-item .lab-inner,
+.widget,
+.comment-respond,
+.comments,
+.blog-section .post-item-inner .blog-footer,
+.blog-section .post-item-inner .post-content,
+.post-item,
+.create-post,
+.media-wrapper .tab-content .tab-pane,
+.media-wrapper .nav-tabs .nav-item .nav-link.active span,
+.media-wrapper .nav-tabs,
+.info-card,
+.profile-section
+  .member-profile
+  .profile-details
+  .tab-content
+  .activity-page
+  .activity-tab
+  .nav,
+.profile-section .member-profile .profile-details .profile-nav,
+.fore-zero .section-wrapper .zero-item,
+.member-page-section .member-wrapper .member-info .all-member p:first-child,
+.top-member-section .filters-button-group .filter-btn,
+.paginations ul li a,
+.bg-prime,
+.lab-btn,
+.group-search .group-search-btn form input[type="text"],
+.group-search .group-count p:first-child,
+.price-item .price-item-inner,
+.group-item.style-1 .lab-inner,
+.member-item.style-1 .lab-inner {
   background: #210053;
 }
 
-.account-bottom .social-media li a, .blog-section .main-blog .blog-wrapper .post-item .tags-section .social-link-list li a, .blog-section .main-blog .blog-wrapper .post-item.code-post .post-item-inner .post-thumb .code-content, .blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider .blog-slider-prev,
-.blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider .blog-slider-next, .load-btn, .profile-section .member-profile .profile-item .profile-information .profile-contact li a .icon, .profile-section .member-profile .profile-item .profile-information .profile-name, .fore-zero .section-wrapper .zero-item, .banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .facebook a,
-.banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .twitter a, .page-header-section.style-1, .header-top-area .social-icons li a, .cart-plus-minus .qtybutton, .cart-plus-minus .cart-plus-minus-box, .section-header, .scrollToTop i, .price-item .price-item-inner, .member-item.style-1 .lab-inner .lab-content {
+.account-bottom .social-media li a,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .social-link-list
+  li
+  a,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.code-post
+  .post-item-inner
+  .post-thumb
+  .code-content,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider
+  .blog-slider-prev,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider
+  .blog-slider-next,
+.load-btn,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-contact
+  li
+  a
+  .icon,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-name,
+.fore-zero .section-wrapper .zero-item,
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .facebook
+  a,
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .twitter
+  a,
+.page-header-section.style-1,
+.header-top-area .social-icons li a,
+.cart-plus-minus .qtybutton,
+.cart-plus-minus .cart-plus-minus-box,
+.section-header,
+.scrollToTop i,
+.price-item .price-item-inner,
+.member-item.style-1 .lab-inner .lab-content {
   text-align: center;
 }
 
-.comments .comment-list .comment, .blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li, ul li {
+.comments .comment-list .comment,
+.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li,
+ul li {
   list-style: none;
 }
 
 /* @@@@@@@@@@@@@  Extend Property Margin 10 - 30 CSS Writing Now  @@@@@@@@@@@@@@ */
-.widget .widget-content, .blog-section .main-blog .blog-wrapper .post-item .tags-section .tags, .page-header-section.style-1, .header-top-area .social-icons, .cart-plus-minus .qtybutton, .cart-plus-minus .cart-plus-minus-box, .paginations ul, .work-item .lab-inner .lab-thumb .thumb-inner .step p, ul {
+.widget .widget-content,
+.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags,
+.page-header-section.style-1,
+.header-top-area .social-icons,
+.cart-plus-minus .qtybutton,
+.cart-plus-minus .cart-plus-minus-box,
+.paginations ul,
+.work-item .lab-inner .lab-thumb .thumb-inner .step p,
+ul {
   margin: 0;
 }
 
@@ -206,15 +1214,69 @@ a h6 {
   margin: 30px;
 }
 
-.widget.search-widget .widget-content .banner-form button, .widget .widget-title h5, .widget:last-child, .comment-respond h3, .comments .comment-list .comment .com-content .com-title .com-title-meta h4, .comments .widget-title h3, .blog-section .main-blog .blog-wrapper .post-item.code-post .post-item-inner .post-thumb .code-content p, .post-item .post-meta .post-meta-top p, .post-item .post-content .post-description p, .post-item .post-content .post-author .post-author-inner .author-details h6, .media-wrapper .tab-content .tab-pane .media-title h2, .info-card .info-card-content .info-list li p, .info-card .info-card-content p, .info-card .info-card-title h6, .profile-section .member-profile .profile-item .profile-information .profile-contact li a .text p, .member-page-section .member-wrapper .member-info .all-member p, .app-section .section-wrapper .app-content .app-download li a .app-content h4, .app-section .section-wrapper .app-content .app-download li a .app-content p, .app-section .section-wrapper .app-content h4, .page-header-section.style-1 .page-header-content .page-header-inner .page-title p, .header-top-area .social-icons li p, .group-search .group-count p, .price-item .price-item-inner .price-bottom ul li p, .work-item .lab-inner .lab-content p, .about-item .lab-inner .lab-content p, .about-item .lab-inner .lab-content h2, .member-item.style-2 .lab-inner .lab-thumb, .member-item.style-1:hover .lab-inner .lab-thumb, .member-item.style-1 .lab-inner .lab-content p {
+.widget.search-widget .widget-content .banner-form button,
+.widget .widget-title h5,
+.widget:last-child,
+.comment-respond h3,
+.comments .comment-list .comment .com-content .com-title .com-title-meta h4,
+.comments .widget-title h3,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.code-post
+  .post-item-inner
+  .post-thumb
+  .code-content
+  p,
+.post-item .post-meta .post-meta-top p,
+.post-item .post-content .post-description p,
+.post-item .post-content .post-author .post-author-inner .author-details h6,
+.media-wrapper .tab-content .tab-pane .media-title h2,
+.info-card .info-card-content .info-list li p,
+.info-card .info-card-content p,
+.info-card .info-card-title h6,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-contact
+  li
+  a
+  .text
+  p,
+.member-page-section .member-wrapper .member-info .all-member p,
+.app-section .section-wrapper .app-content .app-download li a .app-content h4,
+.app-section .section-wrapper .app-content .app-download li a .app-content p,
+.app-section .section-wrapper .app-content h4,
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .page-title
+  p,
+.header-top-area .social-icons li p,
+.group-search .group-count p,
+.price-item .price-item-inner .price-bottom ul li p,
+.work-item .lab-inner .lab-content p,
+.about-item .lab-inner .lab-content p,
+.about-item .lab-inner .lab-content h2,
+.member-item.style-2 .lab-inner .lab-thumb,
+.member-item.style-1:hover .lab-inner .lab-thumb,
+.member-item.style-1 .lab-inner .lab-content p {
   margin-bottom: 0px;
 }
 
-.comments .comment-list .comment .com-content .com-title .com-title-meta span, .media-wrapper .tab-content .tab-pane .media-content .media-upload, .app-section .section-wrapper .app-content .app-download li:first-child, .banner-form button, .banner-form .gender,
+.comments .comment-list .comment .com-content .com-title .com-title-meta span,
+.media-wrapper .tab-content .tab-pane .media-content .media-upload,
+.app-section .section-wrapper .app-content .app-download li:first-child,
+.banner-form button,
+.banner-form .gender,
 .banner-form .person,
 .banner-form .age,
 .banner-form .city,
-.banner-form .interest, .member-filter .member-filter-inner .filter-form > div, .story-item .lab-inner .lab-thumb, .work-item .lab-inner .lab-content h4 {
+.banner-form .interest,
+.member-filter .member-filter-inner .filter-form > div,
+.story-item .lab-inner .lab-thumb,
+.work-item .lab-inner .lab-content h4 {
   margin-bottom: 10px;
 }
 
@@ -222,7 +1284,12 @@ a h6 {
   margin-bottom: 25px;
 }
 
-.media-wrapper .tab-content .tab-pane, .profile-section .member-profile .profile-item .profile-information .profile-name {
+.media-wrapper .tab-content .tab-pane,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-name {
   margin-top: 10px;
 }
 
@@ -230,32 +1297,135 @@ a h6 {
   margin-left: 0;
 }
 
-.info-card .info-card-content .info-list li .info-name:after, .member-filter .member-filter-inner .filter-form .lab-btn i {
+.info-card .info-card-content .info-list li .info-name:after,
+.member-filter .member-filter-inner .filter-form .lab-btn i {
   margin-left: 5px;
 }
 
-.load-btn .lab-btn i, .media-wrapper .nav-tabs .nav-item .nav-link.active span, .media-wrapper .nav-tabs .nav-item .nav-link span, .profile-section .member-profile .profile-details .profile-nav .nav-tabs .nav-link .item-number, .page-header-section.style-1 .page-header-content .page-header-inner .breadcrumb li.active {
+.load-btn .lab-btn i,
+.media-wrapper .nav-tabs .nav-item .nav-link.active span,
+.media-wrapper .nav-tabs .nav-item .nav-link span,
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .nav-link
+  .item-number,
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .breadcrumb
+  li.active {
   margin-left: 10px;
 }
 
-.account-bottom .social-media li:last-child, .blog-section .main-blog .blog-wrapper .post-item .tags-section .social-link-list li:last-child, .post-item .post-meta .post-meta-bottom .react-list .react:last-child, .profile-section .member-profile .profile-item .profile-information .profile-pic .custom-upload .file-btn i, .top-member-section .filters-button-group .filter-btn:last-child {
+.account-bottom .social-media li:last-child,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .social-link-list
+  li:last-child,
+.post-item .post-meta .post-meta-bottom .react-list .react:last-child,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-pic
+  .custom-upload
+  .file-btn
+  i,
+.top-member-section .filters-button-group .filter-btn:last-child {
   margin-right: 0;
 }
 
-.blog-section .post-item-inner .blog-footer .blog-comment i, .post-item .post-meta .post-meta-bottom .react-list .react i, .profile-section .member-profile .profile-item .profile-information .profile-contact li a .icon, .header-top-area .left li i, .price-item .price-item-inner .price-bottom ul li i, .custom-upload i {
+.blog-section .post-item-inner .blog-footer .blog-comment i,
+.post-item .post-meta .post-meta-bottom .react-list .react i,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-contact
+  li
+  a
+  .icon,
+.header-top-area .left li i,
+.price-item .price-item-inner .price-bottom ul li i,
+.custom-upload i {
   margin-right: 5px;
 }
 
-.account-bottom .social-media li, .blog-section .main-blog .blog-wrapper .post-item .tags-section .social-link-list li, .create-post .lab-inner .lab-content .post-form .content-type .content-list .image-video i,
-.create-post .lab-inner .lab-content .post-form .content-type .content-list .attach-file i, .create-post .lab-inner .lab-content .post-form .content-type .content-list .text a i, .app-section .section-wrapper .app-content .app-download li a .app-thumb, .top-member-section .filters-button-group .filter-btn, .member-filter .member-filter-inner .filter-form .age .custom-select:first-child {
+.account-bottom .social-media li,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .social-link-list
+  li,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .image-video
+  i,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .attach-file
+  i,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .text
+  a
+  i,
+.app-section .section-wrapper .app-content .app-download li a .app-thumb,
+.top-member-section .filters-button-group .filter-btn,
+.member-filter
+  .member-filter-inner
+  .filter-form
+  .age
+  .custom-select:first-child {
   margin-right: 10px;
 }
 
-.blog-section .main-blog .blog-wrapper .post-item.code-post .post-item-inner .post-thumb .code-content img, .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content h3, .work-item .lab-inner .lab-thumb {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.code-post
+  .post-item-inner
+  .post-thumb
+  .code-content
+  img,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .post-content
+  h3,
+.work-item .lab-inner .lab-thumb {
   margin-bottom: 15px;
 }
 
-.contact-form-wrapper .contact-form form.comment-form, .blog-section .main-blog .blog-wrapper .post-item .tags-section .social-link-list {
+.contact-form-wrapper .contact-form form.comment-form,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .social-link-list {
   margin-top: 0;
 }
 
@@ -263,7 +1433,22 @@ a h6 {
   margin-left: 15px;
 }
 
-.post-item .post-content .post-author .post-author-inner .author-thumb, .create-post .lab-inner .lab-thumb .thumb-inner .thumb-img, .profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav .custom-select, .profile-section .member-profile .profile-item .profile-information .profile-contact li {
+.post-item .post-content .post-author .post-author-inner .author-thumb,
+.create-post .lab-inner .lab-thumb .thumb-inner .thumb-img,
+.profile-section
+  .member-profile
+  .profile-details
+  .tab-content
+  .activity-page
+  .activity-tab
+  .nav
+  .custom-select,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-contact
+  li {
   margin-right: 15px;
 }
 
@@ -271,36 +1456,161 @@ a h6 {
 .widget.search-widget .widget-content .banner-form .person,
 .widget.search-widget .widget-content .banner-form .age,
 .widget.search-widget .widget-content .banner-form .city,
-.widget.search-widget .widget-content .banner-form .interest, .widget, .comments .comment-list .comment .com-content, .comments .comment-list .comment .com-image, .mb-20, .group-item .lab-inner .lab-content .img-stack {
+.widget.search-widget .widget-content .banner-form .interest,
+.widget,
+.comments .comment-list .comment .com-content,
+.comments .comment-list .comment .com-image,
+.mb-20,
+.group-item .lab-inner .lab-content .img-stack {
   margin-bottom: 20px;
 }
 
-.post-item .post-content .post-description .post-desc-img, .fore-zero .section-wrapper .zero-item .zero-content {
+.post-item .post-content .post-description .post-desc-img,
+.fore-zero .section-wrapper .zero-item .zero-content {
   margin-top: 20px;
 }
 
-.profile-section .member-profile .profile-item .profile-information .profile-contact, .header-wrapper .menu-area .ellepsis-bar {
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-contact,
+.header-wrapper .menu-area .ellepsis-bar {
   margin-left: 20px;
 }
 
-.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li span, .post-item .post-content .post-author .post-author-inner .author-details .post-status .post-privacy, .post-item .post-content .post-author .post-author-inner .author-details h6, .create-post .lab-inner .lab-content .post-form .content-type .content-list .image-video, .create-post .lab-inner .lab-content .post-form .content-type .content-list .text, .member-button-group .lab-btn:first-child {
+.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li span,
+.post-item
+  .post-content
+  .post-author
+  .post-author-inner
+  .author-details
+  .post-status
+  .post-privacy,
+.post-item .post-content .post-author .post-author-inner .author-details h6,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .image-video,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .text,
+.member-button-group .lab-btn:first-child {
   margin-right: 20px;
 }
 
-.widget.search-widget .widget-content .banner-form button, .widget .widget-title h5, .widget:last-child, .comment-respond h3, .comments .comment-list .comment .com-content .com-title .com-title-meta h4, .comments .widget-title h3, .blog-section .main-blog .blog-wrapper .post-item.code-post .post-item-inner .post-thumb .code-content p, .post-item .post-meta .post-meta-top p, .post-item .post-content .post-description p, .post-item .post-content .post-author .post-author-inner .author-details h6, .media-wrapper .tab-content .tab-pane .media-title h2, .info-card .info-card-content .info-list li p, .info-card .info-card-content p, .info-card .info-card-title h6, .profile-section .member-profile .profile-item .profile-information .profile-contact li a .text p, .member-page-section .member-wrapper .member-info .all-member p, .app-section .section-wrapper .app-content .app-download li a .app-content h4, .app-section .section-wrapper .app-content .app-download li a .app-content p, .app-section .section-wrapper .app-content h4, .page-header-section.style-1 .page-header-content .page-header-inner .page-title p, .header-top-area .social-icons li p, .group-search .group-count p, .price-item .price-item-inner .price-bottom ul li p, .work-item .lab-inner .lab-content p, .about-item .lab-inner .lab-content p, .about-item .lab-inner .lab-content h2, .member-item.style-2 .lab-inner .lab-thumb, .member-item.style-1:hover .lab-inner .lab-thumb, .member-item.style-1 .lab-inner .lab-content p {
+.widget.search-widget .widget-content .banner-form button,
+.widget .widget-title h5,
+.widget:last-child,
+.comment-respond h3,
+.comments .comment-list .comment .com-content .com-title .com-title-meta h4,
+.comments .widget-title h3,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.code-post
+  .post-item-inner
+  .post-thumb
+  .code-content
+  p,
+.post-item .post-meta .post-meta-top p,
+.post-item .post-content .post-description p,
+.post-item .post-content .post-author .post-author-inner .author-details h6,
+.media-wrapper .tab-content .tab-pane .media-title h2,
+.info-card .info-card-content .info-list li p,
+.info-card .info-card-content p,
+.info-card .info-card-title h6,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-contact
+  li
+  a
+  .text
+  p,
+.member-page-section .member-wrapper .member-info .all-member p,
+.app-section .section-wrapper .app-content .app-download li a .app-content h4,
+.app-section .section-wrapper .app-content .app-download li a .app-content p,
+.app-section .section-wrapper .app-content h4,
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .page-title
+  p,
+.header-top-area .social-icons li p,
+.group-search .group-count p,
+.price-item .price-item-inner .price-bottom ul li p,
+.work-item .lab-inner .lab-content p,
+.about-item .lab-inner .lab-content p,
+.about-item .lab-inner .lab-content h2,
+.member-item.style-2 .lab-inner .lab-thumb,
+.member-item.style-1:hover .lab-inner .lab-thumb,
+.member-item.style-1 .lab-inner .lab-content p {
   margin-bottom: 0px;
 }
 
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner .lab-content h6, .profile-section .member-profile .profile-item .profile-information .profile-contact li, .price-item .price-item-inner .price-top h2, .group-item .lab-inner .lab-content h4 {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget
+  .lab-inner
+  .lab-content
+  h6,
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-contact
+  li,
+.price-item .price-item-inner .price-top h2,
+.group-item .lab-inner .lab-content h4 {
   margin-bottom: 5px;
 }
 
-.account-form .form-group button, .contact-form-wrapper .contact-form form.comment-form input[type=text],
-.contact-form-wrapper .contact-form form.comment-form [type=email], .widget.search-widget .widget-content .banner-form .interest, .comments, .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content blockquote, .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content p, .blog-section .main-blog .blog-wrapper .post-item .post-item-inner, .fore-zero .section-wrapper .zero-item .zero-content p, .top-member-section .filters-button-group, .banner-form .city, .section-header, .mb-30, .group-search, .story-item .lab-inner .lab-content p {
+.account-form .form-group button,
+.contact-form-wrapper .contact-form form.comment-form input[type="text"],
+.contact-form-wrapper .contact-form form.comment-form [type="email"],
+.widget.search-widget .widget-content .banner-form .interest,
+.comments,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .post-content
+  blockquote,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .post-content
+  p,
+.blog-section .main-blog .blog-wrapper .post-item .post-item-inner,
+.fore-zero .section-wrapper .zero-item .zero-content p,
+.top-member-section .filters-button-group,
+.banner-form .city,
+.section-header,
+.mb-30,
+.group-search,
+.story-item .lab-inner .lab-content p {
   margin-bottom: 30px;
 }
 
-.account-form .form-group button, .contact-form-wrapper .contact-form form.comment-form button.lab-btn, .comment-respond, .load-btn {
+.account-form .form-group button,
+.contact-form-wrapper .contact-form form.comment-form button.lab-btn,
+.comment-respond,
+.load-btn {
   margin-top: 30px;
 }
 
@@ -313,24 +1623,51 @@ a h6 {
 }
 
 /* @@@@@@@@@@@@@  Extend Property padding 10 - 30 CSS Writing Now  @@@@@@@@@@@@@@ */
-.widget.active-group .widget-content, .comments .comment-list .comment .com-content:last-child, .blog-section .main-blog .blog-wrapper .post-item .tags-section .tags, .blog-section .main-blog .blog-wrapper .post-item.video-post .post-item-inner .post-thumb .embed-responsive, .page-header-section.style-1, .header-top-area .social-icons li, ul {
+.widget.active-group .widget-content,
+.comments .comment-list .comment .com-content:last-child,
+.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.video-post
+  .post-item-inner
+  .post-thumb
+  .embed-responsive,
+.page-header-section.style-1,
+.header-top-area .social-icons li,
+ul {
   padding: 0;
 }
 
-.profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav .custom-select select, .member-item.style-1:hover .lab-inner .lab-thumb img {
+.profile-section
+  .member-profile
+  .profile-details
+  .tab-content
+  .activity-page
+  .activity-tab
+  .nav
+  .custom-select
+  select,
+.member-item.style-1:hover .lab-inner .lab-thumb img {
   padding: 5px;
 }
 
-.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li a, .top-member-section .filter-item, .story-item .lab-inner .lab-thumb, .member-item.style-2 .lab-inner .lab-thumb, .member-item.style-1 .lab-inner .lab-thumb {
+.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li a,
+.top-member-section .filter-item,
+.story-item .lab-inner .lab-thumb,
+.member-item.style-2 .lab-inner .lab-thumb,
+.member-item.style-1 .lab-inner .lab-thumb {
   padding: 10px;
 }
 
-.contact-form-wrapper .contact-form form.comment-form input[type=text],
-.contact-form-wrapper .contact-form form.comment-form [type=email], .media-wrapper .nav-tabs {
+.contact-form-wrapper .contact-form form.comment-form input[type="text"],
+.contact-form-wrapper .contact-form form.comment-form [type="email"],
+.media-wrapper .nav-tabs {
   padding: 15px;
 }
 
-.media-wrapper .tab-content .tab-pane .media-content, .member-filter .member-filter-inner {
+.media-wrapper .tab-content .tab-pane .media-content,
+.member-filter .member-filter-inner {
   padding: 20px;
 }
 
@@ -338,11 +1675,22 @@ a h6 {
   padding: 20px 10px;
 }
 
-.contact-info-wrapper, .contact-form-wrapper, .widget.active-group .widget-content .group-item, .widget .widget-content, .comment-respond .add-comment .comment-form, .post-item .post-content .post-description, .post-item .post-content .post-author, .create-post .lab-inner .lab-content .post-form input[type=text], .info-card .info-card-content, .p-30, .story-item .lab-inner .lab-content {
+.contact-info-wrapper,
+.contact-form-wrapper,
+.widget.active-group .widget-content .group-item,
+.widget .widget-content,
+.comment-respond .add-comment .comment-form,
+.post-item .post-content .post-description,
+.post-item .post-content .post-author,
+.create-post .lab-inner .lab-content .post-form input[type="text"],
+.info-card .info-card-content,
+.p-30,
+.story-item .lab-inner .lab-content {
   padding: 30px;
 }
 
-.comments .comment-list .comment:last-child, .member-item.style-2 .lab-inner .lab-thumb {
+.comments .comment-list .comment:last-child,
+.member-item.style-2 .lab-inner .lab-thumb {
   padding-bottom: 0;
 }
 
@@ -350,23 +1698,55 @@ a h6 {
   padding-bottom: 5px;
 }
 
-.post-item .post-content .post-description, .page-header-section.style-1 .page-header-content .page-header-inner .breadcrumb, .story-item .lab-inner .lab-content {
+.post-item .post-content .post-description,
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .breadcrumb,
+.story-item .lab-inner .lab-content {
   padding-top: 0;
 }
 
-.page-header-section.style-1 .page-header-content .page-header-inner .breadcrumb {
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .breadcrumb {
   padding-left: 0;
 }
 
-.blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider .blog-slider-next i, .blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider .blog-slider-prev i {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider
+  .blog-slider-next
+  i,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider
+  .blog-slider-prev
+  i {
   padding-left: 5px;
 }
 
-.group-search .group-search-btn form .input-button input[type=submit] {
+.group-search .group-search-btn form .input-button input[type="submit"] {
   padding-left: 10px;
 }
 
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner .lab-content {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget
+  .lab-inner
+  .lab-content {
   padding-left: 20px;
 }
 
@@ -374,7 +1754,15 @@ a h6 {
   padding-right: 10px;
 }
 
-.profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav .custom-select select {
+.profile-section
+  .member-profile
+  .profile-details
+  .tab-content
+  .activity-page
+  .activity-tab
+  .nav
+  .custom-select
+  select {
   padding-left: 15px;
 }
 
@@ -382,15 +1770,31 @@ a h6 {
   padding-bottom: 20px;
 }
 
-.post-item .post-content .post-author, .create-post .lab-inner .lab-content .post-form input[type=text] {
+.post-item .post-content .post-author,
+.create-post .lab-inner .lab-content .post-form input[type="text"] {
   padding-top: 20px;
 }
 
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner .lab-content {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget
+  .lab-inner
+  .lab-content {
   padding-left: 20px;
 }
 
-.profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav .custom-select select {
+.profile-section
+  .member-profile
+  .profile-details
+  .tab-content
+  .activity-page
+  .activity-tab
+  .nav
+  .custom-select
+  select {
   padding-right: 30px;
 }
 
@@ -558,10 +1962,10 @@ select {
 /* @@@@@@@@@@@@@  Global CSS  @@@@@@@@@@@@@@ */
 @media (min-width: 1200px) {
   .container,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
     max-width: 1200px !important;
   }
 }
@@ -625,7 +2029,7 @@ select {
 .custom-upload .file-btn {
   border-radius: 5px;
 }
-.custom-upload input[type=file] {
+.custom-upload input[type="file"] {
   left: 0;
   top: 0;
   opacity: 0;
@@ -854,22 +2258,22 @@ select {
   border-radius: 50%;
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.3);
 }
-.group-item .lab-inner .lab-content .img-stack li:nth-child(7n+2) {
+.group-item .lab-inner .lab-content .img-stack li:nth-child(7n + 2) {
   transform: translateX(-10px);
 }
-.group-item .lab-inner .lab-content .img-stack li:nth-child(7n+3) {
+.group-item .lab-inner .lab-content .img-stack li:nth-child(7n + 3) {
   transform: translateX(-20px);
 }
-.group-item .lab-inner .lab-content .img-stack li:nth-child(7n+4) {
+.group-item .lab-inner .lab-content .img-stack li:nth-child(7n + 4) {
   transform: translateX(-30px);
 }
-.group-item .lab-inner .lab-content .img-stack li:nth-child(7n+5) {
+.group-item .lab-inner .lab-content .img-stack li:nth-child(7n + 5) {
   transform: translateX(-40px);
 }
-.group-item .lab-inner .lab-content .img-stack li:nth-child(7n+6) {
+.group-item .lab-inner .lab-content .img-stack li:nth-child(7n + 6) {
   transform: translateX(-50px);
 }
-.group-item .lab-inner .lab-content .img-stack li:nth-child(7n+7) {
+.group-item .lab-inner .lab-content .img-stack li:nth-child(7n + 7) {
   transform: translateX(-60px);
 }
 .group-item .lab-inner .lab-content .lab-btn {
@@ -956,14 +2360,17 @@ select {
   box-shadow: 0px 10px 10px 0px rgba(224, 49, 77, 0.2);
   transform: translateY(-3px);
 }
-.price-item:hover .price-item-inner, .price-item.active .price-item-inner {
+.price-item:hover .price-item-inner,
+.price-item.active .price-item-inner {
   background: #fff;
 }
-.price-item:hover .price-item-inner .price-bottom, .price-item.active .price-item-inner .price-bottom {
+.price-item:hover .price-item-inner .price-bottom,
+.price-item.active .price-item-inner .price-bottom {
   color: #210053;
 }
 @media (min-width: 992px) {
-  .price-item:hover, .price-item.active {
+  .price-item:hover,
+  .price-item.active {
     transform: translateY(-30px);
   }
 }
@@ -990,7 +2397,11 @@ select {
   box-shadow: none;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .member-filter .member-filter-inner .filter-form .age .custom-select:first-child {
+  .member-filter
+    .member-filter-inner
+    .filter-form
+    .age
+    .custom-select:first-child {
     margin-right: 3px;
   }
 }
@@ -1042,20 +2453,20 @@ select {
     padding: 0 20px;
   }
 }
-.group-search .group-search-btn form input[type=text] {
+.group-search .group-search-btn form input[type="text"] {
   width: 190px;
 }
 @media (min-width: 768px) {
-  .group-search .group-search-btn form input[type=text] {
+  .group-search .group-search-btn form input[type="text"] {
     width: auto;
   }
 }
-.group-search .group-search-btn form input[type=text]::placeholder {
+.group-search .group-search-btn form input[type="text"]::placeholder {
   color: #fff;
   opacity: 0.9;
 }
 @media (min-width: 768px) {
-  .group-search .group-search-btn form .input-button input[type=submit] {
+  .group-search .group-search-btn form .input-button input[type="submit"] {
     padding-left: 30px;
   }
 }
@@ -1308,7 +2719,8 @@ select {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.paginations ul li a.active, .paginations ul li a:hover {
+.paginations ul li a.active,
+.paginations ul li a:hover {
   color: #fff;
 }
 .paginations ul li a.dot {
@@ -1380,7 +2792,8 @@ select {
 
 /* *****========= All Keyframes  ===============****** */
 @keyframes angle-move {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(-6deg);
   }
   50% {
@@ -1388,7 +2801,8 @@ select {
   }
 }
 @keyframes up-down {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-20px);
   }
   50% {
@@ -1396,7 +2810,8 @@ select {
   }
 }
 @keyframes zoom {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(0.9) rotate(0deg);
   }
   50% {
@@ -1407,7 +2822,8 @@ select {
   }
 }
 @keyframes rotate {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(10deg) translate(10px, 15px);
   }
   50% {
@@ -1578,14 +2994,14 @@ select {
 }
 @media (min-width: 768px) {
   .header-wrapper .menu-area .login,
-.header-wrapper .menu-area .signup {
+  .header-wrapper .menu-area .signup {
     padding: 10px;
     display: inline-block;
   }
 }
 @media (min-width: 1200px) {
   .header-wrapper .menu-area .login,
-.header-wrapper .menu-area .signup {
+  .header-wrapper .menu-area .signup {
     padding: 15px;
   }
 }
@@ -1663,7 +3079,8 @@ select {
     font-weight: 500;
     border-bottom: 1px solid #ecf0f3;
   }
-  .menu li .submenu li a:hover, .menu li .submenu li a.active {
+  .menu li .submenu li a:hover,
+  .menu li .submenu li a.active {
     background: #df314d;
     padding-left: 22px;
     color: #fff;
@@ -1952,12 +3369,21 @@ select {
     padding-bottom: 100px;
   }
 }
-.page-header-section.style-1 .page-header-content .page-header-inner .breadcrumb li {
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .breadcrumb
+  li {
   color: #ffffff;
   margin: 0 5px;
   text-transform: capitalize;
 }
-.page-header-section.style-1 .page-header-content .page-header-inner .breadcrumb li a {
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .breadcrumb
+  li
+  a {
   color: #ffffff;
   padding: 0 5px;
   outline: none;
@@ -1965,10 +3391,20 @@ select {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.page-header-section.style-1 .page-header-content .page-header-inner .breadcrumb li a:hover {
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .breadcrumb
+  li
+  a:hover {
   color: #df314d;
 }
-.page-header-section.style-1 .page-header-content .page-header-inner .breadcrumb li a::before {
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .breadcrumb
+  li
+  a::before {
   background: #ffffff;
   width: 8px;
   height: 1px;
@@ -1979,24 +3415,45 @@ select {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.page-header-section.style-1 .page-header-content .page-header-inner .breadcrumb li:first-child {
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .breadcrumb
+  li:first-child {
   margin-left: 0;
 }
-.page-header-section.style-1 .page-header-content .page-header-inner .page-title .title-text {
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .page-title
+  .title-text {
   font-size: 1.5rem;
   color: #fff;
   text-transform: capitalize;
 }
 @media (min-width: 768px) {
-  .page-header-section.style-1 .page-header-content .page-header-inner .page-title .title-text {
+  .page-header-section.style-1
+    .page-header-content
+    .page-header-inner
+    .page-title
+    .title-text {
     font-size: 3.5rem;
     line-height: 4.125rem;
   }
 }
-.page-header-section.style-1 .page-header-content .page-header-inner .page-title .title-text span {
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .page-title
+  .title-text
+  span {
   color: #df314d;
 }
-.page-header-section.style-1 .page-header-content .page-header-inner .page-title p {
+.page-header-section.style-1
+  .page-header-content
+  .page-header-inner
+  .page-title
+  p {
   color: #fff;
   font-size: 1.125rem;
   text-transform: capitalize;
@@ -2043,43 +3500,119 @@ select {
   color: #fff;
   font-family: "Jost", sans-serif;
 }
-.banner-section .section-wrapper .banner-content .intro-form .intro-form-inner p {
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  p {
   line-height: 30px;
   max-width: 315px;
 }
 @media (max-width: 575px) {
-  .banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list {
+  .banner-section
+    .section-wrapper
+    .banner-content
+    .intro-form
+    .intro-form-inner
+    .social-list {
     justify-content: flex-start;
     row-gap: 10px;
     column-gap: 10px;
   }
 }
-.banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .google a {
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .google
+  a {
   padding: 13px 30px;
 }
 @media (max-width: 575px) {
-  .banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .google a {
+  .banner-section
+    .section-wrapper
+    .banner-content
+    .intro-form
+    .intro-form-inner
+    .social-list
+    .google
+    a {
     padding: 13px 48px;
   }
 }
-.banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .google a span {
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .google
+  a
+  span {
   color: #555555;
 }
-.banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .facebook a,
-.banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .twitter a {
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .facebook
+  a,
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .twitter
+  a {
   line-height: 50px;
   width: 50px;
   height: 50px;
 }
-.banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .facebook {
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .facebook {
   background-color: #3b5998;
 }
-.banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .twitter {
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .twitter {
   background-color: #55acee;
 }
-.banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .google:hover,
-.banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .facebook:hover,
-.banner-section .section-wrapper .banner-content .intro-form .intro-form-inner .social-list .twitter:hover {
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .google:hover,
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .facebook:hover,
+.banner-section
+  .section-wrapper
+  .banner-content
+  .intro-form
+  .intro-form-inner
+  .social-list
+  .twitter:hover {
   box-shadow: 0 4px 5px rgba(223, 49, 77, 0.5);
 }
 .banner-section .section-wrapper .banner-thumb {
@@ -2373,7 +3906,11 @@ textarea::placeholder {
   }
 }
 @media (max-width: 575px) {
-  .clints-section .section-wrapper .clients .client-list.active .client-content {
+  .clints-section
+    .section-wrapper
+    .clients
+    .client-list.active
+    .client-content {
     opacity: 1;
     visibility: visible;
   }
@@ -2382,7 +3919,16 @@ textarea::placeholder {
   opacity: 1;
   visibility: visible;
 }
-.clints-section .section-wrapper .clients .client-list:hover .client-thumb::after, .clints-section .section-wrapper .clients .client-list:hover .client-thumb::before {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:hover
+  .client-thumb::after,
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:hover
+  .client-thumb::before {
   -webkit-animation: ripple 1.05s infinite;
   -moz-animation: ripple 1.05s infinite;
   -ms-animation: ripple 1.05s infinite;
@@ -2390,13 +3936,31 @@ textarea::placeholder {
   animation: ripple 1.05s infinite;
 }
 @media (min-width: 768px) {
-  .clints-section .section-wrapper .clients .client-list:nth-child(1) .client-content, .clints-section .section-wrapper .clients .client-list:nth-child(2) .client-content {
+  .clints-section
+    .section-wrapper
+    .clients
+    .client-list:nth-child(1)
+    .client-content,
+  .clints-section
+    .section-wrapper
+    .clients
+    .client-list:nth-child(2)
+    .client-content {
     top: 75px;
     bottom: auto;
     left: 0;
     right: auto;
   }
-  .clints-section .section-wrapper .clients .client-list:nth-child(1) .client-content::after, .clints-section .section-wrapper .clients .client-list:nth-child(2) .client-content::after {
+  .clints-section
+    .section-wrapper
+    .clients
+    .client-list:nth-child(1)
+    .client-content::after,
+  .clints-section
+    .section-wrapper
+    .clients
+    .client-list:nth-child(2)
+    .client-content::after {
     top: -15px;
     bottom: auto;
     left: 25px;
@@ -2405,13 +3969,31 @@ textarea::placeholder {
   }
 }
 @media (min-width: 768px) {
-  .clints-section .section-wrapper .clients .client-list:nth-child(3) .client-content, .clints-section .section-wrapper .clients .client-list:nth-child(7) .client-content {
+  .clints-section
+    .section-wrapper
+    .clients
+    .client-list:nth-child(3)
+    .client-content,
+  .clints-section
+    .section-wrapper
+    .clients
+    .client-list:nth-child(7)
+    .client-content {
     top: 0px;
     bottom: auto;
     right: 75px;
     box-shadow: -5px 5px 0 0 #fff;
   }
-  .clints-section .section-wrapper .clients .client-list:nth-child(3) .client-content::after, .clints-section .section-wrapper .clients .client-list:nth-child(7) .client-content::after {
+  .clints-section
+    .section-wrapper
+    .clients
+    .client-list:nth-child(3)
+    .client-content::after,
+  .clints-section
+    .section-wrapper
+    .clients
+    .client-list:nth-child(7)
+    .client-content::after {
     box-shadow: 3px 0 0 #fff;
     top: 0;
     bottom: auto;
@@ -2421,13 +4003,21 @@ textarea::placeholder {
   }
 }
 @media (min-width: 768px) {
-  .clints-section .section-wrapper .clients .client-list:nth-child(4) .client-content {
+  .clints-section
+    .section-wrapper
+    .clients
+    .client-list:nth-child(4)
+    .client-content {
     left: 0;
     right: auto;
     box-shadow: -5px -5px 0 0 #fff;
     bottom: 75px;
   }
-  .clints-section .section-wrapper .clients .client-list:nth-child(4) .client-content::after {
+  .clints-section
+    .section-wrapper
+    .clients
+    .client-list:nth-child(4)
+    .client-content::after {
     left: 25px;
     right: auto;
     box-shadow: 0 3px 0 0 #fff;
@@ -2441,49 +4031,110 @@ textarea::placeholder {
   top: 40px;
   left: 35%;
 }
-.clints-section .section-wrapper .clients .client-list:nth-child(2) .client-thumb::after, .clints-section .section-wrapper .clients .client-list:nth-child(2) .client-thumb::before {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(2)
+  .client-thumb::after,
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(2)
+  .client-thumb::before {
   background: #7256df;
 }
 .clints-section .section-wrapper .clients .client-list:nth-child(3) {
   top: 90px;
   left: 75%;
 }
-.clints-section .section-wrapper .clients .client-list:nth-child(3) .client-thumb::after, .clints-section .section-wrapper .clients .client-list:nth-child(3) .client-thumb::before {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(3)
+  .client-thumb::after,
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(3)
+  .client-thumb::before {
   background: #eb59d5;
 }
 .clints-section .section-wrapper .clients .client-list:nth-child(4) {
   top: 400px;
   left: 30%;
 }
-.clints-section .section-wrapper .clients .client-list:nth-child(4) .client-thumb::after, .clints-section .section-wrapper .clients .client-list:nth-child(4) .client-thumb::before {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(4)
+  .client-thumb::after,
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(4)
+  .client-thumb::before {
   background: #37d87b;
 }
 .clints-section .section-wrapper .clients .client-list:nth-child(5) {
   top: 265px;
   left: 47%;
 }
-.clints-section .section-wrapper .clients .client-list:nth-child(5) .client-content {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(5)
+  .client-content {
   box-shadow: -5px -5px 0 0 #fff;
   bottom: 75px;
 }
-.clints-section .section-wrapper .clients .client-list:nth-child(5) .client-content:after {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(5)
+  .client-content:after {
   box-shadow: 0 3px 0 0 #fff;
 }
-.clints-section .section-wrapper .clients .client-list:nth-child(5) .client-thumb::after, .clints-section .section-wrapper .clients .client-list:nth-child(5) .client-thumb::before {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(5)
+  .client-thumb::after,
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(5)
+  .client-thumb::before {
   background: #fe7855;
 }
 .clints-section .section-wrapper .clients .client-list:nth-child(6) {
   top: 408px;
   left: 80%;
 }
-.clints-section .section-wrapper .clients .client-list:nth-child(6) .client-content {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(6)
+  .client-content {
   box-shadow: -5px -5px 0 0 #fff;
   bottom: 75px;
 }
-.clints-section .section-wrapper .clients .client-list:nth-child(6) .client-content:after {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(6)
+  .client-content:after {
   box-shadow: 0 3px 0 0 #fff;
 }
-.clints-section .section-wrapper .clients .client-list:nth-child(6) .client-thumb::after, .clints-section .section-wrapper .clients .client-list:nth-child(6) .client-thumb::before {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(6)
+  .client-thumb::after,
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(6)
+  .client-thumb::before {
   background: #ffc313;
 }
 .clints-section .section-wrapper .clients .client-list:nth-child(7) {
@@ -2491,7 +4142,16 @@ textarea::placeholder {
   left: 75%;
   left: 70%;
 }
-.clints-section .section-wrapper .clients .client-list:nth-child(7) .client-thumb::after, .clints-section .section-wrapper .clients .client-list:nth-child(7) .client-thumb::before {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(7)
+  .client-thumb::after,
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list:nth-child(7)
+  .client-thumb::before {
   background: #26aeea;
 }
 .clints-section .section-wrapper .clients .client-list .client-thumb {
@@ -2502,7 +4162,8 @@ textarea::placeholder {
   border-radius: 100%;
   cursor: pointer;
 }
-.clints-section .section-wrapper .clients .client-list .client-thumb::after, .clints-section .section-wrapper .clients .client-list .client-thumb::before {
+.clints-section .section-wrapper .clients .client-list .client-thumb::after,
+.clints-section .section-wrapper .clients .client-list .client-thumb::before {
   display: inline-block;
   top: 50%;
   left: 50%;
@@ -2567,17 +4228,43 @@ textarea::placeholder {
 .clints-section .section-wrapper .clients .client-list .client-content p {
   margin-bottom: 10px;
 }
-.clints-section .section-wrapper .clients .client-list .client-content .client-info {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list
+  .client-content
+  .client-info {
   justify-content: space-between;
 }
-.clints-section .section-wrapper .clients .client-list .client-content .client-info .name-desi h6 {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list
+  .client-content
+  .client-info
+  .name-desi
+  h6 {
   display: inline-block;
 }
-.clints-section .section-wrapper .clients .client-list .client-content .client-info .name-desi span {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list
+  .client-content
+  .client-info
+  .name-desi
+  span {
   color: #ffffff;
   margin-left: 10px;
 }
-.clints-section .section-wrapper .clients .client-list .client-content .client-info .name-desi span::after {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list
+  .client-content
+  .client-info
+  .name-desi
+  span::after {
   top: 50%;
   left: -6px;
   width: 5px;
@@ -2585,10 +4272,25 @@ textarea::placeholder {
   background: #ffffff;
   transform: translateY(-50%);
 }
-.clints-section .section-wrapper .clients .client-list .client-content .client-info .rating ul {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list
+  .client-content
+  .client-info
+  .rating
+  ul {
   margin-bottom: 0 !important;
 }
-.clints-section .section-wrapper .clients .client-list .client-content .client-info .rating ul li {
+.clints-section
+  .section-wrapper
+  .clients
+  .client-list
+  .client-content
+  .client-info
+  .rating
+  ul
+  li {
   color: #e9ba17;
   margin: 1px;
 }
@@ -2692,7 +4394,11 @@ textarea::placeholder {
   padding: 0.5rem 1rem;
   font-family: "Jost", sans-serif;
 }
-.member-page-section .member-wrapper .member-info .all-member p:last-child:before {
+.member-page-section
+  .member-wrapper
+  .member-info
+  .all-member
+  p:last-child:before {
   left: -10px;
   top: 50%;
   transform: translateY(-50%);
@@ -2702,14 +4408,25 @@ textarea::placeholder {
   border-width: 12.5px 21.7px 12.5px 0;
   border-color: transparent #df314d transparent transparent;
 }
-.member-page-section .member-wrapper .member-info .member-cat .custom-select select {
+.member-page-section
+  .member-wrapper
+  .member-info
+  .member-cat
+  .custom-select
+  select {
   background: #210053 !important;
   padding: 0.5rem 1rem;
   padding-right: 2rem;
   border: none;
   outline: none;
 }
-.member-page-section .member-wrapper .member-info .member-cat .custom-select select option {
+.member-page-section
+  .member-wrapper
+  .member-info
+  .member-cat
+  .custom-select
+  select
+  option {
   border: 1px solid #df314d;
 }
 .member-page-section .member-wrapper .member-item {
@@ -2769,7 +4486,11 @@ textarea::placeholder {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.profile-section .member-profile .profile-item .profile-cover:hover .custom-upload {
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-cover:hover
+  .custom-upload {
   opacity: 1;
   transform: translateY(0);
 }
@@ -2791,14 +4512,22 @@ textarea::placeholder {
     margin-top: -294px;
   }
 }
-.profile-section .member-profile .profile-item .profile-information .profile-pic {
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-pic {
   width: 140px;
   height: 140px;
   border: 5px solid #fff;
   border-radius: 50%;
 }
 @media (min-width: 992px) {
-  .profile-section .member-profile .profile-item .profile-information .profile-pic {
+  .profile-section
+    .member-profile
+    .profile-item
+    .profile-information
+    .profile-pic {
     width: auto;
     height: auto;
     border-radius: 0;
@@ -2808,16 +4537,30 @@ textarea::placeholder {
   }
 }
 @media (min-width: 1200px) {
-  .profile-section .member-profile .profile-item .profile-information .profile-pic {
+  .profile-section
+    .member-profile
+    .profile-item
+    .profile-information
+    .profile-pic {
     height: 320px;
     width: 220px;
     transform: translate(20px, 20px);
   }
 }
-.profile-section .member-profile .profile-item .profile-information .profile-pic img {
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-pic
+  img {
   object-fit: cover;
 }
-.profile-section .member-profile .profile-item .profile-information .profile-pic .custom-upload {
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-pic
+  .custom-upload {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%) translateY(5px);
@@ -2833,56 +4576,122 @@ textarea::placeholder {
   transition: all 0.3s ease;
 }
 @media (min-width: 992px) {
-  .profile-section .member-profile .profile-item .profile-information .profile-pic .custom-upload .file-btn i {
+  .profile-section
+    .member-profile
+    .profile-item
+    .profile-information
+    .profile-pic
+    .custom-upload
+    .file-btn
+    i {
     margin-right: 5px;
   }
 }
-.profile-section .member-profile .profile-item .profile-information .profile-pic:hover .custom-upload {
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-pic:hover
+  .custom-upload {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
 @media (min-width: 992px) {
-  .profile-section .member-profile .profile-item .profile-information .profile-name,
-.profile-section .member-profile .profile-item .profile-information .profile-contact {
+  .profile-section
+    .member-profile
+    .profile-item
+    .profile-information
+    .profile-name,
+  .profile-section
+    .member-profile
+    .profile-item
+    .profile-information
+    .profile-contact {
     transform: translateY(-70px);
   }
 }
 @media (min-width: 1200px) {
-  .profile-section .member-profile .profile-item .profile-information .profile-name,
-.profile-section .member-profile .profile-item .profile-information .profile-contact {
+  .profile-section
+    .member-profile
+    .profile-item
+    .profile-information
+    .profile-name,
+  .profile-section
+    .member-profile
+    .profile-item
+    .profile-information
+    .profile-contact {
     transform: translateY(-50px);
   }
 }
-.profile-section .member-profile .profile-item .profile-information .profile-name h4 {
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-name
+  h4 {
   margin-bottom: 2px;
 }
 @media (min-width: 992px) {
-  .profile-section .member-profile .profile-item .profile-information .profile-name {
+  .profile-section
+    .member-profile
+    .profile-item
+    .profile-information
+    .profile-name {
     margin-left: 30px;
   }
-  .profile-section .member-profile .profile-item .profile-information .profile-name p {
+  .profile-section
+    .member-profile
+    .profile-item
+    .profile-information
+    .profile-name
+    p {
     margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
-  .profile-section .member-profile .profile-item .profile-information .profile-name {
+  .profile-section
+    .member-profile
+    .profile-item
+    .profile-information
+    .profile-name {
     margin-left: 45px;
   }
 }
-.profile-section .member-profile .profile-item .profile-information .profile-contact {
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-contact {
   justify-content: space-evenly;
 }
 @media (min-width: 1200px) {
-  .profile-section .member-profile .profile-item .profile-information .profile-contact {
+  .profile-section
+    .member-profile
+    .profile-item
+    .profile-information
+    .profile-contact {
     margin-left: 40px;
   }
 }
 @media (min-width: 1200px) {
-  .profile-section .member-profile .profile-item .profile-information .profile-contact li {
+  .profile-section
+    .member-profile
+    .profile-item
+    .profile-information
+    .profile-contact
+    li {
     margin-right: 25px;
   }
 }
-.profile-section .member-profile .profile-item .profile-information .profile-contact li a .icon {
+.profile-section
+  .member-profile
+  .profile-item
+  .profile-information
+  .profile-contact
+  li
+  a
+  .icon {
   height: 40px;
   width: 40px;
   line-height: 40px;
@@ -2922,21 +4731,43 @@ textarea::placeholder {
     padding-left: 0;
   }
 }
-.profile-section .member-profile .profile-details .profile-nav .nav-tabs .nav-link {
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .nav-link {
   border: none;
 }
 @media (min-width: 1200px) {
-  .profile-section .member-profile .profile-details .profile-nav .nav-tabs .nav-link {
+  .profile-section
+    .member-profile
+    .profile-details
+    .profile-nav
+    .nav-tabs
+    .nav-link {
     margin-right: 10;
   }
 }
-.profile-section .member-profile .profile-details .profile-nav .nav-tabs .nav-link .item-number {
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .nav-link
+  .item-number {
   color: #fff;
   padding: 0px 5px;
   font-size: 12px;
   font-family: "Jost", sans-serif;
 }
-.profile-section .member-profile .profile-details .profile-nav .nav-tabs .nav-link .item-number:before {
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .nav-link
+  .item-number:before {
   position: absolute;
   content: "";
   left: -5px;
@@ -2948,13 +4779,23 @@ textarea::placeholder {
   border-width: 5px 8.7px 5px 0;
   border-color: transparent #df314d transparent transparent;
 }
-.profile-section .member-profile .profile-details .profile-nav .nav-tabs .nav-link.active {
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .nav-link.active {
   color: #df314d;
   background-color: transparent;
   border: none;
 }
 @media (min-width: 768px) {
-  .profile-section .member-profile .profile-details .profile-nav .nav-tabs .nav-link.active:after {
+  .profile-section
+    .member-profile
+    .profile-details
+    .profile-nav
+    .nav-tabs
+    .nav-link.active:after {
     position: absolute;
     content: "";
     bottom: -30px;
@@ -2965,44 +4806,113 @@ textarea::placeholder {
     transform: rotate(45deg) translateX(-50%);
   }
 }
-.profile-section .member-profile .profile-details .profile-nav .nav-tabs .nav-link:hover {
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .nav-link:hover {
   color: #df314d;
 }
-.profile-section .member-profile .profile-details .profile-nav .nav-tabs .dropdown .btn {
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .dropdown
+  .btn {
   color: #fff;
   border: none;
   outline: none;
   box-shadow: none;
   padding: 0.5rem 1rem;
 }
-.profile-section .member-profile .profile-details .profile-nav .nav-tabs .dropdown ul {
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .dropdown
+  ul {
   background: #210053;
   box-shadow: 0 3px 3px rgba(223, 49, 77, 0.3);
 }
-.profile-section .member-profile .profile-details .profile-nav .nav-tabs .dropdown ul li .dropdown-item {
+.profile-section
+  .member-profile
+  .profile-details
+  .profile-nav
+  .nav-tabs
+  .dropdown
+  ul
+  li
+  .dropdown-item {
   color: #fff;
 }
-.profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav .nav-item {
+.profile-section
+  .member-profile
+  .profile-details
+  .tab-content
+  .activity-page
+  .activity-tab
+  .nav
+  .nav-item {
   padding: 10px 5px;
 }
 @media (min-width: 768px) {
-  .profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav .nav-item {
+  .profile-section
+    .member-profile
+    .profile-details
+    .tab-content
+    .activity-page
+    .activity-tab
+    .nav
+    .nav-item {
     padding: 15px 5px;
   }
 }
 @media (min-width: 992px) {
-  .profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav .nav-item:first-child {
+  .profile-section
+    .member-profile
+    .profile-details
+    .tab-content
+    .activity-page
+    .activity-tab
+    .nav
+    .nav-item:first-child {
     margin-left: 13px;
   }
 }
-.profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav .nav-item .nav-link {
+.profile-section
+  .member-profile
+  .profile-details
+  .tab-content
+  .activity-page
+  .activity-tab
+  .nav
+  .nav-item
+  .nav-link {
   padding: 5px 10px;
 }
-.profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav .custom-select {
+.profile-section
+  .member-profile
+  .profile-details
+  .tab-content
+  .activity-page
+  .activity-tab
+  .nav
+  .custom-select {
   width: auto;
   margin-left: auto;
 }
-.profile-section .member-profile .profile-details .tab-content .activity-page .activity-tab .nav .custom-select select {
+.profile-section
+  .member-profile
+  .profile-details
+  .tab-content
+  .activity-page
+  .activity-tab
+  .nav
+  .custom-select
+  select {
   outline: none;
   background-color: #391965 !important;
   border: none;
@@ -3067,7 +4977,9 @@ textarea::placeholder {
   border-width: 5px 8.7px 5px 0;
   border-color: transparent #df314d transparent transparent;
 }
-.media-wrapper .nav-tabs .nav-item .nav-link:focus, .media-wrapper .nav-tabs .nav-item .nav-link:hover, .media-wrapper .nav-tabs .nav-item .nav-link:focus-visible {
+.media-wrapper .nav-tabs .nav-item .nav-link:focus,
+.media-wrapper .nav-tabs .nav-item .nav-link:hover,
+.media-wrapper .nav-tabs .nav-item .nav-link:focus-visible {
   border-bottom-color: #df314d !important;
 }
 .media-wrapper .nav-tabs .nav-item .nav-link.active {
@@ -3104,14 +5016,22 @@ textarea::placeholder {
   border-width: 5px 8.7px 5px 0;
   border-color: transparent #210053 transparent transparent;
 }
-.media-wrapper .nav-tabs .nav-item .nav-link.active:focus, .media-wrapper .nav-tabs .nav-item .nav-link.active:hover, .media-wrapper .nav-tabs .nav-item .nav-link.active:focus-visible {
+.media-wrapper .nav-tabs .nav-item .nav-link.active:focus,
+.media-wrapper .nav-tabs .nav-item .nav-link.active:hover,
+.media-wrapper .nav-tabs .nav-item .nav-link.active:focus-visible {
   border-color: #df314d;
 }
 .media-wrapper .tab-content .tab-pane .media-title {
   border-bottom: 1px solid #391965;
   padding: 5px 20px;
 }
-.media-wrapper .tab-content .tab-pane .media-content .media-upload .upload-now .custom-upload {
+.media-wrapper
+  .tab-content
+  .tab-pane
+  .media-content
+  .media-upload
+  .upload-now
+  .custom-upload {
   padding: 0.5rem 1rem;
 }
 .media-wrapper .tab-content .tab-pane .media-content .media-thumb {
@@ -3146,7 +5066,12 @@ textarea::placeholder {
 .media-wrapper .tab-content .tab-pane .media-content .album .album-thumb img {
   border: 4px solid #fff;
 }
-.media-wrapper .tab-content .tab-pane .media-content .album .album-thumb:before {
+.media-wrapper
+  .tab-content
+  .tab-pane
+  .media-content
+  .album
+  .album-thumb:before {
   height: 170px;
   width: 170px;
   background: #e0043b;
@@ -3158,7 +5083,12 @@ textarea::placeholder {
   transform: rotate(-4deg);
   -webkit-backface-visibility: hidden;
 }
-.media-wrapper .tab-content .tab-pane .media-content .album .album-thumb::after {
+.media-wrapper
+  .tab-content
+  .tab-pane
+  .media-content
+  .album
+  .album-thumb::after {
   height: 170px;
   width: 170px;
   background: #ffd900;
@@ -3179,22 +5109,39 @@ textarea::placeholder {
   padding: 10px 30px;
   padding-top: 15px;
 }
-.create-post .lab-inner .lab-thumb .thumb-inner .thumb-content .custom-select select {
+.create-post
+  .lab-inner
+  .lab-thumb
+  .thumb-inner
+  .thumb-content
+  .custom-select
+  select {
   font-family: "icoFont" !important;
   outline: none;
   border: none;
   background: #391965 !important;
   padding: 3px 10px;
 }
-.create-post .lab-inner .lab-thumb .thumb-inner .thumb-content .custom-select select option {
+.create-post
+  .lab-inner
+  .lab-thumb
+  .thumb-inner
+  .thumb-content
+  .custom-select
+  select
+  option {
   font-family: "icoFont" !important;
 }
-.create-post .lab-inner .lab-content .post-form input[type=text] {
+.create-post .lab-inner .lab-content .post-form input[type="text"] {
   background: transparent;
   border: none;
   outline: none;
 }
-.create-post .lab-inner .lab-content .post-form input[type=text]::placeholder {
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  input[type="text"]::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 .create-post .lab-inner .lab-content .post-form .content-type {
@@ -3202,39 +5149,104 @@ textarea::placeholder {
   padding: 20px 30px;
 }
 @media (max-width: 575px) {
-  .create-post .lab-inner .lab-content .post-form .content-type .content-list .text {
+  .create-post
+    .lab-inner
+    .lab-content
+    .post-form
+    .content-type
+    .content-list
+    .text {
     margin-bottom: 10px;
   }
 }
 @media (min-width: 768px) {
-  .create-post .lab-inner .lab-content .post-form .content-type .content-list .text {
+  .create-post
+    .lab-inner
+    .lab-content
+    .post-form
+    .content-type
+    .content-list
+    .text {
     margin-right: 50px;
   }
 }
-.create-post .lab-inner .lab-content .post-form .content-type .content-list .image-video .file-btn,
-.create-post .lab-inner .lab-content .post-form .content-type .content-list .attach-file .file-btn {
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .image-video
+  .file-btn,
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .attach-file
+  .file-btn {
   border-radius: 5px;
 }
-.create-post .lab-inner .lab-content .post-form .content-type .content-list .image-video input[type=file],
-.create-post .lab-inner .lab-content .post-form .content-type .content-list .attach-file input[type=file] {
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .image-video
+  input[type="file"],
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .attach-file
+  input[type="file"] {
   left: 0;
   top: 0;
   opacity: 0;
 }
 @media (max-width: 575px) {
-  .create-post .lab-inner .lab-content .post-form .content-type .content-list .image-video {
+  .create-post
+    .lab-inner
+    .lab-content
+    .post-form
+    .content-type
+    .content-list
+    .image-video {
     margin-bottom: 10px;
   }
 }
 @media (min-width: 768px) {
-  .create-post .lab-inner .lab-content .post-form .content-type .content-list .image-video {
+  .create-post
+    .lab-inner
+    .lab-content
+    .post-form
+    .content-type
+    .content-list
+    .image-video {
     margin-right: 50px;
   }
 }
-.create-post .lab-inner .lab-content .post-form .content-type .content-list .post-submit {
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .post-submit {
   margin-left: auto;
 }
-.create-post .lab-inner .lab-content .post-form .content-type .content-list .post-submit .lab-btn {
+.create-post
+  .lab-inner
+  .lab-content
+  .post-form
+  .content-type
+  .content-list
+  .post-submit
+  .lab-btn {
   border: none;
   line-height: 36px;
   text-transform: uppercase;
@@ -3248,14 +5260,32 @@ textarea::placeholder {
     align-items: flex-start;
   }
 }
-.post-item .post-content .post-author .post-author-inner .author-details .post-status .post-privacy {
+.post-item
+  .post-content
+  .post-author
+  .post-author-inner
+  .author-details
+  .post-status
+  .post-privacy {
   font-size: 0.875rem;
 }
-.post-item .post-content .post-author .post-author-inner .author-details .post-status .post-privacy:after {
+.post-item
+  .post-content
+  .post-author
+  .post-author-inner
+  .author-details
+  .post-status
+  .post-privacy:after {
   content: "|";
   right: -12px;
 }
-.post-item .post-content .post-author .post-author-inner .author-details .post-status .post-time {
+.post-item
+  .post-content
+  .post-author
+  .post-author-inner
+  .author-details
+  .post-status
+  .post-time {
   font-size: 0.875rem;
 }
 .post-item .post-meta .post-meta-top {
@@ -3356,50 +5386,117 @@ textarea::placeholder {
 .blog-section .main-blog .blog-wrapper .post-item .post-item-inner {
   box-shadow: 0px 0px 5px 0px rgba(136, 136, 136, 0.1);
 }
-.blog-section .main-blog .blog-wrapper .post-item .post-item-inner:hover .post-content h3 a {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner:hover
+  .post-content
+  h3
+  a {
   color: #df314d;
 }
-.blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content h3 a {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .post-content
+  h3
+  a {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content p {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .post-content
+  p {
   line-height: 30px;
 }
-.blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content blockquote {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .post-content
+  blockquote {
   padding: 35px;
 }
-.blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content blockquote p {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .post-content
+  blockquote
+  p {
   margin-bottom: 0 !important;
   color: #fff;
   padding-top: 50px;
 }
 @media (min-width: 768px) {
-  .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content blockquote p {
+  .blog-section
+    .main-blog
+    .blog-wrapper
+    .post-item
+    .post-item-inner
+    .post-content
+    blockquote
+    p {
     padding-left: 60px;
     padding-top: 0;
   }
 }
-.blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content blockquote p::before {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .post-content
+  blockquote
+  p::before {
   content: url(../images/blog/icon/b-code.png);
   left: 50%;
   top: 7px;
   transform: translateX(-50%);
 }
 @media (min-width: 768px) {
-  .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content blockquote p::before {
+  .blog-section
+    .main-blog
+    .blog-wrapper
+    .post-item
+    .post-item-inner
+    .post-content
+    blockquote
+    p::before {
     left: 0px;
     top: 7px;
     transform: translateX(0%);
   }
 }
 @media (max-width: 575px) {
-  .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .blog-footer .right {
+  .blog-section
+    .main-blog
+    .blog-wrapper
+    .post-item
+    .post-item-inner
+    .blog-footer
+    .right {
     margin-top: 10px;
   }
 }
-.blog-section .main-blog .blog-wrapper .post-item .post-item-inner .blog-footer .right .blog-heart {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .blog-footer
+  .right
+  .blog-heart {
   padding: 0 20px;
   color: #ffffff;
   -webkit-transition: all 0.3s ease;
@@ -3407,26 +5504,76 @@ textarea::placeholder {
   transition: all 0.3s ease;
 }
 @media (max-width: 575px) {
-  .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .blog-footer .right .blog-heart {
+  .blog-section
+    .main-blog
+    .blog-wrapper
+    .post-item
+    .post-item-inner
+    .blog-footer
+    .right
+    .blog-heart {
     padding-left: 0;
   }
 }
-.blog-section .main-blog .blog-wrapper .post-item .post-item-inner .blog-footer .right .blog-heart i {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .blog-footer
+  .right
+  .blog-heart
+  i {
   padding: 0 5px;
 }
 @media (max-width: 575px) {
-  .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .blog-footer .right .blog-heart i {
+  .blog-section
+    .main-blog
+    .blog-wrapper
+    .post-item
+    .post-item-inner
+    .blog-footer
+    .right
+    .blog-heart
+    i {
     padding-left: 0;
   }
 }
-.blog-section .main-blog .blog-wrapper .post-item .post-item-inner .blog-footer .right .blog-heart:hover {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .post-item-inner
+  .blog-footer
+  .right
+  .blog-heart:hover {
   color: #df314d;
 }
-.blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner:hover .post-thumb img {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner:hover
+  .post-thumb
+  img {
   transform: scale(1);
 }
-.blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider .blog-slider-prev,
-.blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider .blog-slider-next {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider
+  .blog-slider-prev,
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider
+  .blog-slider-next {
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -3440,38 +5587,99 @@ textarea::placeholder {
   background: #210053;
   color: #ffffff;
 }
-.blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider .blog-slider-prev {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider
+  .blog-slider-prev {
   left: 20px;
   transform: rotate(180deg) translateY(50%);
 }
-.blog-section .main-blog .blog-wrapper .post-item.post-slider .post-item-inner .post-thumb .blog-slider .blog-slider-next {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.post-slider
+  .post-item-inner
+  .post-thumb
+  .blog-slider
+  .blog-slider-next {
   right: 20px;
 }
-.blog-section .main-blog .blog-wrapper .post-item.video-post .post-item-inner .post-thumb .embed-responsive iframe {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.video-post
+  .post-item-inner
+  .post-thumb
+  .embed-responsive
+  iframe {
   height: 170px;
 }
 @media (min-width: 576px) {
-  .blog-section .main-blog .blog-wrapper .post-item.video-post .post-item-inner .post-thumb .embed-responsive iframe {
+  .blog-section
+    .main-blog
+    .blog-wrapper
+    .post-item.video-post
+    .post-item-inner
+    .post-thumb
+    .embed-responsive
+    iframe {
     height: 250px;
   }
 }
 @media (min-width: 768px) {
-  .blog-section .main-blog .blog-wrapper .post-item.video-post .post-item-inner .post-thumb .embed-responsive iframe {
+  .blog-section
+    .main-blog
+    .blog-wrapper
+    .post-item.video-post
+    .post-item-inner
+    .post-thumb
+    .embed-responsive
+    iframe {
     height: 335px;
   }
 }
 @media (min-width: 1200px) {
-  .blog-section .main-blog .blog-wrapper .post-item.video-post .post-item-inner .post-thumb .embed-responsive iframe {
+  .blog-section
+    .main-blog
+    .blog-wrapper
+    .post-item.video-post
+    .post-item-inner
+    .post-thumb
+    .embed-responsive
+    iframe {
     height: 360px;
   }
 }
-.blog-section .main-blog .blog-wrapper .post-item.code-post .post-item-inner:hover .post-thumb .code-content img {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.code-post
+  .post-item-inner:hover
+  .post-thumb
+  .code-content
+  img {
   transform: scale(1);
 }
-.blog-section .main-blog .blog-wrapper .post-item.code-post .post-item-inner .post-thumb {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.code-post
+  .post-item-inner
+  .post-thumb {
   padding: 40px;
 }
-.blog-section .main-blog .blog-wrapper .post-item.code-post .post-item-inner .post-thumb .code-content p {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item.code-post
+  .post-item-inner
+  .post-thumb
+  .code-content
+  p {
   color: #fff;
   font-style: italic;
   line-height: 30px;
@@ -3487,14 +5695,29 @@ textarea::placeholder {
   padding: 10px 15px;
   color: #fff;
 }
-.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li span::after {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .tags
+  li
+  span::after {
   top: 50%;
   right: 0;
   transform: rotate(45deg) translateY(-50%);
   width: 15px;
   height: 15px;
 }
-.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li span i {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .tags
+  li
+  span
+  i {
   transform: rotate(90deg);
 }
 .blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li a {
@@ -3510,31 +5733,86 @@ textarea::placeholder {
   transition: all 0.3s ease;
   border-radius: 3px;
 }
-.blog-section .main-blog .blog-wrapper .post-item .tags-section .tags li a:hover {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .tags
+  li
+  a:hover {
   color: #fff;
 }
-.blog-section .main-blog .blog-wrapper .post-item .tags-section .social-link-list li {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .social-link-list
+  li {
   padding: 5px 0;
 }
-.blog-section .main-blog .blog-wrapper .post-item .tags-section .social-link-list li a {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .social-link-list
+  li
+  a {
   background-color: #df314d;
   height: 40px;
   width: 40px;
   line-height: 40px;
 }
-.blog-section .main-blog .blog-wrapper .post-item .tags-section .social-link-list li a.facebook {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .social-link-list
+  li
+  a.facebook {
   background: #3b5998;
 }
-.blog-section .main-blog .blog-wrapper .post-item .tags-section .social-link-list li a.dribble {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .social-link-list
+  li
+  a.dribble {
   background: #ea4c89;
 }
-.blog-section .main-blog .blog-wrapper .post-item .tags-section .social-link-list li a.twitter {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .social-link-list
+  li
+  a.twitter {
   background: #55acee;
 }
-.blog-section .main-blog .blog-wrapper .post-item .tags-section .social-link-list li a.linkedin {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .social-link-list
+  li
+  a.linkedin {
   background: #007bb5;
 }
-.blog-section .main-blog .blog-wrapper .post-item .tags-section .social-link-list li a:hover {
+.blog-section
+  .main-blog
+  .blog-wrapper
+  .post-item
+  .tags-section
+  .social-link-list
+  li
+  a:hover {
   border-radius: 50%;
 }
 
@@ -3582,7 +5860,14 @@ textarea::placeholder {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.comments .comment-list .comment .com-content .com-title .com-title-meta h4 a:hover {
+.comments
+  .comment-list
+  .comment
+  .com-content
+  .com-title
+  .com-title-meta
+  h4
+  a:hover {
   color: #df314d;
 }
 .comments .comment-list .comment .com-content .com-title .reply a {
@@ -3604,13 +5889,13 @@ textarea::placeholder {
 .comment-respond .add-comment .comment-form {
   justify-content: space-between;
 }
-.comment-respond .add-comment .comment-form input[type=text] {
+.comment-respond .add-comment .comment-form input[type="text"] {
   color: #ffffff;
   padding: 10px 15px;
   width: 100%;
 }
 @media (min-width: 576px) {
-  .comment-respond .add-comment .comment-form input[type=text] {
+  .comment-respond .add-comment .comment-form input[type="text"] {
     width: calc(100% / 2 - 15px);
   }
 }
@@ -3675,11 +5960,24 @@ textarea::placeholder {
 .widget.active-group .widget-content .group-item:first-child {
   border-bottom: 1px solid #391965;
 }
-.widget.active-group .widget-content .group-item .lab-inner .lab-content .test .lab-btn {
+.widget.active-group
+  .widget-content
+  .group-item
+  .lab-inner
+  .lab-content
+  .test
+  .lab-btn {
   background: #391965;
   color: #fff;
 }
-.widget.active-group .widget-content .group-item .lab-inner .lab-content .test .lab-btn i {
+.widget.active-group
+  .widget-content
+  .group-item
+  .lab-inner
+  .lab-content
+  .test
+  .lab-btn
+  i {
   color: #fff;
 }
 /*Contact Item Css Start here*/
@@ -3748,20 +6046,26 @@ textarea::placeholder {
 .contact-form-wrapper .contact-form h5 {
   font-family: "Jost", sans-serif;
 }
-.contact-form-wrapper .contact-form form.comment-form input[type=text],
-.contact-form-wrapper .contact-form form.comment-form [type=email] {
+.contact-form-wrapper .contact-form form.comment-form input[type="text"],
+.contact-form-wrapper .contact-form form.comment-form [type="email"] {
   background: #391965;
   border: none;
   border: 1px solid transparent;
 }
-.contact-form-wrapper .contact-form form.comment-form input[type=text]:focus-visible,
-.contact-form-wrapper .contact-form form.comment-form [type=email]:focus-visible {
+.contact-form-wrapper
+  .contact-form
+  form.comment-form
+  input[type="text"]:focus-visible,
+.contact-form-wrapper
+  .contact-form
+  form.comment-form
+  [type="email"]:focus-visible {
   border: 1px solid rgba(223, 49, 77, 0.5);
   outline: none;
 }
 @media (min-width: 576px) {
-  .contact-form-wrapper .contact-form form.comment-form input[type=text],
-.contact-form-wrapper .contact-form form.comment-form [type=email] {
+  .contact-form-wrapper .contact-form form.comment-form input[type="text"],
+  .contact-form-wrapper .contact-form form.comment-form [type="email"] {
     width: calc(100% / 2 - 10px);
   }
 }
@@ -3821,20 +6125,36 @@ textarea::placeholder {
   }
 }
 @media (max-width: 991px) {
-  .contact-info-wrapper .contact-info-content .contact-info-item .contact-info-inner {
+  .contact-info-wrapper
+    .contact-info-content
+    .contact-info-item
+    .contact-info-inner {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
   }
-  .contact-info-wrapper .contact-info-content .contact-info-item .contact-info-inner .contact-info-thumb {
+  .contact-info-wrapper
+    .contact-info-content
+    .contact-info-item
+    .contact-info-inner
+    .contact-info-thumb {
     margin-bottom: 0;
     margin-right: 15px;
   }
 }
-.contact-info-wrapper .contact-info-content .contact-info-item .contact-info-inner .contact-info-thumb {
+.contact-info-wrapper
+  .contact-info-content
+  .contact-info-item
+  .contact-info-inner
+  .contact-info-thumb {
   margin-bottom: 15px;
 }
-.contact-info-wrapper .contact-info-content .contact-info-item .contact-info-inner .contact-info-details span {
+.contact-info-wrapper
+  .contact-info-content
+  .contact-info-item
+  .contact-info-inner
+  .contact-info-details
+  span {
   color: #ffffff;
 }
 
@@ -3909,13 +6229,13 @@ textarea::placeholder {
   flex-wrap: nowrap;
   align-items: center;
 }
-.account-form .form-group .checkgroup input[type=checkbox] {
+.account-form .form-group .checkgroup input[type="checkbox"] {
   width: 18px;
   height: 18px;
   margin-right: 15px;
 }
 @media (max-width: 575px) {
-  .account-form .form-group .checkgroup input[type=checkbox] {
+  .account-form .form-group .checkgroup input[type="checkbox"] {
     width: 14px;
     height: 14px;
     margin-right: 8px;
@@ -3975,7 +6295,8 @@ textarea::placeholder {
   position: relative;
   z-index: 1;
 }
-.or::before, .or::after {
+.or::before,
+.or::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -4115,76 +6436,213 @@ textarea::placeholder {
 .footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item {
   margin-bottom: 40px;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-title h4 {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-title
+  h4 {
   text-transform: capitalize;
   margin-bottom: 25px;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .footer-abt-img {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .footer-abt-img {
   margin-bottom: 15px;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget {
   margin-bottom: 12px;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget:last-child {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget:last-child {
   margin-bottom: 0;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget
+  .lab-inner {
   align-items: center;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner .lab-thumb {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget
+  .lab-inner
+  .lab-thumb {
   width: 80px;
   overflow: hidden;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner .lab-thumb a img {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget
+  .lab-inner
+  .lab-thumb
+  a
+  img {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner .lab-content {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget
+  .lab-inner
+  .lab-content {
   width: calc(100% - 80px);
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner .lab-content h6 a {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget
+  .lab-inner
+  .lab-content
+  h6
+  a {
   color: #fff;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner .lab-content p {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget
+  .lab-inner
+  .lab-content
+  p {
   margin: 0;
   color: #677ca9;
   font-size: 0.875rem;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget:hover .lab-thumb a img {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget:hover
+  .lab-thumb
+  a
+  img {
   transform: scale(1.1) rotate(-5deg);
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget:hover .lab-content h6 a {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item
+  .fm-item-content
+  .fm-item-widget:hover
+  .lab-content
+  h6
+  a {
   color: #df314d;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item-title h4 {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item-3
+  .fm-item-title
+  h4 {
   margin-bottom: 25px;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item-content p {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item-3
+  .fm-item-content
+  p {
   margin-bottom: 25px;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item-content form .form-group input {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item-3
+  .fm-item-content
+  form
+  .form-group
+  input {
   border: none;
   padding: 16px;
   box-shadow: none;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item-content form button,
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item-content form .lab-btn {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item-3
+  .fm-item-content
+  form
+  button,
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item-3
+  .fm-item-content
+  form
+  .lab-btn {
   outline: none;
   border: none;
   margin-top: 15px;
   line-height: 56px;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item-content form button i,
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item-content form .lab-btn i {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item-3
+  .fm-item-content
+  form
+  button
+  i,
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item-3
+  .fm-item-content
+  form
+  .lab-btn
+  i {
   font-size: 24px;
   margin-left: 5px;
 }
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item-content form button:hover,
-.footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item-content form .lab-btn:hover {
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item-3
+  .fm-item-content
+  form
+  button:hover,
+.footer-section
+  .footer-middle
+  .footer-middle-item-wrapper
+  .footer-middle-item-3
+  .fm-item-content
+  form
+  .lab-btn:hover {
   transform: translateY(-3px);
   box-shadow: -0.698px 9.976px 10px 0px rgba(255, 255, 255, 0.2);
 }

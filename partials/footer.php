@@ -8,8 +8,8 @@
                             <div class="lab-thumb">
                                 <img src="../public//images/footer/icons/01.png" alt="Phone-icon">
                             </div>
-                            <div class="lab-content">
-                                <span>Phone Number : +88019 339 702 520</span>
+                            <div class="lab-content quick-kiss">
+                                <span>Phone Number : +254 737 229776 </span>
                             </div>
                         </div>
                     </div>
@@ -20,8 +20,8 @@
                             <div class="lab-thumb">
                                 <img src="../public//images/footer/icons/02.png" alt="email-icon">
                             </div>
-                            <div class="lab-content">
-                                <span>Email : admin@turulav.com</span>
+                            <div class="lab-content quick-kiss">
+                                <span>Email : info@asianmelodies.com</span>
                             </div>
                         </div>
                     </div>
@@ -32,8 +32,8 @@
                             <div class="lab-thumb">
                                 <img src="../public//images/footer/icons/03.png" alt="location-icon">
                             </div>
-                            <div class="lab-content">
-                                <span>Address : 30 North West New York 240</span>
+                            <div class="lab-content quick-kiss">
+                                <span>Address : 127.0.0.1 Localhost</span>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                     <div class="footer-middle-item-wrapper">
                         <div class="footer-middle-item mb-lg-0">
                             <div class="fm-item-title">
-                                <h4>About Asian Melodies</h4>
+                                <h4 class="bite-chocolate">Asian Melodies</h4>
                             </div>
                             <div class="fm-item-content">
                                 <p class="mb-4">
