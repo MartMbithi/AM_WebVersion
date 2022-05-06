@@ -112,25 +112,46 @@ require_once('../partials/head.php');
                 $user_age = mysqli_real_escape_string($mysqli, $_GET['age']);
                 $gender_2 = mysqli_real_escape_string($mysqli, $_GET['gender_2']);
                 $city = mysqli_real_escape_string($mysqli, $_GET['city']);
+                /* Check If This Match Yielded Something */
+                $raw_results = mysqli_query($mysqli, "SELECT * FROM users 
+                WHERE user_account_status = 'Verified' AND (`user_age` LIKE '%" . $user_age . "%')  AND (`user_gender` LIKE '%" . $gender_2 . "%')
+                AND(`user_address` LIKE '%" . $city . "%')  ");
+                if (mysqli_num_rows($raw_results) > 0) {
+                    while ($results = mysqli_fetch_array($raw_results)) {
 
                 ?>
-                <div class="col">
-                    <div class="lab-item member-item style-1 style-2">
-                        <div class="lab-inner">
-                            <div class="lab-thumb">
-                                <img src="assets/images/member/01.jpg" alt="member-img">
-                            </div>
-                            <div class="lab-content">
-                                <h6><a href="profile.html">Tenma Shyna</a> </h6>
-                                <p>Active 1 Day</p>
+                        <div class="col">
+                            <div class="lab-item member-item style-1 style-2">
+                                <div class="lab-inner">
+                                    <div class="lab-thumb">
+                                        <img src="../public/uploads/user_data/<?php echo $results['user_profile_picture']; ?>" alt="member-img">
+                                    </div>
+                                    <?php if (!empty($_SESSION['user_id'])) { ?>
+                                        <div class="lab-content">
+                                            <h6><a href="member_profile?view=<?php echo $results['user_id']; ?>"><?php echo $results['user_name']; ?></a> </h6>
+                                            <p><?php echo $results['user_status']; ?></p>
+                                        </div>
+                                    <?php } else { ?>
+                                        <div class="lab-content">
+                                            <h6><a href="login"><?php echo $results['user_name']; ?></a> </h6>
+                                            <p><?php echo $results['user_status']; ?></p>
+                                        </div>
+                                    <?php } ?>
+                                </div>
                             </div>
                         </div>
+                    <?php }
+                } else { ?>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="../public/images/404.png" alt="member-img">
+                        </div>
+                        <div class="lab-content text-center">
+                            <h6>We Cannot Find What You Are Looking For</h6>
+                        </div>
                     </div>
-                </div>
-
-
+                <?php } ?>
             </div>
-        </div>
         </div>
     </section>
     <!-- ==========Member page Section Ends Here========== -->
