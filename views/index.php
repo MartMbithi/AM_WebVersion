@@ -96,7 +96,7 @@ require_once('../partials/head.php');
                                     <h3>Introducing Asian Melodies</h3>
                                     <p>Your Perfect Match is Just a Click Away.</p>
 
-                                    <form class="banner-form">
+                                    <form method="GET" action="search_result?gender=<?php echo $_POST['gender']; ?>&gender_2=<?php echo $_POST['gender_2']; ?>&age=<?php echo $_POST['age']; ?>&city=<?php echo $_POST['city']; ?>" class="banner-form">
                                         <?php if (!empty($_SESSION['user_id'])) { ?>
                                             <div class="gender">
                                                 <label for="gender" class="left">I am a </label>
@@ -121,7 +121,7 @@ require_once('../partials/head.php');
                                         <div class="person">
                                             <label for="gender-two" class="left">Looking for</label>
                                             <div class="custom-select right">
-                                                <select name="gender" id="gender-two" class="">
+                                                <select name="gender_2" id="gender-two" class="">
                                                     <option value="">Select Gender</option>
                                                     <option value="Male">Male</option>
                                                     <option value="Female">Female</option>
@@ -132,7 +132,7 @@ require_once('../partials/head.php');
                                             <label for="age" class="left">Age</label>
                                             <div class="right d-flex justify-content-between">
                                                 <div class="custom-select">
-                                                    <select name="age-end" id="age-two">
+                                                    <select name="age" id="age-two">
                                                         <option>18</option>
                                                         <option>19</option>
                                                         <option>20</option>
@@ -153,7 +153,7 @@ require_once('../partials/head.php');
                                         </div>
                                         <div class="city">
                                             <label for="city" class="left">City</label>
-                                            <input class="right" type="text" value="<?php echo $_SESSION['user_address']; ?>">
+                                            <input class="right" name="city" type="text" value="<?php echo $_SESSION['user_address']; ?>">
                                         </div>
                                         <button class="">Find Your Partner</button>
                                     </form>
@@ -216,7 +216,6 @@ require_once('../partials/head.php');
                                 </div>
                             </div>
                         <?php } ?>
-
                     </div>
 
                     <div class="member-button-group d-flex flex-wrap justify-content-center">
