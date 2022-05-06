@@ -194,7 +194,9 @@ require_once('../partials/head.php');
                 <div class="section-wrapper">
                     <div class="row justify-content-center g-3 g-md-4">
                         <?php
-                        $ret = "SELECT * FROM  users WHERE user_account_status = 'Verified'";
+                        $ret = "SELECT * FROM  users 
+                        WHERE user_account_status = 'Verified'
+                        ORDER BY RAND() LIMIT 5";
                         $stmt = $mysqli->prepare($ret);
                         $stmt->execute(); //ok
                         $res = $stmt->get_result();
