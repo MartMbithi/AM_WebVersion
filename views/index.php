@@ -96,7 +96,7 @@ require_once('../partials/head.php');
                                     <h3>Introducing Asian Melodies</h3>
                                     <p>Your Perfect Match is Just a Click Away.</p>
 
-                                    <form method="GET" action="search_result?gender=<?php echo $_POST['gender']; ?>&gender_2=<?php echo $_POST['gender_2']; ?>&age=<?php echo $_POST['age']; ?>&city=<?php echo $_POST['city']; ?>" class="banner-form">
+                                    <form method="GET" action="search_result?gender_2=<?php echo $_POST['gender_2']; ?>&age=<?php echo $_POST['age']; ?>&city=<?php echo $_POST['city']; ?>" class="banner-form">
                                         <?php if (!empty($_SESSION['user_id'])) { ?>
                                             <div class="gender">
                                                 <label for="gender" class="left">I am a </label>
