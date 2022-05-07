@@ -132,73 +132,22 @@ require_once('../partials/head.php');
                                     <h4><?php echo $users->user_name; ?></h4>
                                     <p><?php echo $users->user_status; ?></p>
                                 </div>
-                                <ul class="profile-contact">
-                                    <li>
-                                        <a href="#">
-                                            <div class="icon"><i class="icofont-user"></i></div>
-                                            <div class="text">
-                                                <p>Mark As Favorite</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                        <div class="profile-item d-none">
-                            <div class="lab-inner">
-                                <div class="lab-thumb">
-                                    <a href="#"><img src="../public/uploads/user_data/<?php echo $users->user_profile_picture; ?>" alt="profile"></a>
-                                </div>
-                                <div class="lab-content">
-                                    <div class="profile-name">
-                                        <div class="p-name-content">
-                                            <h4><?php echo $users->user_name; ?></h4>
-                                            <p><?php echo $users->user_status; ?></p>
-                                        </div>
-
-                                        <div class="contact-button">
-                                            <button class="contact-btn">
-                                                <i class="icofont-info-circle"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <ul class="profile-contact">
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon"><i class="icofont-user"></i></div>
-                                                <div class="text">
-                                                    <p>Mark As Favorite</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon"><i class="icofont-envelope"></i></div>
-                                                <div class="text">
-                                                    <p>Mark As Match</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                         <div class="profile-details">
                             <nav class="profile-nav">
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-                                    <button class="nav-link" id="nav-friends-tab" data-bs-toggle="tab" data-bs-target="#friends" type="button" role="tab" aria-controls="friends" aria-selected="false">Friends <span class="item-number">16</span></button>
-                                    <button class="nav-link" id="nav-media-tab" data-bs-toggle="tab" data-bs-target="#media" type="button" role="tab" aria-controls="media" aria-selected="false">Private Chat <span class="item-number">35</span></button>
+                                    <button class="nav-link" id="nav-friends-tab" data-bs-toggle="tab" data-bs-target="#friends" type="button" role="tab" aria-controls="friends" aria-selected="false">Favorites <span class="item-number">16</span></button>
                                     <div class="dropdown">
                                         <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                             More
                                         </a>
 
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Activity</a></li>
-                                            <li><a class="dropdown-item" href="#">Privacy</a></li>
-                                            <li><a class="dropdown-item" href="#">Block user</a></li>
+                                            <li><a class="dropdown-item" href="#">Send Private Message</a></li>
+                                            <li><a class="dropdown-item" href="#">Add As Match</a></li>
+                                            <li><a class="dropdown-item" href="#">Add To Favourites</a></li>
                                         </ul>
                                     </div>
 
@@ -267,269 +216,42 @@ require_once('../partials/head.php');
                                 <div class="tab-pane fade" id="friends" role="tabpanel" aria-labelledby="nav-friends-tab">
                                     <div>
                                         <div class="row">
-                                            <div class="col-xl-8">
+                                            <div class="col-xl-12">
                                                 <article>
                                                     <div class="row gy-4 gx-3 justify-content-center">
-                                                        <div class=" col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/01.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">jenifer Guido</a> </h6>
-                                                                        <p>Active 1 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/02.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Andrea Guido</a> </h6>
-                                                                        <p>Active 2 Day</p>
+                                                        <?php
+                                                        /* Fetch Some Of Favourite Users Which Belongs To This Fella */
+                                                        $user_id = $users->user_id;
+                                                        $raw_results = mysqli_query($mysqli, "SELECT * FROM favourites f
+                                                        INNER JOIN users u ON f.fav_user_id = u.user_id 
+                                                        WHERE  u.user_account_status = 'Verified' AND f.fav_logged_in_user_id = '{$user_id}'");
+                                                        if (mysqli_num_rows($raw_results) > 0) {
+                                                            while ($results = mysqli_fetch_array($raw_results)) {
+                                                        ?>
+                                                                <div class=" col-lg-3 col-md-4 col-6">
+                                                                    <div class="lab-item member-item style-1">
+                                                                        <div class="lab-inner">
+                                                                            <div class="lab-thumb">
+                                                                                <img src="../public/uploads/user_data/<?php echo $results['user_profile_picture']; ?>" alt="member-img">
+                                                                            </div>
+                                                                            <div class="lab-content">
+                                                                                <h6><a href="member_profile?view=<?php echo $results['user_id']; ?>"><?php echo $results['user_name']; ?></a> </h6>
+                                                                                <p><?php echo $results['user_status']; ?></p>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/03.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Anna hawk</a> </h6>
-                                                                        <p>Active 5 Day</p>
-                                                                    </div>
+                                                            <?php }
+                                                        } else { ?>
+                                                            <div class="row">
+                                                                <div class="col-12 text-center">
+                                                                    <img src="../public/images/404.png" alt="member-img">
+                                                                </div>
+                                                                <div class="lab-content text-center">
+                                                                    <h6>We Cannot Find Any Member Near You, Kindly Update Your Location</h6>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/04.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Andreas Adam</a> </h6>
-                                                                        <p>Active 4 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/05.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Alaina T</a> </h6>
-                                                                        <p>Active 1 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/06.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Aron Smith</a> </h6>
-                                                                        <p>Active 3 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/07.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Helen Gomz</a> </h6>
-                                                                        <p>Active 3 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/08.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Andrez jr</a> </h6>
-                                                                        <p>Active 5 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/09.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Ladiga Guido</a> </h6>
-                                                                        <p>Active 5 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/10.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Andrea Guido</a> </h6>
-                                                                        <p>Active 1 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/11.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Jene Aiko</a> </h6>
-                                                                        <p>Active 4 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/12.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Jhon Cena</a> </h6>
-                                                                        <p>Active 2 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/13.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Irfan Patel </a> </h6>
-                                                                        <p>Active 5 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/14.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Hames Radregez</a> </h6>
-                                                                        <p>Active 1 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/15.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Johan ben</a> </h6>
-                                                                        <p>Active 2 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/16.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Johannes</a> </h6>
-                                                                        <p>Active 6 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/17.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Helena Mind</a> </h6>
-                                                                        <p>Active 4 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/18.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Virat Alba</a> </h6>
-                                                                        <p>Active 3 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/19.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Afrin Nawr</a> </h6>
-                                                                        <p>Active 5 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-6">
-                                                            <div class="lab-item member-item style-1">
-                                                                <div class="lab-inner">
-                                                                    <div class="lab-thumb">
-                                                                        <img src="assets/images/member/20.jpg" alt="member-img">
-                                                                    </div>
-                                                                    <div class="lab-content">
-                                                                        <h6><a href="#">Jason Roy</a> </h6>
-                                                                        <p>Active 2 Day</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        <?php } ?>
                                                     </div>
                                                 </article>
                                             </div>
