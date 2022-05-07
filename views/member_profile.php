@@ -93,6 +93,14 @@ require_once('../partials/head.php');
     $stmt->execute(); //ok
     $res = $stmt->get_result();
     while ($users = $res->fetch_object()) {
+        /* Count Of How Many Favorites This Fella Has */
+        $user_id  = $users->user_id;
+        $query = "SELECT COUNT(*)   FROM favourites WHERE fav_logged_in_user_id  = '{$user_id}' ";
+        $stmt = $mysqli->prepare($query);
+        $stmt->execute();
+        $stmt->bind_result($favourites);
+        $stmt->fetch();
+        $stmt->close();
 
     ?>
         <!-- ==========Page Header Section Start Here========== -->
@@ -138,7 +146,7 @@ require_once('../partials/head.php');
                             <nav class="profile-nav">
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-                                    <button class="nav-link" id="nav-friends-tab" data-bs-toggle="tab" data-bs-target="#friends" type="button" role="tab" aria-controls="friends" aria-selected="false">Favorites <span class="item-number">16</span></button>
+                                    <button class="nav-link" id="nav-friends-tab" data-bs-toggle="tab" data-bs-target="#friends" type="button" role="tab" aria-controls="friends" aria-selected="false">Favorites <span class="item-number"><?php echo $favourites; ?></span></button>
                                     <div class="dropdown">
                                         <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                             More
@@ -147,7 +155,12 @@ require_once('../partials/head.php');
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                             <li><a class="dropdown-item" href="#">Send Private Message</a></li>
                                             <li><a class="dropdown-item" href="#">Add As Match</a></li>
-                                            <li><a class="dropdown-item" href="#">Add To Favourites</a></li>
+                                            <form method="POST">
+                                                <!-- Hide This -->
+                                                <input type="hidden" name="fav_logged_in_user_id" value="<?php echo $_SESSION['user_id']; ?>">
+                                                <input type="hidden" name="fav_user_id" value="<?php echo $user_id; ?>">
+                                                <li><input type="submit" name="Add_Favourite" class="dropdown-item" value="Add To Favourites"></li>
+                                            </form>
                                         </ul>
                                     </div>
 
