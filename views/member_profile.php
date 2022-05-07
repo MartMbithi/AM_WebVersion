@@ -62,6 +62,28 @@ session_start();
 require_once('../config/config.php');
 require_once('../config/checklogin.php');
 check_login();
+
+/* Add Favourites */
+if (isset($_POST['Add_Favourite'])) {
+    $fav_logged_in_user_id = mysqli_real_escape_string($mysqli, $_POST['fav_logged_in_user_id']);
+    $fav_user_id = mysqli_real_escape_string($mysqli, $_POST['fav_user_id']);
+    /* Check Already If These Fellas Have Favourited Each Other */
+    $sql = mysqli_query($mysqli, "SELECT * FROM favourites 
+    WHERE fav_logged_in_user_id = '{$fav_logged_in_user_id}' AND  fav_user_id = '{$fav_user_id}'");
+    if (mysqli_num_rows($sql) > 0) {
+        $info = "You Already Have This Member In Your Favourites List";
+    } else {
+        /* Add To Favourites */
+        $sql = "INSERT INTO favourites(fav_logged_in_user_id, fav_user_id) VALUES ('{$fav_logged_in_user_id}', '{$fav_user_id}')";
+        $prepare = $mysqli->prepare($sql);
+        $prepare->execute();
+        if ($prepare) {
+            $success = "Added To Your Favourites";
+        } else {
+            $err = "Failed!, Please Try Again";
+        }
+    }
+}
 require_once('../partials/head.php');
 ?>
 
