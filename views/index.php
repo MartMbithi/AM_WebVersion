@@ -61,7 +61,10 @@
 session_start();
 require_once('../config/config.php');
 require_once('../config/checklogin.php');
-check_login();
+if (!empty($_SESSION['user_id'])) {
+    /* Invoke Check Login */
+    check_login();
+}
 require_once('../partials/head.php');
 ?>
 
@@ -233,7 +236,7 @@ require_once('../partials/head.php');
 
 
         <!-- ================ About Section start Here =============== -->
-        <section class="about-section padding-tb bg-img">
+        <section class="about-section padding-tb bg-img" id="about">
             <div class="container">
                 <div class="section-header">
                     <h4>About Our Asian Melodies</h4>
@@ -301,7 +304,7 @@ require_once('../partials/head.php');
 
 
         <!-- ================ Work Section start Here =============== -->
-        <section class="work-section padding-tb">
+        <section class="work-section padding-tb" id="how_it_works">
             <div class="container">
                 <div class="section-header">
                     <h4 class="theme-color">How Does It Work?</h4>

@@ -98,13 +98,10 @@
                                 <a href="index">Home</a>
                             </li>
                             <li>
-                                <a href="about">About Us</a>
+                                <a href="#about">About Us</a>
                             </li>
                             <li>
-                                <a href="contact">Contact</a>
-                            </li>
-                            <li>
-                                <a href="contact">Privacy Policy</a>
+                                <a href="#how_it_works">How It Works</a>
                             </li>
                         </ul>
                         <a href="login" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
