@@ -84,6 +84,19 @@ if (isset($_POST['Add_Favourite'])) {
         }
     }
 }
+
+/* Add As A Match */
+if (isset($_POST['Add_Match'])) {
+    $match_first_patner_id = mysqli_real_escape_string($mysqli, $_POST['match_first_patner_id']);
+    $match_second_partner_id = mysqli_real_escape_string($mysqli, $_POST['match_second_partner_id']);
+    /* Check If These Two Love Birds Are Already A Match */
+    $sql = mysqli_query($mysqli, "SELECT * FROM favourites 
+    WHERE fav_logged_in_user_id = '{$fav_logged_in_user_id}' AND  fav_user_id = '{$fav_user_id}'");
+    if (mysqli_num_rows($sql) > 0) {
+        $info = "You Already Have This Member In Your Favourites List";
+    } else {
+    }
+}
 require_once('../partials/head.php');
 ?>
 
