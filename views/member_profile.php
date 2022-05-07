@@ -90,11 +90,21 @@ if (isset($_POST['Add_Match'])) {
     $match_first_patner_id = mysqli_real_escape_string($mysqli, $_POST['match_first_patner_id']);
     $match_second_partner_id = mysqli_real_escape_string($mysqli, $_POST['match_second_partner_id']);
     /* Check If These Two Love Birds Are Already A Match */
-    $sql = mysqli_query($mysqli, "SELECT * FROM favourites 
-    WHERE fav_logged_in_user_id = '{$fav_logged_in_user_id}' AND  fav_user_id = '{$fav_user_id}'");
+    $sql = mysqli_query($mysqli, "SELECT * FROM matches 
+    WHERE match_first_patner_id = '{$match_first_patner_id}' AND  match_second_partner_id = '{$match_second_partner_id}'");
     if (mysqli_num_rows($sql) > 0) {
-        $info = "You Already Have This Member In Your Favourites List";
+        $info = "You Two Are Already A Match, No Need To Rematch Again";
     } else {
+        /* Concatnane These Two Love Birds */
+        $sql = "INSERT INTO matches (match_first_patner_id, match_second_partner_id)
+        VALUES('{$match_first_patner_id}', '{$match_second_partner_id}')";
+        $prepare = $mysqli->prepare($sql);
+        $prepare->execute();
+        if ($prepare) {
+            $success = "You Two Are Match";
+        }else{
+            $err = "Failed!, Please Try Again";
+        }
     }
 }
 require_once('../partials/head.php');
