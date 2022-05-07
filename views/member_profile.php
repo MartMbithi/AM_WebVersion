@@ -176,7 +176,12 @@ require_once('../partials/head.php');
 
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                             <li><a class="dropdown-item" href="#">Send Private Message</a></li>
-                                            <li><a class="dropdown-item" href="#">Add As Match</a></li>
+                                            <form method="POST">
+                                                <!-- Hide This -->
+                                                <input type="hidden" name="match_first_patner_id" value="<?php echo $_SESSION['user_id']; ?>">
+                                                <input type="hidden" name="match_second_partner_id" value="<?php echo $user_id; ?>">
+                                                <li><input type="submit" name="Add_Match" class="dropdown-item" value="Add As Match"></li>
+                                            </form>
                                             <form method="POST">
                                                 <!-- Hide This -->
                                                 <input type="hidden" name="fav_logged_in_user_id" value="<?php echo $_SESSION['user_id']; ?>">
