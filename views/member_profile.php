@@ -101,7 +101,7 @@ require_once('../partials/head.php');
                 <div class="page-header-content">
                     <div class="page-header-inner">
                         <div class="page-title">
-                            <h2>Member Single Profile</h2>
+                            <h2><?php echo $users->user_name; ?> Profile</h2>
                         </div>
                         <ol class="breadcrumb">
                             <li><a href="index">Home</a></li>
@@ -220,16 +220,23 @@ require_once('../partials/head.php');
                                                             <ul class="info-list">
                                                                 <li>
                                                                     <p class="info-name">Name</p>
-                                                                    <p class="info-details">William Smith</p>
+                                                                    <p class="info-details"><?php echo $users->user_name; ?></p>
                                                                 </li>
                                                                 <li>
                                                                     <p class="info-name">I'm a</p>
-                                                                    <p class="info-details">Woman</p>
+                                                                    <p class="info-details"><?php echo $users->user_gender; ?></p>
                                                                 </li>
-                                                                <li>
-                                                                    <p class="info-name">Loking for a</p>
-                                                                    <p class="info-details">Men</p>
-                                                                </li>
+                                                                <?php if ($users->user_gender == 'Male') { ?>
+                                                                    <li>
+                                                                        <p class="info-name">Loking for a</p>
+                                                                        <p class="info-details">Women</p>
+                                                                    </li>
+                                                                <?php } else { ?>
+                                                                    <li>
+                                                                        <p class="info-name">Loking for a</p>
+                                                                        <p class="info-details">Men</p>
+                                                                    </li>
+                                                                <?php } ?>
                                                                 <li>
                                                                     <p class="info-name">Marital Status</p>
                                                                     <p class="info-details">Single</p>
