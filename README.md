@@ -1,6 +1,8 @@
-# Ezana ELMS V 2.0
+# Asian Melodies
 
-To Dos
+To Dos:
 
-1. Video Player On PWA Client Is Messy
-2. Profile Image Update Is Messy
+1. Favourites Logic, You cant favourite yourself
+2. Matching algorithm - other member must be notifies that you have made them a perfect match
+are they able to confirm?
+3.
