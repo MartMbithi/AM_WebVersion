@@ -115,9 +115,9 @@ require_once('../partials/head.php');
                     <?php
                     /* Fetch Some Of Favourite Users Which Belongs To You */
                     $user_id = $_SESSION['user_id'];
-                    $raw_results = mysqli_query($mysqli, "SELECT * FROM favourites f
-                    INNER JOIN users u ON f.fav_user_id = u.user_id 
-                    WHERE  u.user_account_status = 'Verified' AND f.fav_logged_in_user_id = '{$user_id}'");
+                    $raw_results = mysqli_query($mysqli, "SELECT * FROM matches m
+                    INNER JOIN users u ON m.match_second_partner_id = u.user_id 
+                    WHERE  u.user_account_status = 'Verified' AND m.match_first_patner_id = '{$user_id}'");
                     if (mysqli_num_rows($raw_results) > 0) {
                         while ($results = mysqli_fetch_array($raw_results)) {
                     ?>
