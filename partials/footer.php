@@ -4,14 +4,20 @@ if (isset($_POST['add_mailing'])) {
     $email = mysqli_real_escape_string($mysqli, $_POST['email']);
     /* Validate Email */
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $sql = "INSERT INTO newsletter (email) VALUES('{$email}')";
-        $prepare = $mysqli->prepare($sql);
-        $prepare->execute();
-        /* Load Mailer */
-        if ($prepare) {
-            $success = "Email Added To Our Mailing List";
+        /* Check If Email Already Exists On Mailing Lists */
+        $sql = mysqli_query($mysqli, "SELECT * FROM newsletter WHERE email = '{$email}'");
+        if (mysqli_num_rows($sql) > 0) {
+            $err = "Your Email Already Exists In Our Mailing List";
         } else {
-            $err = "Failed!, Please Try Again";
+            $sql = "INSERT INTO newsletter (email) VALUES('{$email}')";
+            $prepare = $mysqli->prepare($sql);
+            $prepare->execute();
+            /* Load Mailer */
+            if ($prepare) {
+                $success = "Email Added To Our Mailing List";
+            } else {
+                $err = "Failed!, Please Try Again";
+            }
         }
     } else {
         $err = "Enter Correct Email Address";
