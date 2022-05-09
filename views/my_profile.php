@@ -120,6 +120,21 @@ if (isset($_POST['update_image'])) {
         }
     }
 }
+
+/* Update Biography/ About */
+if (isset($_POST['update_bio'])) {
+    $user_id = mysqli_real_escape_string($mysqli, $_SESSION['user_id']);
+    $user_biography = mysqli_real_escape_string($mysqli, $_POST['user_biography']);
+    /* Persist */
+    $sql = "UPDATE users SET user_biography = '{$user_biography}' WHERE user_id = '{$user_id}'";
+    $prepare  = $mysqli->prepare($sql);
+    $prepare->execute();
+    if ($prepare) {
+        $success = "Your Biography Has Been Updated";
+    } else {
+        $err = "Failed!, Please Try Again";
+    }
+}
 require_once('../partials/head.php');
 ?>
 
