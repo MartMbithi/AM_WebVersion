@@ -191,7 +191,10 @@ require_once('../partials/head.php');
                             <nav class="profile-nav">
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-                                    <button class="nav-link" id="nav-friends-tab" data-bs-toggle="tab" data-bs-target="#friends" type="button" role="tab" aria-controls="friends" aria-selected="false">Profile Settings</button>
+                                    <button class="nav-link" id="nav-friends-tab" data-bs-toggle="tab" data-bs-target="#friends" type="button" role="tab" aria-controls="friends" aria-selected="false">Personal Info</button>
+                                    <button class="nav-link" id="nav-friends-tab" data-bs-toggle="tab" data-bs-target="#dpic" type="button" role="tab" aria-controls="friends" aria-selected="false">Profile Image</button>
+                                    <button class="nav-link" id="nav-friends-tab" data-bs-toggle="tab" data-bs-target="#bio" type="button" role="tab" aria-controls="friends" aria-selected="false">Bio & About</button>
+                                    <button class="nav-link" id="nav-friends-tab" data-bs-toggle="tab" data-bs-target="#auth" type="button" role="tab" aria-controls="friends" aria-selected="false">Authentication</button>
                                 </div>
                             </nav>
                             <div class="tab-content" id="nav-tabContent">
@@ -253,7 +256,7 @@ require_once('../partials/head.php');
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Frinds Tab -->
+                                <!-- Personal Info Tab -->
                                 <div class="tab-pane fade" id="friends" role="tabpanel" aria-labelledby="nav-friends-tab">
                                     <div class="info-card mb-20">
 
@@ -289,8 +292,95 @@ require_once('../partials/head.php');
                                                                     <input type="text" required name="user_address" value="<?php echo $users->user_address; ?>">
                                                                 </div>
                                                             </div>
-                                                            <div class="text-right">
-                                                                <button type="submit" name="update_profile" class="btn btn-primary">Submit</button>
+                                                            <div class="pull-right">
+                                                                <button type="submit" name="update_profile" class="btn btn-primary">Save</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- User Image -->
+                                <div class="tab-pane fade" id="dpic" role="tabpanel" aria-labelledby="nav-friends-tab">
+                                    <div class="info-card mb-20">
+
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <div class="row gy-4 gx-3 justify-content-center">
+                                                    <div class="info-card-content">
+                                                        <form method="post" class="account-form" enctype="multipart/form-data" role="form">
+                                                            <div class="row">
+                                                                <div class="form-group col-md-12">
+                                                                    <label for="">Profile Image</label><br>
+                                                                    <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required name="user_address">
+                                                                </div>
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <button type="submit" name="update_image" class="btn btn-primary">Save</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Biography -->
+                                <div class="tab-pane fade" id="bio" role="tabpanel" aria-labelledby="nav-friends-tab">
+                                    <div class="info-card mb-20">
+
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <div class="row gy-4 gx-3 justify-content-center">
+                                                    <div class="info-card-content">
+                                                        <form method="post" class="account-form" enctype="multipart/form-data" role="form">
+                                                            <div class="row">
+                                                                <div class="form-group col-md-12">
+                                                                    <label for="">Biography/ Intrests / Who Are You</label><br>
+                                                                    <textarea rows="10" type="text" class="form-control" required name="user_biography"><?php echo $users->user_biography; ?></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <button type="submit" name="update_bio" class="btn btn-primary">Save</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Auth -->
+                                <div class="tab-pane fade" id="auth" role="tabpanel" aria-labelledby="nav-friends-tab">
+                                    <div class="info-card mb-20">
+
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <div class="row gy-4 gx-3 justify-content-center">
+                                                    <div class="info-card-content">
+                                                        <form method="post" class="account-form" enctype="multipart/form-data" role="form">
+                                                            <div class="row">
+
+                                                                <div class="form-group col-md-4">
+                                                                    <label for="">Old Password</label>
+                                                                    <input type="password" required name="old_password">
+                                                                </div>
+                                                                <div class="form-group col-md-4">
+                                                                    <label for="">New Password</label>
+                                                                    <input type="password" required name="new_password">
+                                                                </div>
+                                                                <div class="form-group col-md-4">
+                                                                    <label for="">Confirm Password</label>
+                                                                    <input type="password" required name="confirm_password">
+                                                                </div>
+                                                                <div class="pull-right">
+                                                                    <button type="submit" name="update_password" class="btn btn-primary">Save</button>
+                                                                </div>
                                                             </div>
                                                         </form>
                                                     </div>
