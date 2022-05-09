@@ -84,7 +84,7 @@ if (isset($_POST['update_profile'])) {
 }
 
 /* Update Profile Image */
-if (isset($_POST['SignUp'])) {
+if (isset($_POST['update_image'])) {
     $user_id = mysqli_real_escape_string($mysqli, $_SESSION['user_id']);
     /* Persist User Profile Image */
     if (isset($_FILES['image'])) {
