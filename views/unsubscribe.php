@@ -61,7 +61,7 @@
 session_start();
 require_once('../config/config.php');
 require_once('../config/checklogin.php');
-check_login();
+//check_login();
 /* Unsubscribe This Fella */
 if (isset($_POST['unsubscribe'])) {
     $email = mysqli_escape_string($mysqli, $_GET['email']);
