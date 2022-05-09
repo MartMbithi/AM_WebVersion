@@ -83,7 +83,7 @@ while ($sys = $res->fetch_object()) {
     $mail->Port = $sys->mailer_port;
     $mail->Username = $sys->mailer_username;
     $mail->Password = $sys->mailer_password;
-    $mail->Subject = 'Welcome To ' . $sys->mailer_mail_from_name . ' Mailing List';
+    $mail->Subject = 'Welcome To ' . $sys->mailer_mail_from_name . ' Mailing List ';
     /* Custom Mail Body */
     $mail->Body = '
     <!doctype html>
@@ -138,6 +138,9 @@ while ($sys = $res->fetch_object()) {
                                                 Kind Regards<br>
                                                 <b> ' . $sys->mailer_mail_from_name . ' </b> <br>
                                                 <i>The Future Of Dating</i>
+
+                                                <br><br>
+                                                <p> If these emails are not worth your time, <a href="' . $unsubcsribe . '">Click here to unsubscribe</a></p>
                                             </p>
                                         </td>
                                     </tr>

@@ -63,3 +63,4 @@
 /* On Deploying In Live Server Kindly Change This To Your Given URL */
 $url = $_SERVER['HTTP_HOST'] . '/AM/views/confirm_password?token=';
 $account_activation = $_SERVER['HTTP_HOST'] . '/AM/views/user_account_activation?account=';
+$unsubcribe_mail = $_SERVER['HTTP_HOST'] . '/AM/views/unsubscribe?email=';

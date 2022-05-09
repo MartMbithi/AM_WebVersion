@@ -1,4 +1,5 @@
 <?php
+require_once('../config/app_config.php');
 /* Add Mailing List */
 if (isset($_POST['add_mailing'])) {
     $email = mysqli_real_escape_string($mysqli, $_POST['email']);
@@ -9,6 +10,7 @@ if (isset($_POST['add_mailing'])) {
         if (mysqli_num_rows($sql) > 0) {
             $err = "You Are Already In Our Mailing List";
         } else {
+            $unsubcsribe = $unsubcribe_mail . $email;
             $sql = "INSERT INTO newsletter (email) VALUES('{$email}')";
             $prepare = $mysqli->prepare($sql);
             $prepare->execute();
