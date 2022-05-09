@@ -144,7 +144,7 @@ if (isset($_POST['update_password'])) {
     $confirm_password  = sha1(md5(mysqli_real_escape_string($mysqli, $_POST['confirm_password'])));
 
     /* Check If New & Confirm Passwords Match */
-    if ($new_password != g$confirm_password) {
+    if ($new_password != $confirm_password) {
         $err = "New Password And Confirmation Passwords Does Not Match";
     } else {
         /* Check if Old Passwords Match */

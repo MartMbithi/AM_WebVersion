@@ -102,7 +102,7 @@ if (isset($_POST['Add_Match'])) {
         $prepare->execute();
         if ($prepare) {
             $success = "You Two Are Match";
-        }else{
+        } else {
             $err = "Failed!, Please Try Again";
         }
     }
@@ -198,7 +198,6 @@ require_once('../partials/head.php');
                                         </a>
 
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Send Private Message</a></li>
                                             <form method="POST">
                                                 <!-- Hide This -->
                                                 <input type="hidden" name="match_first_patner_id" value="<?php echo $_SESSION['user_id']; ?>">
