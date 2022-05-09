@@ -73,7 +73,9 @@ if (isset($_POST['unsubscribe'])) {
             $sql = "DELETE FROM  newsletter WHERE email = '{$email}' ";
             $prepare = $mysqli->prepare($sql);
             $prepare->execute();
-            if ($prepare) {
+            /* Load Mailer */
+            require_once('../mailers/unsubscribe_mailer.php');
+            if ($prepare && $mail->send()) {
                 $success = "You Have Unsubscribed From Our Newsletter";
             } else {
                 $err = "Failed!, Please Try Again";
