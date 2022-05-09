@@ -63,7 +63,7 @@
                                 <a href="my_favourites">Favourites</a>
                             </li>
                             <li>
-                                <a href="chat/">Chat</a>
+                                <a href="chat/users">Chat</a>
                             </li>
                             <li>
                                 <a href="#0">Profile</a>
