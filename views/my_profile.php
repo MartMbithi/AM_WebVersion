@@ -62,49 +62,24 @@ session_start();
 require_once('../config/config.php');
 require_once('../config/checklogin.php');
 check_login();
+/* Update Personal Details */
+if (isset($_POST['update_profile'])) {
+    $user_id = mysqli_real_escape_string($mysqli, $_SESSION['user_id']);
+    $user_name = mysqli_real_escape_string($mysqli, $_POST['user_name']);
+    $user_email = mysqli_real_escape_string($mysqli, $_POST['user_email']);
+    $user_age = mysqli_real_escape_string($mysqli, $_POST['user_age']);
+    $user_gender = mysqli_real_escape_string($mysqli, $_POST['user_gender']);
+    $user_address = mysqli_real_escape_string($mysqli, $_POST['user_address']);
 
-/* Add Favourites */
-if (isset($_POST['Add_Favourite'])) {
-    $fav_logged_in_user_id = mysqli_real_escape_string($mysqli, $_POST['fav_logged_in_user_id']);
-    $fav_user_id = mysqli_real_escape_string($mysqli, $_POST['fav_user_id']);
-    /* Check Already If These Fellas Have Favourited Each Other */
-    $sql = mysqli_query($mysqli, "SELECT * FROM favourites 
-    WHERE fav_logged_in_user_id = '{$fav_logged_in_user_id}' AND  fav_user_id = '{$fav_user_id}'");
-    if (mysqli_num_rows($sql) > 0) {
-        $info = "You Already Have This Member In Your Favourites List";
+    /* Persist */
+    $sql = "UPDATE users SET user_name = '{$user_name}', user_email = '{$user_email}', user_age = '{$user_age}', user_gender = '{$user_gender}'
+    user_address = '{$user_address}' WHERE user_id = '{$user_id}'";
+    $prepare = $mysqli->prepare($sql);
+    $prepare->execute();
+    if ($prepare) {
+        $success  = "Personal Details Updated";
     } else {
-        /* Add To Favourites */
-        $sql = "INSERT INTO favourites(fav_logged_in_user_id, fav_user_id) VALUES ('{$fav_logged_in_user_id}', '{$fav_user_id}')";
-        $prepare = $mysqli->prepare($sql);
-        $prepare->execute();
-        if ($prepare) {
-            $success = "Added To Your Favourites";
-        } else {
-            $err = "Failed!, Please Try Again";
-        }
-    }
-}
-
-/* Add As A Match */
-if (isset($_POST['Add_Match'])) {
-    $match_first_patner_id = mysqli_real_escape_string($mysqli, $_POST['match_first_patner_id']);
-    $match_second_partner_id = mysqli_real_escape_string($mysqli, $_POST['match_second_partner_id']);
-    /* Check If These Two Love Birds Are Already A Match */
-    $sql = mysqli_query($mysqli, "SELECT * FROM matches 
-    WHERE match_first_patner_id = '{$match_first_patner_id}' AND  match_second_partner_id = '{$match_second_partner_id}'");
-    if (mysqli_num_rows($sql) > 0) {
-        $info = "You Two Are Already A Match, No Need To Rematch Again";
-    } else {
-        /* Concatnane These Two Love Birds */
-        $sql = "INSERT INTO matches (match_first_patner_id, match_second_partner_id)
-        VALUES('{$match_first_patner_id}', '{$match_second_partner_id}')";
-        $prepare = $mysqli->prepare($sql);
-        $prepare->execute();
-        if ($prepare) {
-            $success = "You Two Are Match";
-        } else {
-            $err = "Failed!, Please Try Again";
-        }
+        $err = "Failed!, Please Try Again";
     }
 }
 require_once('../partials/head.php');
