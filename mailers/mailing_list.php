@@ -1,6 +1,6 @@
 <?php
 /*
- * Created on Wed Jan 19 2022
+ * Created on Thu Dec 16 2021
  *
  *  Devlan - devlan.co.ke 
  *
@@ -9,7 +9,7 @@
  *
  * The Devlan End User License Agreement
  *
- * Copyright (c) 2022 Devlan
+ * Copyright (c) 2021 Devlan
  *
  * 1. GRANT OF LICENSE
  * Devlan hereby grants to you (an individual) the revocable, personal, non-exclusive, and nontransferable right to
@@ -66,16 +66,15 @@ require_once('../vendor/PHPMailer/src/Exception.php');
 
 /* Init PHP Mailer */
 
-$ret = "SELECT * FROM system_settings 
-INNER JOIN mailer_settings";
+$ret = "SELECT * FROM mailer_settings";
 $stmt = $mysqli->prepare($ret);
 $stmt->execute(); //ok
 $res = $stmt->get_result();
 while ($sys = $res->fetch_object()) {
     $mail = new PHPMailer\PHPMailer\PHPMailer();
     $mail->setFrom($sys->mailer_mail_from_email);
-    $mail->addAddress($user_email);
-    $mail->FromName = $sys->system_name;
+    $mail->addAddress($email);
+    $mail->FromName = $sys->mailer_mail_from_name;
     $mail->isHTML(true);
     $mail->IsSMTP();
     $mail->SMTPSecure = 'ssl';
@@ -84,7 +83,7 @@ while ($sys = $res->fetch_object()) {
     $mail->Port = $sys->mailer_port;
     $mail->Username = $sys->mailer_username;
     $mail->Password = $sys->mailer_password;
-    $mail->Subject = 'Module Enrollment Notification';
+    $mail->Subject = 'Welcome To ' . $sys->mailer_mail_from_name . 'Mailing List';
     /* Custom Mail Body */
     $mail->Body = '
     <!doctype html>
@@ -95,48 +94,50 @@ while ($sys = $res->fetch_object()) {
         <title>Password Reset</title>
         <meta name="description" content="Reset Password Email">
         <style type="text/css">
-            a:hover {
-                text-decoration: underline !important;
-            }
+            a:hover {text-decoration: underline !important;}
         </style>
     </head>
     
     <body marginheight="0" topmargin="0" marginwidth="0" style="margin: 0px; background-color: #f2f3f8;" leftmargin="0">
         <!--100% body table-->
-        <table cellspacing="0" border="0" cellpadding="0" width="100%" bgcolor="#f2f3f8" style="@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Open+Sans:300,400,600,700); font-family: " Open Sans", sans-serif;">
+        <table cellspacing="0" border="0" cellpadding="0" width="100%" bgcolor="#f2f3f8"
+            style="@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Open+Sans:300,400,600,700); font-family: "Open Sans", sans-serif;">
             <tr>
                 <td>
-                    <table style="background-color: #f2f3f8; max-width:670px;  margin:0 auto;" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <table style="background-color: #f2f3f8; max-width:670px;  margin:0 auto;" width="100%" border="0"
+                        align="center" cellpadding="0" cellspacing="0">
                         <tr>
                             <td style="height:80px;">&nbsp;</td>
                         </tr>
-                            <tr>
-                                <td style="text-align:center;">
-                                  <a href="" title="logo" target="_blank">
-                                    <img width="200" src="' . $sys->hosted_logo_link . '" title="logo" alt="">
-                                  </a>
-                                </td>
-                            </tr> 
+                       <!-- <tr>
+                            <td style="text-align:center;">
+                              <a href="" title="logo" target="_blank">
+                                <img width="200" src="" title="logo" alt="">
+                              </a>
+                            </td>
+                        </tr> -->
                         <tr>
                             <td style="height:20px;">&nbsp;</td>
                         </tr>
                         <tr>
                             <td>
-                                <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" style="max-width:670px;background:#fff; border-radius:3px; text-align:center;-webkit-box-shadow:0 6px 18px 0 rgba(0,0,0,.06);-moz-box-shadow:0 6px 18px 0 rgba(0,0,0,.06);box-shadow:0 6px 18px 0 rgba(0,0,0,.06);">
+                                <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0"
+                                    style="max-width:670px;background:#fff; border-radius:3px; text-align:center;-webkit-box-shadow:0 6px 18px 0 rgba(0,0,0,.06);-moz-box-shadow:0 6px 18px 0 rgba(0,0,0,.06);box-shadow:0 6px 18px 0 rgba(0,0,0,.06);">
                                     <tr>
                                         <td style="height:40px;">&nbsp;</td>
                                     </tr>
                                     <tr>
                                         <td style="padding:0 35px;">
-                                            <h1 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;font-family:" Rubik",sans-serif;"></h1>
-                                            <p>
-                                                Hello ' . $user_details . ', <br>
-                                                This is to notify you that your enrollment for : <b> ' . $module_details . ' </b> <br>
-                                                is successful, kindly login to your student portal and confirm its availabilty in the timetable. <br>
-                                                <br><br>
+                                            <h1 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;font-family:"Rubik",sans-serif;">Verify Your Email</h1>
+                                            <p style="color:#455056; font-size:15px;line-height:24px; margin:0;">
+                                                Hi there, <br>
+                                                We are so glad that you have joined  ' . $sys->mailer_mail_from_name . '
+                                                mailing list. <br> By subscribing to our mailing list you will always be updated 
+                                                with the latest news from us.                                                
+                                                <br>
                                                 Kind Regards<br>
-                                                <b> ' . $sys->system_name . ' </b> <br>
-                                                <i>' . $sys->system_tagline . '</i>
+                                                <b> ' . $sys->mailer_mail_from_name . ' </b> <br>
+                                                <i>The Future Of Dating</i>
                                             </p>
                                         </td>
                                     </tr>
@@ -150,7 +151,7 @@ while ($sys = $res->fetch_object()) {
                         </tr>
                         <tr>
                             <td style="text-align:center;">
-                                <p style="font-size:14px; color:rgba(69, 80, 86, 0.7411764705882353); line-height:18px; margin:0 0 0;">&copy; ' . date('Y') . ' <strong> ' . $sys->system_name . ' . A <a href="https://devlan.co.ke/"> Devlan </a> Production</strong></p>
+                                <p style="font-size:14px; color:rgba(69, 80, 86, 0.7411764705882353); line-height:18px; margin:0 0 0;">&copy; ' . date('Y') . ' <strong> ' . $sys->system_name . ' . A <a href="https://devlan.co.ke/"> Devlan Solutions LTD </a> Production</strong></p>
                             </td>
                         </tr>
                         <tr>
@@ -161,6 +162,5 @@ while ($sys = $res->fetch_object()) {
             </tr>
         </table>
     </body>
-
-        ';
+    ';
 }

@@ -7,14 +7,15 @@ if (isset($_POST['add_mailing'])) {
         /* Check If Email Already Exists On Mailing Lists */
         $sql = mysqli_query($mysqli, "SELECT * FROM newsletter WHERE email = '{$email}'");
         if (mysqli_num_rows($sql) > 0) {
-            $err = "Your Email Already Exists In Our Mailing List";
+            $err = "You Are Already In Our Mailing List";
         } else {
             $sql = "INSERT INTO newsletter (email) VALUES('{$email}')";
             $prepare = $mysqli->prepare($sql);
             $prepare->execute();
             /* Load Mailer */
+            require_once('../mailers/mailing_list.php');
             if ($prepare) {
-                $success = "Email Added To Our Mailing List";
+                $success = "You Have Joined Our Mailing List";
             } else {
                 $err = "Failed!, Please Try Again";
             }
