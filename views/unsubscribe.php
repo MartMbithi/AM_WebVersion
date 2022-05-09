@@ -84,6 +84,7 @@ if (isset($_POST['unsubscribe'])) {
                 $err = "Failed!, Please Try Again";
             }
         } else {
+
             $err = "Email Account Does Not Exist In Our Mailing List";
         }
     } else {
@@ -134,7 +135,7 @@ require_once('../partials/head.php');
                 <div class="row g-3 row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 justify-content-center">
                     <div class="row">
                         <div class="col-12 text-center">
-                            <img src="../public/images/404.png" alt="member-img">
+                            <img src="../public/images/broken-heart.png" alt="member-img">
                         </div>
                         <div class="lab-content text-center">
                             <h6>To Unsubscribe from our mailing list click the button below to confirm.</h6>
