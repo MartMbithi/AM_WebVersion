@@ -498,7 +498,13 @@ while ($sys = $res->fetch_object()) {
                         We are so glad that you have joined  ' . $sys->mailer_mail_from_name . '
                         mailing list. <br> By subscribing to our mailing list you will always be updated 
                         with the latest news from us.  
-                      </h3>
+                        <br><br>
+                        </h3>
+                        <p>
+                            Kind Regards, ' . $sys->mailer_mail_from_name . '. A
+                            <a href="https://devlan.co.ke" style="color: rgba(0, 0, 0, 0.8)"></a>
+                            Devlan Solutions LTD</a> Production
+                        </p>
                     </div>
                   </td>
                 </tr>
@@ -519,12 +525,6 @@ while ($sys = $res->fetch_object()) {
         >
           <tr>
             <td class="bg_light" style="text-align: center">
-              <p>
-                Kind Regards, ' . $sys->mailer_mail_from_name . '. A
-                <a href="https://devlan.co.ke" style="color: rgba(0, 0, 0, 0.8)"></a>
-                  Devlan Solutions LTD</a> Production
-              </p>
-              <br><br>
               <p> If these emails are not worth your time, <a href="' . $unsubcsribe . '">Click here to unsubscribe</a></p>
             </td>
           </tr>
