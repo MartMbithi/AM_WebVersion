@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 09, 2022 at 01:23 PM
+-- Generation Time: May 09, 2022 at 03:03 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -32,13 +32,6 @@ CREATE TABLE `favourites` (
   `fav_logged_in_user_id` int(200) NOT NULL,
   `fav_user_id` int(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `favourites`
---
-
-INSERT INTO `favourites` (`fav_id`, `fav_logged_in_user_id`, `fav_user_id`) VALUES
-(4, 1225274256, 1227425642);
 
 -- --------------------------------------------------------
 
@@ -77,13 +70,6 @@ CREATE TABLE `matches` (
   `match_second_partner_id` int(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `matches`
---
-
-INSERT INTO `matches` (`match_id`, `match_first_patner_id`, `match_second_partner_id`) VALUES
-(1, 1225274256, 1227425642);
-
 -- --------------------------------------------------------
 
 --
@@ -119,6 +105,18 @@ INSERT INTO `messages` (`msg_id`, `incoming_msg_id`, `outgoing_msg_id`, `msg`) V
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `newsletter`
+--
+
+CREATE TABLE `newsletter` (
+  `id` int(200) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `added_on` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -142,8 +140,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `user_name`, `user_gender`, `user_age`, `user_email`, `user_password`, `user_password_reset_token`, `user_profile_picture`, `user_biography`, `user_address`, `user_status`, `user_account_status`) VALUES
-(1225274256, 'Martin Mbithi', 'Male', '22', 'martdevelopers254@gmail.com', 'a69681bcf334ae130217fea4505fd3c994f5683f', NULL, '1652091645Devlan 009.jpg', 'Collaboratively innovate compelling mindshare after\n                                                                prospective partnerships Competently sereiz long-term\n                                                                high-impact internal or \"organic\" sources via user friendly\n                                                                strategic themesr areas creat Dramatically coordinate\n                                                                premium partnerships rather than standards compliant\n                                                                technologies ernd Dramatically matrix ethical collaboration\n                                                                and idea-sharing through opensource methodologies and\n                                                                Intrinsicly grow collaborative platforms vis-a-vis effective\n                                                                scenarios. Energistically strategize cost effective ideas\n                                                                before the worke under.', 'Machakos', 'Offline now', 'Verified'),
-(1227425642, 'Marylinne', 'Female', '20', 'martinezmbithi@gmail.com', 'a69681bcf334ae130217fea4505fd3c994f5683f', NULL, '1651760378Wet Devlan Logo Glass.jpg', 'Collaboratively innovate compelling mindshare after\n                                                                prospective partnerships Competently sereiz long-term\n                                                                high-impact internal or \"organic\" sources via user friendly\n                                                                strategic themesr areas creat Dramatically coordinate\n                                                                premium partnerships rather than standards compliant\n                                                                technologies ernd Dramatically matrix ethical collaboration\n                                                                and idea-sharing through opensource methodologies and\n                                                                Intrinsicly grow collaborative platforms vis-a-vis effective\n                                                                scenarios. Energistically strategize cost effective ideas\n                                                                before the worke unde.a', 'Machakos', 'Active now', 'Verified');
+(440616491, 'Martin Mbithi', 'Male', '23', 'martdevelopers254@gmail.com', 'a69681bcf334ae130217fea4505fd3c994f5683f', 'ac906d9f35f84e94482a3640', '1652100451Wet Devlan Logo Glass.jpg', NULL, 'Machakos', NULL, 'Verified'),
+(1227425642, 'Marylinne', 'Female', '20', 'martinezmbithi@gmail.com', 'a69681bcf334ae130217fea4505fd3c994f5683f', NULL, '1651760378Wet Devlan Logo Glass.jpg', 'Collaboratively innovate compelling mindshare after\n                                                                prospective partnerships Competently sereiz long-term\n                                                                high-impact internal or \"organic\" sources via user friendly\n                                                                strategic themesr areas creat Dramatically coordinate\n                                                                premium partnerships rather than standards compliant\n                                                                technologies ernd Dramatically matrix ethical collaboration\n                                                                and idea-sharing through opensource methodologies and\n                                                                Intrinsicly grow collaborative platforms vis-a-vis effective\n                                                                scenarios. Energistically strategize cost effective ideas\n                                                                before the worke unde.a', 'Machakos', 'Offline now', 'Verified');
 
 -- --------------------------------------------------------
 
@@ -190,6 +188,12 @@ ALTER TABLE `messages`
   ADD PRIMARY KEY (`msg_id`);
 
 --
+-- Indexes for table `newsletter`
+--
+ALTER TABLE `newsletter`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -229,6 +233,12 @@ ALTER TABLE `matches`
 --
 ALTER TABLE `messages`
   MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `newsletter`
+--
+ALTER TABLE `newsletter`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `user_intrests`
