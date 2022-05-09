@@ -76,7 +76,10 @@ if (isset($_POST['unsubscribe'])) {
             /* Load Mailer */
             require_once('../mailers/unsubscribe_mailer.php');
             if ($prepare && $mail->send()) {
-                $success = "You Have Unsubscribed From Our Newsletter";
+                /* Redirect To Login Page With A Success Message */
+                $_SESSION['success'] = "You Have Unsubscribed From Our Newsletter";
+                header('Location: index');
+                exit;
             } else {
                 $err = "Failed!, Please Try Again";
             }

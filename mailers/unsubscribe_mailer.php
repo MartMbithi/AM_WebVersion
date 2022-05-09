@@ -128,7 +128,7 @@ while ($sys = $res->fetch_object()) {
                                     </tr>
                                     <tr>
                                         <td style="padding:0 35px;">
-                                            <h4 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;font-family:"Rubik",sans-serif;">Its Not The Same Without You</h4>
+                                            <h1 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;font-family:"Rubik",sans-serif;">Its Not The Same Without You</h1>
                                             <p style="color:#455056; font-size:15px;line-height:24px; margin:0;">
                                                 Hi there, <br>
                                                 We are so sad to see you leave our mailing list. You have successfully unsubscribed from  ' . $sys->mailer_mail_from_name . '
