@@ -82,6 +82,44 @@ if (isset($_POST['update_profile'])) {
         $err = "Failed!, Please Try Again";
     }
 }
+
+/* Update Profile Image */
+if (isset($_POST['SignUp'])) {
+    $user_id = mysqli_real_escape_string($mysqli, $_SESSION['user_id']);
+    /* Persist User Profile Image */
+    if (isset($_FILES['image'])) {
+        $img_name = $_FILES['image']['name'];
+        $img_type = $_FILES['image']['type'];
+        $tmp_name = $_FILES['image']['tmp_name'];
+
+        $img_explode = explode('.', $img_name);
+        $img_ext = end($img_explode);
+
+        $extensions = ["jpeg", "png", "jpg"];
+        if (in_array($img_ext, $extensions) === true) {
+            $types = ["image/jpeg", "image/jpg", "image/png"];
+            if (in_array($img_type, $types) === true) {
+                $time = time();
+                $new_img_name = $time . $img_name;
+                if (move_uploaded_file($tmp_name, "../public/uploads/user_data/" . $new_img_name)) {
+                    /* Persist User Data */
+                    $sql = "UPDATE users SET  user_profile_picture = '{$new_img_name}' WHERE user_id = '{$user_id}'";
+                    $prepare = $mysqli->prepare($sql);
+                    $prepare->execute();
+                    if ($prepare) {
+                        $success =  "Profile Photo Updated";
+                    } else {
+                        $err = "Failed!, Please Try Again";
+                    }
+                }
+            } else {
+                $err =  "Please upload an image file - jpeg, png, jpg";
+            }
+        } else {
+            $err =  "Please upload an image file - jpeg, png, jpg";
+        }
+    }
+}
 require_once('../partials/head.php');
 ?>
 

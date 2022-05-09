@@ -99,10 +99,10 @@ if (isset($_POST['SignUp'])) {
                     }
                 }
             } else {
-                echo "Please upload an image file - jpeg, png, jpg";
+                $err =  "Please upload an image file - jpeg, png, jpg";
             }
         } else {
-            echo "Please upload an image file - jpeg, png, jpg";
+            $err =  "Please upload an image file - jpeg, png, jpg";
         }
     }
 }
