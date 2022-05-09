@@ -135,6 +135,43 @@ if (isset($_POST['update_bio'])) {
         $err = "Failed!, Please Try Again";
     }
 }
+
+/* Update Passwords */
+if (isset($_POST['update_password'])) {
+    $user_id = mysqli_real_escape_string($mysqli, $_SESSION['user_id']);
+    $old_password = sha1(md5(mysqli_real_escape_string($mysqli, $_POST['old_password'])));
+    $new_password = sha1(md5(mysqli_real_escape_string($mysqli, $_POST['new_password'])));
+    $confirm_password  = sha1(md5(mysqli_real_escape_string($mysqli, $_POST['confirm_password'])));
+
+    /* Check If New & Confirm Passwords Match */
+    if ($new_password != $$confirm_password) {
+        $err = "New Password And Confirmation Passwords Does Not Match";
+    } else {
+        /* Check if Old Passwords Match */
+        $sql = "SELECT * FROM  users  WHERE user_id = '{$user_id}'";
+        $res = mysqli_query($mysqli, $sql);
+        if (mysqli_num_rows($res) > 0) {
+            $row = mysqli_fetch_assoc($res);
+            if ($old_password != $row['user_password']) {
+                $err = "Incorrect Old Password";
+            } else {
+                /* Persist New Password */
+                $sql = "UPDATE users SET user_password  = '{$confirm_password}' WHERE user_id  = '{$user_id}'";
+                $prepare = $mysqli->prepare($sql);
+                $prepare->execute();
+                if ($prepare) {
+                    $success = "Passwords Updated";
+                } else {
+                    $err = "Failed!, Please Try Again";
+                }
+            }
+        } else {
+            /* Log Out This User */
+            header('Location:logout?account="' . $user_id . '"');
+        }
+    }
+}
+
 require_once('../partials/head.php');
 ?>
 
