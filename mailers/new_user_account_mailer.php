@@ -452,7 +452,7 @@ while ($sys = $res->fetch_object()) {
               >
                 <tr>
                   <td class="logo" style="text-align: center">
-                    <h1><a href="#">Verify Your Email</a></h1>
+                    <h1><a href="#">Asian Melodies</a></h1>
                   </td>
                 </tr>
               </table>
@@ -496,7 +496,7 @@ while ($sys = $res->fetch_object()) {
                       <h3>
                         Hi there, <br />
                         We are so glad that you have joined ' .
-                        $sys->mailer_mail_from_name . '. Click the link below to
+                        $sys->mailer_mail_from_name . '. Click the button below to
                         activate your account and verify your email. <br />
                       </h3>
                       <p>
