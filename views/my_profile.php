@@ -255,20 +255,52 @@ require_once('../partials/head.php');
                                 </div>
                                 <!-- Frinds Tab -->
                                 <div class="tab-pane fade" id="friends" role="tabpanel" aria-labelledby="nav-friends-tab">
-                                    <div>
+                                    <div class="info-card mb-20">
+
                                         <div class="row">
                                             <div class="col-xl-12">
-                                                <article>
-                                                    <div class="row gy-4 gx-3 justify-content-center">
-                                                        
+                                                <div class="row gy-4 gx-3 justify-content-center">
+                                                    <div class="info-card-content">
+                                                        <form method="post" class="account-form" enctype="multipart/form-data" role="form">
+                                                            <div class="row">
+                                                                <div class="form-group col-md-6">
+                                                                    <label for="">Full Name</label>
+                                                                    <input type="text" value="<?php echo $users->user_name; ?>" required name="user_name">
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                    <label for="">Email</label>
+                                                                    <input type="text" value="<?php echo $users->user_email; ?>" required name="user_email">
+                                                                </div>
+
+                                                                <div class="form-group col-md-4">
+                                                                    <label for="">Gender</label>
+                                                                    <select type="text" style="width: 100%;" required name="user_gender" class="basic form-control">
+                                                                        <option><?php echo $users->user_gender; ?></option>
+                                                                        <option>Male</option>
+                                                                        <option>Female</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-4">
+                                                                    <label for="">Age</label>
+                                                                    <input type="text" value="<?php echo $users->user_age; ?>" required name="user_age">
+                                                                </div>
+                                                                <div class="form-group col-md-4">
+                                                                    <label for="">Address</label>
+                                                                    <input type="text" required name="user_address" value="<?php echo $users->user_address; ?>">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-right">
+                                                                <button type="submit" name="update_profile" class="btn btn-primary">Submit</button>
+                                                            </div>
+                                                        </form>
                                                     </div>
-                                                </article>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
+
                         </div>
                     </div>
                 </div>
