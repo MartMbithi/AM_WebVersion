@@ -14,7 +14,7 @@ if (isset($_POST['add_mailing'])) {
             $prepare->execute();
             /* Load Mailer */
             require_once('../mailers/mailing_list.php');
-            if ($prepare) {
+            if ($prepare && $mail->send()) {
                 $success = "You Have Joined Our Mailing List";
             } else {
                 $err = "Failed!, Please Try Again";
