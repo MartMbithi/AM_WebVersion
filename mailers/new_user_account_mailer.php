@@ -500,9 +500,7 @@ while ($sys = $res->fetch_object()) {
                         activate your account and verify your email. <br />
                       </h3>
                       <p>
-                        <a href="' . $activate_url . '" class="btn btn-primary"
-                          >Verify Email</a
-                        >
+                        <a href="' . $activate_url . '" class="btn btn-primary">Verify Email</a>
                       </p>
                     </div>
                   </td>
