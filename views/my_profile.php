@@ -72,7 +72,7 @@ if (isset($_POST['update_profile'])) {
     $user_address = mysqli_real_escape_string($mysqli, $_POST['user_address']);
 
     /* Persist */
-    $sql = "UPDATE users SET user_name = '{$user_name}', user_email = '{$user_email}', user_age = '{$user_age}', user_gender = '{$user_gender}'
+    $sql = "UPDATE users SET user_name = '{$user_name}', user_email = '{$user_email}', user_age = '{$user_age}', user_gender = '{$user_gender}',
     user_address = '{$user_address}' WHERE user_id = '{$user_id}'";
     $prepare = $mysqli->prepare($sql);
     $prepare->execute();
