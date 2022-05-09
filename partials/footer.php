@@ -1,3 +1,23 @@
+<?php
+/* Add Mailing List */
+if (isset($_POST['add_mailing'])) {
+    $email = mysqli_real_escape_string($mysqli, $_POST['email']);
+    /* Validate Email */
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $sql = "INSERT INTO newsletter (email) VALUES('{$email}')";
+        $prepare = $mysqli->prepare($sql);
+        $prepare->execute();
+        /* Load Mailer */
+        if ($prepare) {
+            $success = "Email Added To Our Mailing List";
+        } else {
+            $err = "Failed!, Please Try Again";
+        }
+    } else {
+        $err = "Enter Correct Email Address";
+    }
+}
+?>
 <footer class="footer-section">
     <div class="footer-top">
         <div class="container">
@@ -72,9 +92,9 @@
                                     be updated with the latest news from us.</p>
                                 <form method="post">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Enter email">
+                                        <input type="email" required name="email" class="form-control" placeholder="Enter email">
                                     </div>
-                                    <button type="submit" class="lab-btn">Submit <i class="icofont-paper-plane"></i></button>
+                                    <button type="submit" name="add_mailing" class="lab-btn">Submit <i class="icofont-paper-plane"></i></button>
                                 </form>
                             </div>
                         </div>
