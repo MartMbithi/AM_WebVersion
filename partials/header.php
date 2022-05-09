@@ -63,7 +63,7 @@
                                 <a href="my_favourites">Favourites</a>
                             </li>
                             <li>
-                                <a href="asian_messenger">Chat</a>
+                                <a href="chat/">Chat</a>
                             </li>
                             <li>
                                 <a href="#0">Profile</a>
