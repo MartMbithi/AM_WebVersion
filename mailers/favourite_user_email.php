@@ -492,7 +492,7 @@ while ($sys = $res->fetch_object()) {
                       class="text"
                       style="padding: 0 2.5em; text-align: center"
                     >
-                      <h2>You`ve Been Added To Favourite List</h2>
+                      <h2>Someone Just Added You To Their Favourites List</h2>
                       <h3>
                         Hi there, <br />
                         Seems like your profile is getting a lot of visits and someone just added you to their favourite list.<br />

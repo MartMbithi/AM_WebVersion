@@ -64,4 +64,4 @@
 $url = $_SERVER['HTTP_HOST'] . '/AM/views/confirm_password?token=';
 $account_activation = $_SERVER['HTTP_HOST'] . '/AM/views/user_account_activation?account=';
 $unsubcribe_mail = $_SERVER['HTTP_HOST'] . '/AM/views/unsubscribe?email=';
-$favourite_url  = $_SERVER['HTTP_HOST'] . '/AM/views/my_matches';
+$favourite_url  = $_SERVER['HTTP_HOST'] . '/AM/views/my_favourites';

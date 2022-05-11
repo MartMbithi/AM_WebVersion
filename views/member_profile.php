@@ -81,8 +81,8 @@ if (isset($_POST['Add_Favourite'])) {
         $prepare = $mysqli->prepare($sql);
         $prepare->execute();
         /* Load Mailer */
-
-        if ($prepare) {
+        require_once('../mailers/favourite_user_email.php');
+        if ($prepare && $mail->send()) {
             $success = "Added To Your Favourites";
         } else {
             $err = "Failed!, Please Try Again";
