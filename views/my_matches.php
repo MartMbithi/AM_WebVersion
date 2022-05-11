@@ -91,11 +91,11 @@ require_once('../partials/head.php');
             <div class="page-header-content">
                 <div class="page-header-inner">
                     <div class="page-title">
-                        <h2>My Favourite Members</h2>
+                        <h2>My Matches</h2>
                     </div>
                     <ol class="breadcrumb">
                         <li><a href="index">Home</a></li>
-                        <li class="active">My Favourites</li>
+                        <li class="active">My Matches</li>
                     </ol>
                 </div>
             </div>

@@ -108,8 +108,8 @@ if (isset($_POST['Add_Match'])) {
         $prepare = $mysqli->prepare($sql);
         $prepare->execute();
         /* Load Mailer */
-
-        if ($prepare) {
+        require_once('../mailers/match_user_email.php');
+        if ($prepare && $mail->send()) {
             $success = "You Two Are Match";
         } else {
             $err = "Failed!, Please Try Again";
