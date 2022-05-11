@@ -56,7 +56,7 @@ CREATE TABLE `mailer_settings` (
 --
 
 INSERT INTO `mailer_settings` (`mailer_host`, `mailer_port`, `mailer_protocol`, `mailer_username`, `mailer_mail_from_name`, `mailer_mail_from_email`, `mailer_password`, `id`, `hosted_logo_link`) VALUES
-('bhs104.truehost.cloud', '465', 'ssl', 'sandbox_mailer@devlan.co.ke', 'Asian Melodies', 'martdevelopers254@gmail.com', '20Devlan@', 1, NULL);
+('', '465', 'ssl', '', 'Asian Melodies', '', '', 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -140,8 +140,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `user_name`, `user_gender`, `user_age`, `user_email`, `user_password`, `user_password_reset_token`, `user_profile_picture`, `user_biography`, `user_address`, `user_status`, `user_account_status`) VALUES
-(440616491, 'Martin Mbithi', 'Male', '23', 'martdevelopers254@gmail.com', 'a69681bcf334ae130217fea4505fd3c994f5683f', 'ac906d9f35f84e94482a3640', '1652100451Wet Devlan Logo Glass.jpg', NULL, 'Machakos', NULL, 'Verified'),
-(1227425642, 'Marylinne', 'Female', '20', 'martinezmbithi@gmail.com', 'a69681bcf334ae130217fea4505fd3c994f5683f', NULL, '1651760378Wet Devlan Logo Glass.jpg', 'Collaboratively innovate compelling mindshare after\n                                                                prospective partnerships Competently sereiz long-term\n                                                                high-impact internal or \"organic\" sources via user friendly\n                                                                strategic themesr areas creat Dramatically coordinate\n                                                                premium partnerships rather than standards compliant\n                                                                technologies ernd Dramatically matrix ethical collaboration\n                                                                and idea-sharing through opensource methodologies and\n                                                                Intrinsicly grow collaborative platforms vis-a-vis effective\n                                                                scenarios. Energistically strategize cost effective ideas\n                                                                before the worke unde.a', 'Machakos', 'Offline now', 'Verified');
+(440616491, 'Martin Mbithi', 'Male', '23', 'demo@gmail.com', 'a69681bcf334ae130217fea4505fd3c994f5683f', 'ac906d9f35f84e94482a3640', '1652100451Wet Devlan Logo Glass.jpg', NULL, 'Machakos', NULL, 'Verified'),
+(1227425642, 'Marylinne', 'Female', '20', 'demo@gmail.com', 'a69681bcf334ae130217fea4505fd3c994f5683f', NULL, '1651760378Wet Devlan Logo Glass.jpg', 'Collaboratively innovate compelling mindshare after\n                                                                prospective partnerships Competently sereiz long-term\n                                                                high-impact internal or \"organic\" sources via user friendly\n                                                                strategic themesr areas creat Dramatically coordinate\n                                                                premium partnerships rather than standards compliant\n                                                                technologies ernd Dramatically matrix ethical collaboration\n                                                                and idea-sharing through opensource methodologies and\n                                                                Intrinsicly grow collaborative platforms vis-a-vis effective\n                                                                scenarios. Energistically strategize cost effective ideas\n                                                                before the worke unde.a', 'Machakos', 'Offline now', 'Verified');
 
 -- --------------------------------------------------------
 
