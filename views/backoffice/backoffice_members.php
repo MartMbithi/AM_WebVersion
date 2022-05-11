@@ -178,7 +178,11 @@ require_once('../../partials/backoffice_head.php');
                                                                                 </div>
                                                                                 <div class="form-group col-md-4">
                                                                                     <label for="">Gender</label>
-                                                                                    <input type="text" value="<?php echo $users->user_email; ?>" required name="user_email" class="form-control">
+                                                                                    <select type="text" value="<?php echo $users->user_gender; ?>" required name="user_gender" class="form-control">
+                                                                                        <option><?php echo $users->user_gender; ?></option>
+                                                                                        <option>Male</option>
+                                                                                        <option>Female</option>
+                                                                                    </select>
                                                                                 </div>
                                                                                 <div class="form-group col-md-4">
                                                                                     <label for="">Age</label>
