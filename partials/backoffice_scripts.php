@@ -5,6 +5,8 @@
 <!-- Alerts -->
 <!-- Toastr Alerts -->
 <script src="../../public/plugins/toastr/toastr.min.js"></script>
+<!-- Load Data Tables -->
+
 <!-- Init  Alerts -->
 <?php if (isset($success)) { ?>
     <!-- Pop Success Alert -->
