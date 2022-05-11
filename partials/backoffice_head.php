@@ -20,4 +20,6 @@
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="../../public/css/dashlite.css?ver=1.4.0">
     <link id="skin-default" rel="stylesheet" href="../../public/css/theme.css?ver=1.4.0">
+    <!-- Load Alert-->
+    <link rel="stylesheet" href="../../public/plugins/toastr/toastr.min.css">
 </head>
