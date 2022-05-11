@@ -62,6 +62,7 @@ session_start();
 require_once('../../config/config.php');
 require_once('../../config/checklogin.php');
 admin_check_login();
+require_once('../../partials/analytics.php');
 require_once('../../partials/backoffice_head.php');
 ?>
 
@@ -88,7 +89,7 @@ require_once('../../partials/backoffice_head.php');
                                                     </div>
                                                     <div class="nk-iv-wg2-text">
                                                         <div class="nk-iv-wg2-amount">
-                                                            105.94
+                                                            <?php echo $users; ?>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -100,11 +101,11 @@ require_once('../../partials/backoffice_head.php');
                                             <div class="card-inner">
                                                 <div class="nk-iv-wg2">
                                                     <div class="nk-iv-wg2-title">
-                                                        <h6 class="title">Online Memners</h6>
+                                                        <h6 class="title">Online Members</h6>
                                                     </div>
                                                     <div class="nk-iv-wg2-text">
                                                         <div class="nk-iv-wg2-amount">
-                                                            509,850.90
+                                                            <?php echo $online_users; ?>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -120,7 +121,7 @@ require_once('../../partials/backoffice_head.php');
                                                     </div>
                                                     <div class="nk-iv-wg2-text">
                                                         <div class="nk-iv-wg2-amount">
-                                                            50,600.48
+                                                            <?php echo $pending_users; ?>
                                                         </div>
                                                     </div>
                                                 </div>
