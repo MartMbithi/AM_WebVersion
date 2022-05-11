@@ -83,7 +83,21 @@ if (isset($_POST['update_user'])) {
         $err = "Failed!, Please Try Again";
     }
 }
+
+
 /* Delete Account */
+if (isset($_POST['delete_user'])) {
+    $user_id = $_POST['user_id'];
+    /* Persist */
+    $sql = "DELETE FROM users WHERE user_id = '{$user_id}'";
+    $prepare = $mysqli->prepare($sql);
+    $prepare->execute();
+    if ($prepare) {
+        $success = "Member Account Deleted";
+    } else {
+        $err = "Failed! Please Try Again";
+    }
+}
 require_once('../../partials/backoffice_head.php');
 ?>
 
