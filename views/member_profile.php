@@ -67,6 +67,8 @@ check_login();
 if (isset($_POST['Add_Favourite'])) {
     $fav_logged_in_user_id = mysqli_real_escape_string($mysqli, $_POST['fav_logged_in_user_id']);
     $fav_user_id = mysqli_real_escape_string($mysqli, $_POST['fav_user_id']);
+    /* Favourite User Email */
+    $email = mysqli_real_escape_string($mysqli, $_POST['email']);
     /* Check Already If These Fellas Have Favourited Each Other */
     $sql = mysqli_query($mysqli, "SELECT * FROM favourites 
     WHERE fav_logged_in_user_id = '{$fav_logged_in_user_id}' AND  fav_user_id = '{$fav_user_id}'");
@@ -77,6 +79,8 @@ if (isset($_POST['Add_Favourite'])) {
         $sql = "INSERT INTO favourites(fav_logged_in_user_id, fav_user_id) VALUES ('{$fav_logged_in_user_id}', '{$fav_user_id}')";
         $prepare = $mysqli->prepare($sql);
         $prepare->execute();
+        /* Load Mailer */
+
         if ($prepare) {
             $success = "Added To Your Favourites";
         } else {
@@ -202,12 +206,16 @@ require_once('../partials/head.php');
                                                 <!-- Hide This -->
                                                 <input type="hidden" name="match_first_patner_id" value="<?php echo $_SESSION['user_id']; ?>">
                                                 <input type="hidden" name="match_second_partner_id" value="<?php echo $user_id; ?>">
+                                                <!-- User Email -->
+                                                <input type="hidden" name="user_email" value="<?php echo $users->user_email; ?>">
                                                 <li><input type="submit" name="Add_Match" class="dropdown-item" value="Add As Match"></li>
                                             </form>
                                             <form method="POST">
                                                 <!-- Hide This -->
                                                 <input type="hidden" name="fav_logged_in_user_id" value="<?php echo $_SESSION['user_id']; ?>">
                                                 <input type="hidden" name="fav_user_id" value="<?php echo $user_id; ?>">
+                                                <!-- User Email -->
+                                                <input type="hidden" name="user_email" value="<?php echo $users->user_email; ?>">
                                                 <li><input type="submit" name="Add_Favourite" class="dropdown-item" value="Add To Favourites"></li>
                                             </form>
                                         </ul>
@@ -244,7 +252,7 @@ require_once('../partials/head.php');
                                                                     </li>
                                                                 <?php } else { ?>
                                                                     <li>
-                                                                        <p class="info-name">Loking for a</p>
+                                                                        <p class="info-name">Looking for a</p>
                                                                         <p class="info-details">Men</p>
                                                                     </li>
                                                                 <?php } ?>
