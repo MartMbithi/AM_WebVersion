@@ -58,7 +58,28 @@
  * IN NO EVENT WILL DEVLAN  LIABILITY FOR ANY CLAIM, WHETHER IN CONTRACT 
  * TORT OR ANY OTHER THEORY OF LIABILITY, EXCEED THE LICENSE FEE PAID BY YOU, IF ANY.
  */
+session_start();
+require_once('../../config/config.php');
+/* Handle Login */
+if (isset($_POST['Sign_In'])) {
+    $admin_email = mysqli_real_escape_string($mysqli, $_POST['admin_email']);
+    $admin_password = mysqli_real_escape_string($mysqli, sha1(md5($_POST['admin_password'])));
 
+    /* Login */
+    $stmt = $mysqli->prepare("SELECT admin_email, admin_password, admin_id  FROM admin  WHERE  (admin_email =? AND admin_password =?) ");
+    $stmt->bind_param('ss', $admin_email, $admin_password);
+    $stmt->execute();
+    $stmt->bind_result($admin_email, $admin_password, $admin_id);
+    $rs = $stmt->fetch();
+    $_SESSION['admin_id'] = $admin_id;
+    $_SESSION['admin_email'] = $admin_email;
+    /* Manage Access Levels */
+    if ($rs) {
+        header("location:home");
+    } else {
+        $err = "Incorrrect Email Or Password";
+    }
+}
 require_once('../../partials/backoffice_head.php')
 ?>
 
@@ -81,7 +102,7 @@ require_once('../../partials/backoffice_head.php')
                         <div class="nk-block-head-content">
                             <h5 class="nk-block-title">Sign In</h5>
                             <div class="nk-block-des">
-                                
+
                             </div>
                         </div>
                     </div><!-- .nk-block-head -->
