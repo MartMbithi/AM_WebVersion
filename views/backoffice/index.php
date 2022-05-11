@@ -81,7 +81,7 @@ require_once('../../partials/backoffice_head.php')
                         <div class="nk-block-head-content">
                             <h5 class="nk-block-title">Sign In</h5>
                             <div class="nk-block-des">
-                                <p>Asian Melodies - Back Office Module</p>
+                                
                             </div>
                         </div>
                     </div><!-- .nk-block-head -->
@@ -115,9 +115,12 @@ require_once('../../partials/backoffice_head.php')
                     <div class="slider-init">
                         <div class="slider-item">
                             <div class="nk-feature nk-feature-center">
+                                <div class="nk-feature-img">
+                                    <img class="round" src="../../public/images/love-birds.png" alt="">
+                                </div>
                                 <div class="nk-feature-content py-4 p-sm-5">
                                     <h4>Asian Melodies</h4>
-                                    <p>You can start to create your products easily with its user-friendly design & most completed responsive layout.</p>
+                                    <p>The Future Of Dating</p>
                                 </div>
                             </div>
                         </div><!-- .slider-item -->
