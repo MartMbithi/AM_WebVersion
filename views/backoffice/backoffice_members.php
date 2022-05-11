@@ -130,7 +130,34 @@ require_once('../../partials/backoffice_head.php');
                                                                         </button>
                                                                     </div>
                                                                     <div class="modal-body">
-
+                                                                        <form method="post" enctype="multipart/form-data" role="form">
+                                                                            <div class="row">
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label for="">Name</label>
+                                                                                    <input type="text" required name="user_name" value="<?php echo $users->user_name; ?>" class="form-control" id="exampleInputEmail1">
+                                                                                    <input type="hidden" required name="user_id" value="<?php echo $users->user_id; ?>" class="form-control" id="exampleInputEmail1">
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label for="">Email</label>
+                                                                                    <input type="email" value="<?php echo $users->user_email; ?>" required name="user_email" class="form-control">
+                                                                                </div>
+                                                                                <div class="form-group col-md-4">
+                                                                                    <label for="">Gender</label>
+                                                                                    <input type="text" value="<?php echo $users->user_email; ?>" required name="user_email" class="form-control">
+                                                                                </div>
+                                                                                <div class="form-group col-md-4">
+                                                                                    <label for="">Age</label>
+                                                                                    <input type="text" value="<?php echo $users->user_age; ?>" required name="user_age" class="form-control">
+                                                                                </div>
+                                                                                <div class="form-group col-md-4">
+                                                                                    <label for="">Address</label>
+                                                                                    <input type="text" value="<?php echo $users->user_address; ?>" required name="user_address" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="text-right">
+                                                                                <button type="submit" name="update_user" class="btn btn-primary">Update Personal Details</button>
+                                                                            </div>
+                                                                        </form>
                                                                     </div>
                                                                 </div>
                                                             </div>
