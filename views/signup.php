@@ -70,6 +70,7 @@ if (isset($_POST['SignUp'])) {
     $new_password = sha1(md5(mysqli_real_escape_string($mysqli, $_POST['new_password'])));
     $confirm_password = sha1(md5(mysqli_real_escape_string($mysqli, $_POST['confirm_password'])));
 
+
     /* Check If Passwords Match */
     if ($new_password != $confirm_password) {
         $err = "Passwords Does Not Match";
