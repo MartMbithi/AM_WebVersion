@@ -61,6 +61,7 @@
 session_start();
 require_once('../config/config.php');
 require_once('../config/checklogin.php');
+require_once('../config/app_config.php');
 check_login();
 
 /* Add Favourites */
@@ -68,7 +69,7 @@ if (isset($_POST['Add_Favourite'])) {
     $fav_logged_in_user_id = mysqli_real_escape_string($mysqli, $_POST['fav_logged_in_user_id']);
     $fav_user_id = mysqli_real_escape_string($mysqli, $_POST['fav_user_id']);
     /* Favourite User Email */
-    $email = mysqli_real_escape_string($mysqli, $_POST['email']);
+    $user_email = mysqli_real_escape_string($mysqli, $_POST['user_email']);
     /* Check Already If These Fellas Have Favourited Each Other */
     $sql = mysqli_query($mysqli, "SELECT * FROM favourites 
     WHERE fav_logged_in_user_id = '{$fav_logged_in_user_id}' AND  fav_user_id = '{$fav_user_id}'");
@@ -93,6 +94,8 @@ if (isset($_POST['Add_Favourite'])) {
 if (isset($_POST['Add_Match'])) {
     $match_first_patner_id = mysqli_real_escape_string($mysqli, $_POST['match_first_patner_id']);
     $match_second_partner_id = mysqli_real_escape_string($mysqli, $_POST['match_second_partner_id']);
+    /* Favourite User Email */
+    $user_email = mysqli_real_escape_string($mysqli, $_POST['user_email']);
     /* Check If These Two Love Birds Are Already A Match */
     $sql = mysqli_query($mysqli, "SELECT * FROM matches 
     WHERE match_first_patner_id = '{$match_first_patner_id}' AND  match_second_partner_id = '{$match_second_partner_id}'");
@@ -104,6 +107,8 @@ if (isset($_POST['Add_Match'])) {
         VALUES('{$match_first_patner_id}', '{$match_second_partner_id}')";
         $prepare = $mysqli->prepare($sql);
         $prepare->execute();
+        /* Load Mailer */
+
         if ($prepare) {
             $success = "You Two Are Match";
         } else {
