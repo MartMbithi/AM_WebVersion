@@ -63,6 +63,27 @@ session_start();
 require_once('../../config/config.php');
 require_once('../../config/checklogin.php');
 admin_check_login();
+/* Update User Account */
+if (isset($_POST['update_user'])) {
+    $user_id = $_POST['user_id'];
+    $user_name = $_POST['user_name'];
+    $user_email = $_POST['user_email'];
+    $user_gender = $_POST['user_gender'];
+    $user_address = $_POST['user_address'];
+    $user_age = $_POST['user_age'];
+
+    /* Update */
+    $sql = "UPDATE users SET user_name  = '{$user_name}', user_email = '{$user_email}', user_gender = '{$user_gender}',
+    user_address = '{$user_address}', user_age = '{$user_age}' WHERE user_id = '{$user_id}'";
+    $prepare = $mysqli->prepare($sql);
+    $prepare->execute();
+    if ($prepare) {
+        $success = "Member Account Details Updated";
+    } else {
+        $err = "Failed!, Please Try Again";
+    }
+}
+/* Delete Account */
 require_once('../../partials/backoffice_head.php');
 ?>
 
