@@ -1,10 +1,10 @@
 <!-- Bundle Js -->
-<script src="../public/js/bundle.js?ver=1.4.0"></script>
+<script src="../../public/js/bundle.js?ver=1.4.0"></script>
 <!-- Scripts -->
-<script src="./public/js/scripts.js?ver=1.4.0"></script>
+<script src="../../public/js/scripts.js?ver=1.4.0"></script>
 <!-- Alerts -->
 <!-- Toastr Alerts -->
-<script src="../public/plugins/toastr/toastr.min.js"></script>
+<script src="../../public/plugins/toastr/toastr.min.js"></script>
 <!-- Init  Alerts -->
 <?php if (isset($success)) { ?>
     <!-- Pop Success Alert -->
