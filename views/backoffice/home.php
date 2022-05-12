@@ -81,7 +81,7 @@ require_once('../../partials/backoffice_head.php');
                             <div class="nk-block">
                                 <div class="row gy-gs">
                                     <div class="col-md-6 col-lg-4">
-                                        <div class="nk-wg-card is-dark card card-bordered">
+                                        <div class="nk-wg-card is-s1 card card-bordered">
                                             <div class="card-inner">
                                                 <div class="nk-iv-wg2">
                                                     <div class="nk-iv-wg2-title">
