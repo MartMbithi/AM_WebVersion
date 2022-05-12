@@ -128,6 +128,38 @@ require_once('../../partials/backoffice_head.php');
                                             </div>
                                         </div><!-- .card -->
                                     </div><!-- .col -->
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="nk-wg-card is-s3 card card-bordered">
+                                            <div class="card-inner">
+                                                <div class="nk-iv-wg2">
+                                                    <div class="nk-iv-wg2-title">
+                                                        <h6 class="title">Matches </h6>
+                                                    </div>
+                                                    <div class="nk-iv-wg2-text">
+                                                        <div class="nk-iv-wg2-amount">
+                                                            <?php echo $matches; ?>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="nk-wg-card is-s3 card card-bordered">
+                                            <div class="card-inner">
+                                                <div class="nk-iv-wg2">
+                                                    <div class="nk-iv-wg2-title">
+                                                        <h6 class="title">Favourites </h6>
+                                                    </div>
+                                                    <div class="nk-iv-wg2-text">
+                                                        <div class="nk-iv-wg2-amount">
+                                                            <?php echo $favourites; ?>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
                                 </div><!-- .row -->
                             </div><!-- .nk-block -->
                         </div>

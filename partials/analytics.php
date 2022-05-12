@@ -82,3 +82,19 @@ $stmt->execute();
 $stmt->bind_result($pending_users);
 $stmt->fetch();
 $stmt->close();
+
+/* Matches */
+$query = "SELECT COUNT(*)  FROM matches ";
+$stmt = $mysqli->prepare($query);
+$stmt->execute();
+$stmt->bind_result($matches);
+$stmt->fetch();
+$stmt->close();
+
+/* Favourites */
+$query = "SELECT COUNT(*)  FROM favourites ";
+$stmt = $mysqli->prepare($query);
+$stmt->execute();
+$stmt->bind_result($favourites);
+$stmt->fetch();
+$stmt->close();
